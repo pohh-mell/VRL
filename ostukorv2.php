@@ -1,9 +1,5 @@
 <?
 session_start();
-
-ostukorv = array('piim','piim','leib','sai','leib');
-$kuipalju = array_count_values($ostukorv);
-
 ?>
 <h2>Pood</h2>
 <form method="post">
@@ -13,9 +9,20 @@ $kuipalju = array_count_values($ostukorv);
 <input type="submit" value="Tühjenda ostukorv" name="tühjenda" />
 </form>
 <?
-ostukorv = array();
+if ($_POST['Piim']){
+	$_SESSION['Piim']++;
+	// sessioonimuutuja 'piim' väärtust suurendatakse ühe võrra
+}
+if ($_POST['Sai']){
+	$_SESSION['Sai']++;
+}
+if ($_POST['Leib']){
+	$_SESSION['Leib']++;
+}
 if ($_POST['tühjenda']){
-	
+	$_SESSION['Piim']='';
+	$_SESSION['Sai']='';
+	$_SESSION['Leib']='';
 }
 ?>
 <p>Ostukorvis on
