@@ -1,35 +1,46 @@
 <?
-session_start();
+$otsitav = $_POST['otsitav'];
+$kordi = $_POST['kordi'];
+if ($otsitav == 0) {
+	$otsitav = rand(1,30);
+	$kordi = 0;
+	//  muutuja $kordi loendab pakkumisi
+}
+// $otsitav saab juhusliku väärtuse vahemikus 1-30.
+$pakkumine = $_POST['arv'];
+if ($pakkumine) {
+	//kontrollime kas kasutaja tegi pakkumise
+	$kordi = $kordi + 1;
+	// suurendame muutuja $kordi väärtus 1 võrra
+}
+if ($pakkumine == $otsitav) {
+// kui kasutaja on ära arvanud õige arvu, siis nullime muutuja $otsitav
+	$otsitav = 0;
+}
 ?>
-<h2>Pood</h2>
-<form method="post">
-<input type="submit" value="Piim 0.70 €" name="Piim" />
-<input type="submit" value="Leib 0.75 €" name="Leib" />
-<input type="submit" value="Sai 0.66 €" name="Sai" />
-<input type="submit" value="Tühjenda ostukorv" name="tühjenda" />
-</form>
+<html>
+<head>
+	<title>Arvamismäng</title>
+</head>
+<body>
+	<form method="post">
+	Tee oma pakkumine;
+		<input type="text" name="arv" size="5" />
+		<input type="hidden" name="otsitav" value="<?= $otsitav ?>" />
+		<input type="hidden" name="kordi" value="<?= $kordi ?>" />
+		<input type="submit" value="OK" />
+	</form>
 <?
-if ($_POST['Piim']){
-	$_SESSION['Piim']++;
-	// sessioonimuutuja 'piim' väärtust suurendatakse ühe võrra
+if ($pakkumine && $pakkumine > $_POST['otsitav']) {
+	echo "Sinu pakutud arv $pakkumine on liiga suur";
 }
-if ($_POST['Sai']){
-	$_SESSION['Sai']++;
+if ($pakkumine && $pakkumine < $_POST['otsitav']) {
+	// kas muutujal $pakkumine on väärtus JA kas $pakkumine on väiksem kui $otsitav
+	echo "Sinu pakutud arv $pakkumine on liiga väike";
 }
-if ($_POST['Leib']){
-	$_SESSION['Leib']++;
-}
-if ($_POST['tühjenda']){
-	$_SESSION['Piim']='';
-	$_SESSION['Sai']='';
-	$_SESSION['Leib']='';
+if ($pakkumine && $pakkumine == $_POST['otsitav']) {
+	echo "Sinu pakutud arv $pakkumine on õige! Arvamiseks kulus $kordi korda. Arva järgmist arvu.";
 }
 ?>
-<p>Ostukorvis on
-<?= $_SESSION['Piim'] ?> piima,
-<?= $_SESSION['Leib'] ?> leiba,
-<?= $_SESSION['Sai'] ?> saia.<p>
-
-<p>Kaupade hindade summa:
-<?= $_SESSION['Piim']*0.7 + $_SESSION['Leib']*0.75 + $_SESSION['Sai']*0.66 ?>
-</p>
+</body>
+</html>
