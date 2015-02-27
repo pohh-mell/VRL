@@ -23,7 +23,7 @@
 
 					<div class="col-xs-9 col-md-9">  
 						<h1>
-							<a href="http://www.tdl.ee/~hilari/VRL.php">
+							<a href="">
 								<h1></br>E-hääletus</h1>
 							</a>
 						</h1>
