@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>E-hääletus</title>
-	<link rel="icon" href="http://president.ee/images/stories/president_staatilised/lipp.jpg" type="image/x-icon" />
+	<link rel="icon" href="picid/lipp.jpg" type="image/x-icon" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,7 +24,7 @@
 				<div class ="col-xs-2 col-md-3 " style="text-align:center">
 					<div class ="col-xs-12 col-md-12">
 						<p></br>SISENE: 
-							<a href=""><img src="https://www.eesti.ee/riigiportaal/gfx/logo_id.gif"/></a>
+							<a href=""><img src="picid/logo_id.gif"/></a>
 						</p>		  
 					</div>
 					<div class ="col-xs-12 col-md-12">
@@ -32,8 +32,8 @@
 					</div>
 					<div class ="col-xs-12 col-md-12">
 						<p>
-							<a href=""><img src="http://flags.redpixart.com/img/1570/flag_256.jpg" id="ENG" style="width:13%"/></a>
-							<a href=""><img src="http://flags.redpixart.com/img/1445/flag_256.jpg" id="EE" style="width:13%"/></a>
+							<a href=""><img src="picid/ENG.jpg" id="ENG" style="width:13%"/></a>
+							<a href=""><img src="picid/EE.jpg" id="EE" style="width:13%"/></a>
 						</p>
 					</div>
 				</div>
