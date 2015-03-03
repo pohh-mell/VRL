@@ -18,8 +18,9 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="page-header">
+	
+	<header>
+		<div class="container"
 			<div class="row" style="background-color:#DEDEFF">
 				<div class="col-xs-9 col-md-9">  
 					<h1><a href=""></br>E-hääletus</a></h1>
@@ -42,7 +43,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="middle" style="background-image:url(picid/kaart.jpg);background-size: 70%; background-position: 50% 10%; background-repeat: no-repeat">		
+	</header>
+	<div class="container">
+		<div class="middle">		
 			<div class="row" style="text-align:center" >
 				<div class="col-xs-12 col-md-12" >
 					</br></br></br></br>
@@ -68,5 +71,10 @@
 			</div>
 		</div>
 	</div>
+	<footer>
+ 		<div class="container">
+   			<!-- footeri sisu -->
+  		</div>
+ 	</footer>
 </body>
 </html>
