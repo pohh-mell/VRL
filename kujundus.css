@@ -1,4 +1,5 @@
-
+<meta charset="utf-8">
+<title>Text Gradients</title>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 .middle{
@@ -8,7 +9,7 @@
 	background-repeat: no-repeat
 }
 
-.katse{
+.katse {
     position: relative;
 	font-size: 70px;
     margin-top: 0;
@@ -23,7 +24,7 @@
     }
 .katse:after {
 
-	content : 'auhauhauh';
+	content : 'E-hääletus';
     color: #d6d6d6;
     text-shadow: 0 1px 0 white;
 }
