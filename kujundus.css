@@ -1,4 +1,9 @@
 .page-header{
 	margin: 0px 0px 20px;
 }
-auh
+.middle{
+	background-image:url(picid/kaart.jpg);
+	background-size: 70%; 
+	background-position: 50% 10%; 
+	background-repeat: no-repeat
+}
