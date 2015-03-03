@@ -14,10 +14,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:#DEDEFF;">
+<body>
 	<div class="põhi">
 		<div class="page-header">
-			<div class="col-xs-12 col-md-12" style="background-color:white">
+			<div class="col-xs-12 col-md-12" style="background-color:#DEDEFF">
 				<div class="col-xs-9 col-md-9">  
 					<h1><a href=""></br>E-hääletus</a></h1>
 				</div>
@@ -39,9 +39,8 @@
 				</div>
 			 </div>
 		</div>
-		<!-- style="background-image:url(http://i58.tinypic.com/mrzay9.jpg);background-size: 100%" -->
 		<div class="middle">
-			<div class="col-xs-12 col-md-12" >
+			<div class="col-xs-12 col-md-12" style="background-image:url(picid/kaart.jpg);background-size: 100%">
 				<div class="col-xs-12 col-md-12" style="text-align:center" >
 					<div class="col-xs-12 col-md-12" >
 						</br></br></br></br>
