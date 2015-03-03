@@ -46,27 +46,15 @@
 	</header>
 	<div class="container">
 		<div class="middle">		
-			<div class="row" style="text-align:center" >
-				<div class="col-xs-12 col-md-12" >
-					</br></br></br></br>
+			<div class="row">
+				<div class="col-xs-8 col-md-4  col-md-offset-1">
+					<a href="" class="front-page-button">KANDIDAADID</a>
 				</div>
-				<a href=""><div class="col-xs-8 col-md-4  col-xs-offset-1 col-md-offset-1" style="background-color:#8585FF;">
-						<h3></br>KANDIDAADID</br></br></h3>
-				</div></a>
-				<a href=""><div class="col-xs-8 col-md-4 col-xs-offset-1 col-md-offset-1" style="background-color:#8585FF;">
-					<h3><img src="http://tinyurl.com/ptxtreq" style="width:20%" /> STATISTIKA</h3>
-				</div></a>
-				<div class="col-xs-12 col-md-12" >
-					</br></br></br></br>
+				<div class="col-xs-8 col-md-4 col-md-offset-1">
+					<a href="" class="front-page-button"><img src="http://tinyurl.com/ptxtreq" style="width:7%" /> STATISTIKA</a>
 				</div>
-				<a href=""><div class="col-xs-8 col-md-4  col-xs-offset-1 col-md-offset-1" style="background-color:#8585FF;">
-					<h3></br>TULEMUSED</br></br></h3>
-				</div></a>
-				<div class="col-xs-12 col-md-12" >
-					</br></br></br></br>
-				</div>
-				<div class="col-xs-12 col-md-12" >
-					</br></br></br></br>
+				<div class="col-xs-8 col-md-4 col-md-offset-1">
+					<a href="" class="front-page-button">TULEMUSED</a>
 				</div>
 			</div>
 		</div>
