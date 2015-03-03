@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="row" >
 				<div class="col-xs-9 col-md-9">  
-					<h1 class="katse"><a href="#"></br>E-hääletus</a></h1>
+					<h1><a href="#"></br>E-hääletus</a></h1>
 				</div>
 				<div class ="col-xs-3 col-md-3 " style="text-align:center">
 					<div class ="row">
