@@ -28,7 +28,7 @@
 				<div class ="col-xs-3 col-md-3 " style="text-align:center">
 					<div class ="row">
 						<p></br>SISENE: 
-							<a href=""><img src="http://www.helias.cz/pictures/face.png"  style="width:10%/></a>
+							<a href=""><img src="http://www.helias.cz/pictures/face.png" style="width:10%"/></a>
 						</p>		  
 					</div>
 					<div class ="row">
