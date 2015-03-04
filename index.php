@@ -28,7 +28,7 @@
 				<div class ="col-xs-3 col-md-3 " style="text-align:center">
 					<div class ="row">
 						<p></br>SISENE: 
-							<a href=""><img src="picid/logo_id.gif"/></a>
+							<a href=""><img src="http://www.helias.cz/pictures/face.png"/></a>
 						</p>		  
 					</div>
 					<div class ="row">
@@ -36,8 +36,8 @@
 					</div>
 					<div class ="row">
 						<p>
-							<a href=""><img src="picid/ENG.jpg" id="ENG" style="width:13%"/></a>
-							<a href=""><img src="picid/EE.jpg" id="EE" style="width:13%"/></a>
+							<a href=""><img src="picid/ENG.png" id="ENG" style="width:13%"/></a>
+							<a href=""><img src="picid/EE.png" id="EE" style="width:13%"/></a>
 						</p>
 					</div>			
 				</div>
