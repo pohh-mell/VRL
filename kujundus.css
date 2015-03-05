@@ -2,6 +2,10 @@ header{
 	background-color:#DEDEFF;
 }
 
+header p {
+	margin: 10px;
+}
+
 .middle{
 	width: 100%;
     height: 100%;

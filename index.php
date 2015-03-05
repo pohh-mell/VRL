@@ -27,7 +27,7 @@
 				</div>
 				<div class ="col-xs-3 col-md-3 col-lg-3" style="text-align:center">
 					<div class ="row4">
-						<p id="status"></br>SISENE: 
+						<p id="status">SISENE: 
 							<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 						<!--	<a href=""><img src="http://www.helias.cz/pictures/face.png" style="width:10%"/></a>-->
 						</p>		  
