@@ -72,7 +72,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('row4').innerHTML =
+      document.getElementById('status').innerHTML =
         'Tere tulemast, ' + response.name + '!';
     });
   }
