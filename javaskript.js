@@ -81,8 +81,7 @@
     
     function LogOut() {
     FB.logout(function(response) {
-      document.getElementById('status') =
-        'SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>;'
+     unset($_SESSION['fb_APPID_user_id']);
         // Person is now logged out
     });
   }
