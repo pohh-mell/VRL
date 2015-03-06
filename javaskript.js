@@ -81,7 +81,6 @@
     
     function LogOut() {
     FB.logout(function(response) {
-     unset($_SESSION['fb_APPID_user_id']);
         // Person is now logged out
     });
   }
