@@ -48,6 +48,7 @@
 				</div>
 			</div>
 		</div>
+	</header>	
 	<div class="container">
 		<div class="middle">		
 			<div class="row">
