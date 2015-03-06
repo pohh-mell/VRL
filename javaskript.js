@@ -72,7 +72,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
+      document.getElementById('status') =
         'Tere tulemast, ' + response.name + '!';
     });
   }
@@ -81,6 +81,8 @@
     
     function LogOut() {
     FB.logout(function(response) {
+      document.getElementById('status') =
+        SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>;
         // Person is now logged out
     });
   }
