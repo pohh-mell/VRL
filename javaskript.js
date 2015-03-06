@@ -80,6 +80,8 @@
     
     function LogOut() {
     FB.logout(function(response) {
-        // Person is now logged out
+        console.log('Successful logout for: ' + response.name);
+      document.getElementById('status').innerHTML = </br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+            </fb:login-button>;
     });
   }
