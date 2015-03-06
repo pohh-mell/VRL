@@ -82,7 +82,7 @@
     function LogOut() {
     FB.logout(function(response) {
       document.getElementById('status') =
-        SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>;
+        'SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>;'
         // Person is now logged out
     });
   }
