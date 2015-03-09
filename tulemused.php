@@ -27,16 +27,16 @@
 					<h1><a href="http://e-haaletus.azurewebsites.net/"></br>E-hääletus</a></h1>
 					<p>Tulemused</p>
 				</div>
-				<div class ="col-xs-3 col-md-3 col-lg-3">
-					<div class ="row" id="hh">
+				<div class ="kl col-xs-3 col-md-3 col-lg-3">
+					<div class ="row">
 						<p></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 						</fb:login-button>
 						</p>		  
 					</div>
-					<div class ="row" id="hh">
+					<div class ="row">
 						<input id="clickMe" type="button" value="clickme" onclick="LogOut();" />
 					</div>
-					<div class ="row" id="hh">
+					<div class ="row">
 						<p>
 							<a href=""><img src="picid/ENG.png" id="ENG" style="width:10%"/></a>
 							<a href=""><img src="picid/EE.png" id="EE" style="width:10%"/></a>
