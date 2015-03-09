@@ -49,15 +49,14 @@
 		<div class="middle">		
 			<div class="row">
 				<div class="col-xs-8 col-md-4  col-md-offset-1">
-					<a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="front-page-button">KANDIDAADID</a>
+					<a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" class="pilt"/>KANDIDAADID</a>
 				</div>
 				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://e-haaletus.azurewebsites.net/statistika.php" class="front-page-button">
-						<img src="http://tinyurl.com/ptxtreq" style="width:7%" /> STATISTIKA
+					<a href="http://e-haaletus.azurewebsites.net/statistika.php" class="wide blue"><img src="http://i57.tinypic.com/2qbi06s.png" class="pilt2"/>STATISTIKA</a>
 					</a>
 				</div>
 				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://e-haaletus.azurewebsites.net/tulemused.php" class="front-page-button">TULEMUSED</a>
+					<a href="http://e-haaletus.azurewebsites.net/tulemused.php" class="wide blue"><img src="http://i57.tinypic.com/ta1ytl.png" class="pilt"/>TULEMUSED</a>
 				</div>
 			</div>
 		</div>

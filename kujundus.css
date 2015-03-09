@@ -1,13 +1,19 @@
+.kl {
+	text-align:center;
+}
+
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+* { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased; }
+
+
 header{
 	background-color:#DEDEFF;
 }
 
 header p {
 	margin: 10px;
-}
-
-.kl {
-	text-align:center;
 }
 
 .middle{
@@ -18,23 +24,6 @@ header p {
 	background-color:white;
 	background-position: 50% 10%; 
 	background-repeat: no-repeat
-}
-
-.middle form {
-	margin: 0px;	
-}
-
-.front-page-button {
-	width: 100%;
-	padding: 10px 20px;
-	font-size: 20px;
-	color: #fff;
-	background: #8585FF;
-    display: block;
-    text-align: center;
-    margin: 20px;
-    width: 100%;
-    height: 15%;
 }
 a:hover {
     text-decoration: none;
@@ -59,6 +48,149 @@ h1 {
 	content : 'E-hääletus';
 	color: #d6d6d6;
 	text-shadow: 0 1px 0 white;
+}
+
+
+
+.pilt {
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	display:block;
+}
+
+.pilt2 {
+	width:35%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	display:block;
+}
+
+
+
+a.wide, a.box{
+	text-decoration:none;
+	color:#fff;
+	-webkit-transition: -webkit-transform 0.1s;
+	position:relative;
+	overflow:hidden;
+}
+
+a.wide h2, a.box h2{
+	position:absolute;
+	bottom:5px;
+	font-size:14px;
+}
+
+a.wide h2.top, a.box h2.top{
+	position:static;
+
+	font-size:14px;
+}
+a.wide i, a.box i{
+font-size: 60px;
+text-align: center;
+display: block;
+margin-top: 10px; /* outside Codepen is actually 30px */
+}
+a.wide:hover, a.box:hover{
+	-webkit-transform: scale(1.05);
+}
+
+a.wide:active, a.box:active{
+	-webkit-transform: scale(1);
+}
+.wide{
+	width:100%;
+	min-width:250px;
+	height:15%;
+	min-height:170px;
+	overflow:hidden;
+	font-size:26px;
+	padding:10px 20px;
+	display:block;
+	float:left;
+    margin: 20px;   
+    text-align: center;
+}
+
+
+.lime{background:#61b812;}
+.orange{background:#e76022;}
+.blue{background:#8585FF;}
+.redgay{background:#DA312E;}
+.yellow{background:#dbb701;}
+.bluefish{background:#02b9e3;}
+.magenta{background:#d22a4e;}
+.spacer{
+	width:770px;
+	margin-right: 50px;
+	float:left;
+}
+
+@-webkit-keyframes galeri
+{
+1% {background-position: 0px 0px;}
+10%{background-position: 0px 140px;}
+20%{background-position: 0px 140px;}
+30%{background-position: 0px 280px;}
+40%{background-position: 0px 280px;}
+50%{background-position: 0px 420px;}
+60%{background-position: 0px 420px;}
+70%{background-position: 0px 560px;}
+80%{background-position: 0px 560px;}
+100% {background-position: 0px 560px;}
+}
+
+.right{
+	float:right;
+	text-align:right;
+	margin-top: 30px;
+}
+.right p{
+	margin: 5px 0px;
+}
+img.prof{
+	float: right;
+	margin: 10px;
+	margin-top: 40px;
+}
+.i_bot{
+	font-size: 30px;
+	text-align: left;
+	position: absolute;
+	bottom: 0px;
+}
+.cal_i{
+	margin-top: 20px;
+	margin-left: 15px;
+	width: 155px;
+}
+.cal_e h1{
+	position: absolute;
+	right: 0px;
+	width: 115px;
+	text-align: center;
+	margin: 0px;
+	font-size: 60px;
+}
+.cal_e p{
+	position: absolute;
+	right: 0px;
+	width: 115px;
+	text-align: center;
+	margin-top: 75px;
+	text-transform: uppercase;
+}
+.cal_e i{
+	text-align: left;
+	font-size: 25px !important;
+	position: absolute;
+	bottom: 0px;
 }
 
 table#t01, th, td {
