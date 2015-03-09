@@ -6,6 +6,10 @@ header p {
 	margin: 10px;
 }
 
+.row#hh {
+	text-align:center;
+}
+
 .middle{
 	width: 100%;
     height: 100%;
@@ -14,6 +18,10 @@ header p {
 	background-color:white;
 	background-position: 50% 10%; 
 	background-repeat: no-repeat
+}
+
+.middle form {
+	margin: 0px;	
 }
 
 .front-page-button {
@@ -51,4 +59,31 @@ h1 {
 	content : 'E-hääletus';
 	color: #d6d6d6;
 	text-shadow: 0 1px 0 white;
+}
+
+table#t01, th, td {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#t01 {
+	margin-top: 50px;	
+}
+
+table#t01 tr:nth-child {
+    background-color: #eee;
+}
+
+table#t01 th	{
+    background-color: #DEDEFF;
+}
+
+.Valikud{
+	height: 25px
+}
+
+.singleline li{
+display: inline-block;
+margin-right: 15px;
+margin-top: 50px;
 }

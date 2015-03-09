@@ -1,16 +1,16 @@
 <html>
 <head>
 	<title>E-hääletus</title>
-	<link rel="icon" href="picid/lipp.jpg" type="image/x-icon" />
+	<link rel="icon" href="http://president.ee/images/stories/president_staatilised/lipp.jpg" type="image/x-icon" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="kujundus.css">
-
+	<link rel="stylesheet" type="text/css" href="vrl.css">
+	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -25,6 +25,7 @@
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
 					<h1><a href=""></br>E-hääletus</a></h1>
+					<p>Tulemused</p>
 				</div>
 				<div class ="col-xs-3 col-md-3 col-lg-3">
 					<div class ="row" id="hh">
@@ -44,22 +45,51 @@
 				</div>
 			</div>
 		</div>
-	</header>	
+	</header>
 	<div class="container">
-		<div class="middle">		
-			<div class="row">
-				<div class="col-xs-8 col-md-4  col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/kandidaadid.php" class="front-page-button">KANDIDAADID</a>
-				</div>
-				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/statistika.php" class="front-page-button">
-						<img src="http://tinyurl.com/ptxtreq" style="width:7%" /> STATISTIKA
-					</a>
-				</div>
-				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/tulemused.php" class="front-page-button">TULEMUSED</a>
-				</div>
-			</div>
+		<div class="middle">
+		
+			<ol class="singleline">			
+		
+			<li><select class="Valikud">
+	   		    <option value="Kogu Eesti">Kogu Eesti</option>
+			    <option value="Tartumaa">Tartumaa</option>
+			    <option value="Võrumaa">Võrumaa</option>
+			  	<option value="Harjumaa">Harjumaa</option>
+			</select></li>
+			
+			<li><select class="Valikud">
+	   		    <option value="Kõik Erakonnad">Kõik Erakonnad</option>
+			    <option value="JAVA">JAVA</option>
+			    <option value="MUNA">MUNA</option>
+			</select></li>
+			
+			<li><form method="get" action="">
+				<input type="text" class="Valikud" name="search" id="search-text"  value="" Placeholder="Sisesta kandidaadi nimi" />
+			</form></li>
+			
+			</ol>
+			
+			<table style="width:100%" id="t01">
+				<tr>
+					<th>Nimi</th>
+			    	<th>Piirkond</th>		
+			    	<th>Erakond</th>
+			    	<th>Hääli</th>
+			  	</tr>
+			  	<tr>
+			    	<td>Karl</td>
+			    	<td>Tartumaa</td>		
+			    	<td>JAVA</td>
+			    	<td>3</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Meelis</td>
+			    	<td>Tartu</td>		
+			    	<td>MUNA</td>
+			    	<td>2</td>
+			  	</tr>
+			</table>
 		</div>
 	</div>
 	<footer>
