@@ -49,15 +49,15 @@
 		<div class="middle">		
 			<div class="row">
 				<div class="col-xs-8 col-md-4  col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/kandidaadid.php" class="front-page-button">KANDIDAADID</a>
+					<a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="front-page-button">KANDIDAADID</a>
 				</div>
 				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/statistika.php" class="front-page-button">
+					<a href="http://e-haaletus.azurewebsites.net/statistika.php" class="front-page-button">
 						<img src="http://tinyurl.com/ptxtreq" style="width:7%" /> STATISTIKA
 					</a>
 				</div>
 				<div class="col-xs-8 col-md-4 col-md-offset-1">
-					<a href="http://www.tdl.ee/~hilari/tulemused.php" class="front-page-button">TULEMUSED</a>
+					<a href="http://e-haaletus.azurewebsites.net/tulemused.php" class="front-page-button">TULEMUSED</a>
 				</div>
 			</div>
 		</div>

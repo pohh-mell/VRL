@@ -9,7 +9,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="vrl.css">
+	<link rel="stylesheet" type="text/css" href="kujundus.css">
 	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
-					<h1><a href=""></br>E-hääletus</a></h1>
+					<h1><a href="http://e-haaletus.azurewebsites.net/"></br>E-hääletus</a></h1>
 					<p>Tulemused</p>
 				</div>
 				<div class ="col-xs-3 col-md-3 col-lg-3">
