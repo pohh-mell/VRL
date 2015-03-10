@@ -27,8 +27,8 @@
 					<h1><a href=""></br>E-hääletus</a></h1>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
-					<div class ="row" id = "aff">
-						<p></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+					<div class ="row">
+						<p id="aff"></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 						</fb:login-button>
 						</p>		  
 					</div>
