@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
-					<h1><a href=""></br>E-hääletus</a></h1>
+					<h1><a href="">E-hääletus</a></h1>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
