@@ -73,10 +73,14 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('aff').innerHTML = 'Tere tulemast, ' + response.name + '!';
-      location.reload();
+      myfun();
     });
   }
-  
+
+
+  function myfun(){
+    window.location.search += '&reload=true';
+}
   
     
     function LogOut() {
