@@ -33,7 +33,7 @@
 						</p>		  
 					</div>
 					<div class ="row">
-						<input id="clickMe" type="button" value="clickme" onclick="LogOut();" />
+						<input id="clickMe" type="button" value="Log out" onclick="LogOut();" />
 					</div>
 					<div class ="row">
 						<p>
