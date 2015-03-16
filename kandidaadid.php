@@ -1,9 +1,13 @@
+<!DOCTYPE HTML SYSTEM>
 <html>
 <head>
 	<title>E-hääletus</title>
-	<link rel="icon" href="http://president.ee/images/stories/president_staatilised/lipp.jpg" type="image/x-icon" />
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="picid/lipp.jpg" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Hege Refsnes">
+
 	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
 
 	<!-- Latest compiled and minified CSS -->
@@ -12,13 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="kujundus.css">
 	
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
-<script src="javaskript.js">
+<script src="javaskript.js"  type="text/javascript">
 </script>
 	<header>
 		<div class="container">
@@ -34,12 +38,12 @@
 						</p>		  
 					</div>
 					<div class ="row">
-						<input id="clickMe" type="button" value="clickme" onclick="LogOut();" />
+						<input id="clickMe" type="button" value="Log out" onclick="LogOut();">
 					</div>
 					<div class ="row">
 						<p>
-							<a href=""><img src="picid/ENG.png" id="ENG" style="width:10%"/></a>
-							<a href=""><img src="picid/EE.png" id="EE" style="width:10%"/></a>
+							<a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
+							<a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
 						</p>
 					</div>			
 				</div>
