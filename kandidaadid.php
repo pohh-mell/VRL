@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
-					<h1><a href="http://e-haaletus.azurewebsites.net/"></br>E-hääletus</a></h1>
+					<h1><a href="http://e-haaletus.azurewebsites.net/">E-hääletus</a></h1>
 					<p>Kandidaadid</p>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
