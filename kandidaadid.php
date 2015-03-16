@@ -93,6 +93,24 @@
 			    	<td><a href="">Hääleta</a></td>
 			  	</tr>
 			</table>
+			<!-- kandidaadi lisamine -->
+			<div class="block">
+    			<label>Nimi:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Piirkond:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Erakond:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Isikukood:</label>
+    			<input type="text" />
+			</div>
+			<button class="nupp" style = "margin-left : 150px; margin-top:5px;">Lisa end kandidaadiks</button>
 		</div>
 	</div>
 	<footer>
