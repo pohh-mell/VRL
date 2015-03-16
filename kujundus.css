@@ -199,7 +199,8 @@ table#t01, th, td {
 }
 
 table#t01 {
-	margin-top: 50px;	
+	margin-top: 50px;
+	margin-bottom: 50px;	
 }
 
 table#t01 tr:nth-child {
@@ -218,4 +219,9 @@ table#t01 th	{
 display: inline-block;
 margin-right: 15px;
 margin-top: 50px;
+}
+
+label { 
+	display: inline-block; 
+	width: 140px;
 }
