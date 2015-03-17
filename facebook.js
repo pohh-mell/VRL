@@ -52,31 +52,19 @@ function statusChangeCallback(response) {
   // These three cases are handled in the callback function.
 
   FB.getLoginStatus(function(response) {
-    if(statusChangeCallback(response)){
-      showLogoutButton();
-    }
+    statusChangeCallback(response);
   });
 
 };
 
-function showLoginButton() {
-    $('#aff').show();
-
-    $('#FBButton').html('Log in Facebook');
-    $('#FBButton').on('click', function(){
-      login();
-    });
-  }
-
-function showLogoutButton() {
-    $('#aff').show();
-
+  function showLogoutButton() {
+    $('#FBButtonDiv').show();
     $('#FBButton').html('Log out Facebook');
     $('#FBButton').on('click', function(){
-      logout();
+      LogOut();
     });
   }
-
+  
   // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,6 +81,7 @@ function showLogoutButton() {
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('aff').innerHTML = 'Tere tulemast, ' + response.name + '!';
+      showLogoutButton();
     });
   }
 
@@ -106,7 +95,6 @@ function showLogoutButton() {
     FB.logout(function(response) {
       console.log('Successful logout for: ' + response.name);
       myfun();
-      showLoginButton();
      // document.getElementById('status').innerHTML = "</br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
        //     </fb:login-button>";
      });
