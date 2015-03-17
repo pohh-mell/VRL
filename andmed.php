@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "select * from erakonnad;
+$sql = "select * from erakonnad";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
