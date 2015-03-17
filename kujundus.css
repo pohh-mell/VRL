@@ -16,11 +16,8 @@ header p {
 	margin: 15px;
 }
 
-
 .fb_iframe_widget {
-  display: inline-block;
-  position: relative;
-  margin: 15px;
+	margin: 15px;	
 }
 
 .middle{
