@@ -14,13 +14,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "select kandidaadid.nimi,erakonnad.nimi from kandidaadid,erakonnad where kandidaadid.Erakonna_id=erakonnad.id";
+$sql = "select * from Erakonnad";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["kandidaadid.nimi"]. " - Name: " . $row["erakonnad.nimi"].  "<br>";
+        echo "id: " . $row["id"]. " - Nimi: " . $row["Nimi"].  "<br>";
     }
 } else {
     echo "0 results";
