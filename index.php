@@ -36,8 +36,7 @@
 						
 					</div>
 					<div class ="row">
-						<input id="clickMe" type="button" value="Log out" onclick="LogOut();" >
-						<div id="FBButtonDiv"><button id="FBButton">x</button></div>
+						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
 					</div>
 					<div class ="row">
 						<p>

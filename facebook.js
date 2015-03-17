@@ -56,14 +56,6 @@ function statusChangeCallback(response) {
   });
 
 };
-
-  function showLogoutButton() {
-    $('#FBButtonDiv').show();
-    $('#FBButton').html('Log out Facebook');
-    $('#FBButton').on('click', function(){
-      LogOut();
-    });
-  }
   
   // Load the SDK asynchronously
   (function(d, s, id) {
@@ -81,7 +73,7 @@ function statusChangeCallback(response) {
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('aff').innerHTML = 'Tere tulemast, ' + response.name + '!';
-      showLogoutButton();
+      document.getElementById('out').style.visibility="visible";
     });
   }
 
