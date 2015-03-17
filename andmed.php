@@ -1,8 +1,5 @@
 <?php
 
-
-=======
-
 	// DB connection info
 	$host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
