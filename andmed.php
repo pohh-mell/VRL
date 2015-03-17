@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
     	console.log("JÕUDSIN");
-        echo "Erakond " . $row["nimi"]. " - Esimees: " . $row["esimees"].  "<br>";
+        echo "Erakond " . $row["Nimi"]. " - Esimees: " . $row["Esimees"].  "<br>";
     }
 } else {
     echo "0 results";
