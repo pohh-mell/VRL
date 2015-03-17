@@ -74,6 +74,7 @@ function statusChangeCallback(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('aff').innerHTML = 'Tere tulemast, ' + response.name + '!';
       document.getElementById('out').style.visibility="visible";
+      document.getElementById('kandideerimine').style.visibility="visible";
     });
   }
 

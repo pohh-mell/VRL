@@ -53,23 +53,25 @@
 	<div class="container">
 		<div class="middle">
 			<!-- kandidaadi lisamine -->
-			<div class="block">
-    			<label>Nimi:</label>
-    			<input type="text" />
-			</div>
-			<div class="block">
-    			<label>Piirkond:</label>
-    			<input type="text" />
-			</div>
-			<div class="block">
-    			<label>Erakond:</label>
-    			<input type="text" />
-			</div>
-			<div class="block">
-    			<label>Isikukood:</label>
-    			<input type="text" />
-			</div>
-			<button class="nupp" style = "margin-left : 150px; margin-top:5px;">Lisa end kandidaadiks</button>
+			<form class="ff1" action="post">
+				<div class="block">
+	    			<label>Nimi:</label>
+	    			<input type="text" id="name-input" name="variable">
+				</div>
+				<div class="block">
+	    			<label>Piirkond:</label>
+	    			<input type="text" id="piirkond-input" name="variable">
+				</div>
+				<div class="block">
+	    			<label>Erakond:</label>
+	    			<input type="text" id="erakond-input" name="variable">
+				</div>
+				<div class="block">
+	    			<label>Isikukood:</label>
+	    			<input type="text" id="isikukood-input" name="variable">
+				</div>
+				<button class="nupp" type="submit"  id="submit-button">Lisa end kandidaadiks</button>
+			</form>
 		</div>
 	</div>
 	<footer>

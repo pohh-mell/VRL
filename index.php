@@ -60,6 +60,9 @@
 				<div class="col-xs-8 col-md-4 col-md-offset-1">
 					<a href="http://e-haaletus.azurewebsites.net/tulemused.php" class="wide blue"><img src="http://i57.tinypic.com/ta1ytl.png" alt="tulemused" class="pilt">TULEMUSED</a>
 				</div>
+				<div class="col-xs-8 col-md-4 col-md-offset-1">
+					<a href="http://www.tdl.ee/~hilari/tulemused.php" style="visibility:hidden" id="kandideerimine" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" alt="kandideeri" class="pilt">KANDIDEERI</a>
+				</div>
 			</div>
 		</div>
 	</div>
