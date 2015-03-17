@@ -22,7 +22,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
-<script src="javaskript.js"  type="text/javascript">
+<script src="facebook.js"  type="text/javascript">
 </script>
 	<header>
 		<div class="container">
@@ -33,6 +33,7 @@
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
 						<div class="fb-login-button" id="aff" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+						<div id="FBButtonDiv"><button id="FBButton">Facebook login!</button></div>
 					</div>
 					<div class ="row">
 						<input id="clickMe" type="button" value="Log out" onclick="LogOut();" >
