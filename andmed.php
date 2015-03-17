@@ -1,0 +1,56 @@
+<?php
+	
+
+	// DB connection info
+	$host = "eu-cdbr-azure-north-c.cloudapp.net";
+	$user = "bb8f29df6ad035";
+	$pwd = "461b6fa7";
+	$db = "ehaaletusdata";
+
+	// Create connection
+$conn = new mysqli($host, $user, $pwd, $db);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "select kandidaadid.nimi,erakonnad.nimi from kandidaadid,erakonnad where kandidaadid.Erakonna_id=erakonnad.id";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+function getAllItems()
+{
+	$conn = connect();
+	$sql = "SELECT * FROM items";
+	$stmt = $conn->query($sql);
+	return $stmt->fetchAll(PDO::FETCH_NUM);
+}
+function addItem($name, $category, $date, $is_complete)
+{
+	$conn = connect();
+	$sql = "INSERT INTO items (name, category, date, is_complete) VALUES (?, ?, ?, ?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bindValue(1, $name);
+	$stmt->bindValue(2, $category);
+	$stmt->bindValue(3, $date);
+	$stmt->bindValue(4, $is_complete);
+	$stmt->execute();
+}
+function deleteItem($item_id)
+{
+	$conn = connect();
+	$sql = "DELETE FROM items WHERE id = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bindValue(1, $item_id);
+	$stmt->execute();
+}
+?>
