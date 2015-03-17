@@ -3,7 +3,7 @@
 <head>
 	<title>E-hääletus</title>
 	<link rel="icon" href="picid/lipp.jpg" type="image/x-icon">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
 	<meta name="description" content="Free Web tutorials">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 	<meta name="author" content="Hege Refsnes">
