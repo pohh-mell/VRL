@@ -1,7 +1,10 @@
 <?php
+<<<<<<< HEAD
 	
 <meta charset="UTF-8">
 
+=======
+>>>>>>> aa05973829f20387f6c00df5a1fb1167c0265e29
 	// DB connection info
 	$host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
