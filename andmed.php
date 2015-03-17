@@ -13,14 +13,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "select * from erakonnad;";
+$sql = "select kandidaadid.nimi as kandidaat,erakonnad.nimi as erakond from kandidaadid left join erakonnad 
+ON kandidaadid.erakonna_id=erakonnad.id;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-    	console.log("JÕUDSIN");
-        echo "Erakond " . $row["Nimi"]. " - Esimees: " . $row["Esimees"].  "<br>";
+    	console.log("JÃ•UDSIN");
+        echo "Erakond " . $row["kandidaat"]. " - Esimees: " . $row["erakond"].  "<br>";
     }
 } else {
     echo "0 results";
