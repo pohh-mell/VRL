@@ -29,7 +29,7 @@
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
 					<h1><a href="http://e-haaletus.azurewebsites.net/">E-hääletus</a></h1>
-					<p>Kandidaadid</p>
+					<p>Kandideerimine</p>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
@@ -52,51 +52,24 @@
 	</header>
 	<div class="container">
 		<div class="middle">
-		
-			<ol class="singleline">			
-		
-			<li><select class="Valikud">
-	   		    <option value="Kogu Eesti">Kogu Eesti</option>
-			    <option value="Tartumaa">Tartumaa</option>
-			    <option value="Võrumaa">Võrumaa</option>
-			  	<option value="Harjumaa">Harjumaa</option>
-			</select></li>
-			
-			<li><select class="Valikud">
-	   		    <option value="Kõik Erakonnad">Kõik Erakonnad</option>
-			    <option value="JAVA">JAVA</option>
-			    <option value="MUNA">MUNA</option>
-			</select></li>
-			
-			<li><form method="get" action="">
-				<input type="text" class="Valikud" name="search" id="search-text"  value="" Placeholder="Sisesta kandidaadi nimi" />
-			</form></li>
-			
-			</ol>
-			
-			<table style="width:100%" id="t01">
-				<tr>
-					<th>Nimi</th>
-			    	<th>Piirkond</th>		
-			    	<th>Erakond</th>
-			    	<th>Hääli</th>
-			    	<th></th>
-			  	</tr>
-			  	<tr>
-			    	<td>Karl</td>
-			    	<td>Tartumaa</td>		
-			    	<td>JAVA</td>
-			    	<td>3</td>
-			    	<td><a href="">Hääleta</a></td>
-			  	</tr>
-			  	<tr>
-			    	<td>Meelis</td>
-			    	<td>Tartu</td>		
-			    	<td>MUNA</td>
-			    	<td>2</td>
-			    	<td><a href="">Hääleta</a></td>
-			  	</tr>
-			</table>
+			<!-- kandidaadi lisamine -->
+			<div class="block">
+    			<label>Nimi:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Piirkond:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Erakond:</label>
+    			<input type="text" />
+			</div>
+			<div class="block">
+    			<label>Isikukood:</label>
+    			<input type="text" />
+			</div>
+			<button class="nupp" style = "margin-left : 150px; margin-top:5px;">Lisa end kandidaadiks</button>
 		</div>
 	</div>
 	<footer>
