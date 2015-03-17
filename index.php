@@ -32,9 +32,7 @@
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
-						<p id="aff"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
-						</fb:login-button>
-						</p>		  
+						<div class="fb-login-button" id="aff" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 					</div>
 					<div class ="row">
 						<input id="clickMe" type="button" value="Log out" onclick="LogOut();" >
