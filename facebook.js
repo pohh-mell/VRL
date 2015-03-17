@@ -1,7 +1,7 @@
 // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
+function statusChangeCallback(response) {
+  console.log('statusChangeCallback');
+  console.log(response);
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
@@ -12,12 +12,12 @@
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
+      'into this app.';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
+      'into Facebook.';
     }
   }
 
@@ -31,8 +31,8 @@
   }
 
   window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '764717310292073',
+    FB.init({
+      appId      : '764717310292073',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -52,10 +52,30 @@
   // These three cases are handled in the callback function.
 
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
+    if(statusChangeCallback(response)){
+      showLogoutButton();
+    }
   });
 
-  };
+};
+
+function showLoginButton() {
+    $('#aff').show();
+
+    $('#FBButton').html('Log in Facebook');
+    $('#FBButton').on('click', function(){
+      login();
+    });
+  }
+
+function showLogoutButton() {
+    $('#aff').show();
+
+    $('#FBButton').html('Log out Facebook');
+    $('#FBButton').on('click', function(){
+      logout();
+    });
+  }
 
   // Load the SDK asynchronously
   (function(d, s, id) {
@@ -79,14 +99,15 @@
 
   function myfun(){
     window.location.search += '&reload=true';
-}
+  }
   
-    
-    function LogOut() {
+
+  function LogOut() {
     FB.logout(function(response) {
-        console.log('Successful logout for: ' + response.name);
-        myfun();
+      console.log('Successful logout for: ' + response.name);
+      myfun();
+      showLoginButton();
      // document.getElementById('status').innerHTML = "</br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
        //     </fb:login-button>";
-    });
+     });
   }
