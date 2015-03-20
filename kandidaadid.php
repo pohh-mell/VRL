@@ -86,22 +86,27 @@
 						GROUP BY Number;";
 					$result = $conn->query($sql);
 
-					$meielist= array();
-					if ($result->num_rows > 0) {
-   					 // output data of each row
-    					while($row = $result->fetch_assoc()) {
-    						console.log("JÕUDSIN");
-    						array_push($meielist, array("Nr."=>$row["Number"],
-    						 "Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"],
-    						  "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
-        	
-    						}
-						} else {
+					if($result->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$nr = $rows['Number'];
+							$Nimi = $rows['Nimi'];
+							$Piirkond = $rows['Piirkond'];
+							$Erakond = $rows['Erakond'];
+							$Hääli = $rows['Hääli'];
+
+							echo "<tr>
+							<td>$nr</td>
+							<td>$Nimi</td>
+							<td>$Piirkond</td>
+							<td>$Erakond</td>
+							<td>$Hääli</td>
+							</tr>";
+						}
+					}
     				echo "0 results";
 					}
 
 					$conn->close();
-					echo build_table($meielist);
 					?>
 			</table>
 		</div>
