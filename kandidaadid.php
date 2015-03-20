@@ -91,7 +91,7 @@
 							<td>"Piirkond"</td>
 							<td>"Erakond"</td>
 							<td>"Hääli"</td>
-							</tr>"
+							</tr>";
 					if($result->num_rows != 0){
 						while($rows = $result->fetch_assoc()){
 							$nr = $rows["Number"];
