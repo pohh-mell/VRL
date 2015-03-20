@@ -61,9 +61,9 @@ function statusChangeCallback(response) {
     });
   }
 
- //function myfun(){
-  //  window.location.search += '&reload=true';
-//  }
+  function myfun(){
+    window.location.search += '&reload=true';
+  }
 
   function LogOut() {
     FB.logout(function(response) {
