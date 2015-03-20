@@ -13,7 +13,7 @@ header{
 }
 
 header p {
-	margin: 15px;
+	margin-bottom: 10px;
 }
 
 .fb_iframe_widget {
@@ -204,6 +204,7 @@ table#t01, th, td {
 }
 
 table#t01 {
+	width:100%;
 	margin-top: 50px;
 	margin-bottom: 50px;	
 }

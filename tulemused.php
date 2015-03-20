@@ -33,12 +33,10 @@
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
-						<p id="aff"></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-						</fb:login-button>
-						</p>		  
+						<div class="fb-login-button" id="aff" scope="public_profile,email" onlogin="checkLoginState();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 					</div>
 					<div class ="row">
-						<input id="clickMe" type="button" value="Log out" onclick="LogOut();">
+						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
 					</div>
 					<div class ="row">
 						<p>
@@ -74,25 +72,47 @@
 			
 			</ol>
 			
-			<table style="width:100%" id="t01">
-				<tr>
-					<th>Nimi</th>
-			    	<th>Piirkond</th>		
-			    	<th>Erakond</th>
-			    	<th>Hääli</th>
-			  	</tr>
-			  	<tr>
-			    	<td>Karl</td>
-			    	<td>Tartumaa</td>		
-			    	<td>JAVA</td>
-			    	<td>3</td>
-			  	</tr>
-			  	<tr>
-			    	<td>Meelis</td>
-			    	<td>Tartu</td>		
-			    	<td>MUNA</td>
-			    	<td>2</td>
-			  	</tr>
+			<table id="t01">
+				<?php
+					
+					require_once("andmed.php");
+					$conn=database();
+					$sql = "SELECT kandidaadid.number AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
+					 erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli
+						FROM kandidaadid LEFT JOIN erakonnad 
+						ON kandidaadid.Erakonna_id=erakonnad.id
+						GROUP BY Number;";
+					$result = $conn->query($sql);
+					echo "<tr>
+							<th>Nr</th>
+							<th>Nimi</th>
+							<th>Piirkond</th>
+							<th>Erakond</th>
+							<th>Hääli</th>
+							</tr>";
+					if($result->num_rows != 0){
+						while($rows = $result->fetch_assoc()){
+							$nr = $rows["Number"];
+							$Nimi = $rows["Nimi"];
+							$Piirkond = $rows["Piirkond"];
+							$Erakond = $rows["Erakond"];
+							$Hääli = $rows["Hääli"];
+
+							echo "<tr>
+							<td>$nr</td>
+							<td>$Nimi</td>
+							<td>$Piirkond</td>
+							<td>$Erakond</td>
+							<td>$Hääli</td>
+							</tr>";
+						}
+					}
+					else{
+    				echo "0 results";
+					}
+
+					$conn->close();
+					?>
 			</table>
 		</div>
 	</div>

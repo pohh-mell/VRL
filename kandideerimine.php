@@ -33,12 +33,10 @@
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
-						<p id="aff"></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-						</fb:login-button>
-						</p>		  
+						<div class="fb-login-button" id="aff" scope="public_profile,email" onlogin="checkLoginState();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 					</div>
 					<div class ="row">
-						<input id="clickMe" type="button" value="Log out" onclick="LogOut();">
+						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
 					</div>
 					<div class ="row">
 						<p>

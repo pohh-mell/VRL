@@ -32,16 +32,13 @@
 					<p>Statistika</p>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
-					<div class ="row" id="hh">
-						<p></br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-						</fb:login-button>
-						<!--	<a href=""><img src="http://www.helias.cz/pictures/face.png" style="width:10%"/></a>-->
-						</p>		  
+					<div class ="row">
+						<div class="fb-login-button" id="aff" scope="public_profile,email" onlogin="checkLoginState();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 					</div>
-					<div class ="row" id="hh">
-						<input id="clickMe" type="button" value="Log out" onclick="LogOut();">
+					<div class ="row">
+						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
 					</div>
-					<div class ="row" id="hh">
+					<div class ="row">
 						<p>
 							<a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
 							<a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
