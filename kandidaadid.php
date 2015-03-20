@@ -107,7 +107,7 @@
 							<td>$Piirkond</td>
 							<td>$Erakond</td>
 							<td>$Hääli</td>
-							<td><a href="">Hääleta</a></td>
+							<td>Hääleta</td>
 							</tr>";
 						}
 					}
