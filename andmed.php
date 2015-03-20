@@ -24,8 +24,9 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
     	console.log("JÕUDSIN");
-    	array_push(meielist, array("Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
-        echo $row["Nimi"]. " " . $row["Piirkond"]." " . $row["Erakond"]. " " . $row["Hääli"]. "<br>";
+    	echo $row["Nimi"]. " " . $row["Piirkond"]." " . $row["Erakond"]. " " . $row["Hääli"]. "<br>";
+    	array_push($meielist, array("Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
+        
     }
 } else {
     echo "0 results";
