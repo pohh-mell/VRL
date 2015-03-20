@@ -1,5 +1,5 @@
 <?php 
-header('Content-type: text/plain; charset=utf-8');
+//header('Content-type: text/plain; charset=utf-8');
 
 	// DB connection info
 	$host = "eu-cdbr-azure-north-c.cloudapp.net";
@@ -9,14 +9,15 @@ header('Content-type: text/plain; charset=utf-8');
 
 	// Create connection
 $conn = new mysqli($host, $user, $pwd, $db);
+ mysql_set_charset('utf8', $conn);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, 
-erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli FROM erakonnad, kandidaadid 
-WHERE kandidaadid.Erakonna_id=erakonnad.id;";
+$sql = "SELECT kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli 
+FROM kandidaadid LEFT JOIN erakonnad 
+ON kandidaadid.Erakonna_id=erakonnad.id;";
 $result = $conn->query($sql);
 
 $meielist= array();
