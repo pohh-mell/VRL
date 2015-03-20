@@ -87,7 +87,7 @@
 					$result = $conn->query($sql);
 
 					if($result->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
+						while($rows = $result->fetch_assoc()){
 							$nr = $rows['Number'];
 							$Nimi = $rows['Nimi'];
 							$Piirkond = $rows['Piirkond'];
