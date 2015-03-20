@@ -34,7 +34,7 @@ function statusChangeCallback(response) {
     FB.init({
       appId      : '764717310292073',
       cookie     : true,  // enable cookies to allow the server to access the session
-      xfbml      : false,  // parse social plugins on this page
+      xfbml      : true,  // parse social plugins on this page
       version    : 'v2.2' // use version 2.2
   });
 
