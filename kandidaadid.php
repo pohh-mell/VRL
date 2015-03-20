@@ -100,6 +100,7 @@
 
 					$conn->close();
 					build_table($meielist);
+					?>
 			</table>
 		</div>
 	</div>
