@@ -1,4 +1,4 @@
-<?php
+<?php header('Content-type: text/plain; charset=utf-8');
 
 	// DB connection info
 	$host = "eu-cdbr-azure-north-c.cloudapp.net";
@@ -34,7 +34,22 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 
-print_r($meielist);
+<?php if (count($meielist) > 0): ?>
+<table>
+  <thead>
+    <tr>
+      <th><?php echo implode('</th><th>', array_keys(current($meielist))); ?></th>
+    </tr>
+  </thead>
+  <tbody>
+<?php foreach ($meielist as $row): array_map('htmlentities', $row); ?>
+    <tr>
+      <td><?php echo implode('</td><td>', $row); ?></td>
+    </tr>
+<?php endforeach; ?>
+  <tbody>
+</table>
+<?php endif; ?>
 
 function getAllItems()
 {
