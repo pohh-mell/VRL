@@ -1,4 +1,4 @@
-<?php header('Content-type: text/plain; charset=utf-8');
+<?php //header('Content-type: text/plain; charset=utf-8');
 
 	// DB connection info
 	$host = "eu-cdbr-azure-north-c.cloudapp.net";
