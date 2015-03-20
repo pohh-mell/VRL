@@ -86,11 +86,11 @@
 						GROUP BY Number;";
 					$result = $conn->query($sql);
 					echo "<tr>
-							<td>"Nr"</td>
-							<td>"Nimi"</td>
-							<td>"Piirkond"</td>
-							<td>"Erakond"</td>
-							<td>"Hääli"</td>
+							<td>Nr</td>
+							<td>Nimi</td>
+							<td>Piirkond</td>
+							<td>Erakond</td>
+							<td>Hääli</td>
 							</tr>";
 					if($result->num_rows != 0){
 						while($rows = $result->fetch_assoc()){
