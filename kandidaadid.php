@@ -87,7 +87,6 @@
 					$result = $conn->query($sql);
 
 					$meielist= array();
-					print_r($result);
 					if ($result->num_rows > 0) {
    					 // output data of each row
     					while($row = $result->fetch_assoc()) {
@@ -102,7 +101,7 @@
 					}
 
 					$conn->close();
-					build_table($meielist);
+					echo build_table($meielist);
 					?>
 			</table>
 		</div>
