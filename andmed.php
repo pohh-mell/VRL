@@ -14,6 +14,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+if (!$conn->set_charset("utf8")) {
+      printf("Error loading character set utf8: %s\n", $conn->error);
+  } else {
+      printf("Current character set: %s\n", $conn->character_set_name());
+  }
+
+
 $sql = "SELECT kandidaadid.number AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli 
 FROM kandidaadid LEFT JOIN erakonnad 
 ON kandidaadid.Erakonna_id=erakonnad.id
