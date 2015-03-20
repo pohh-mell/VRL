@@ -90,7 +90,7 @@
 							<th>Nimi</th>
 							<th>Piirkond</th>
 							<th>Erakond</th>
-							<th>Hääli</t>
+							<th>Hääli</th>
 							</tr>";
 					if($result->num_rows != 0){
 						while($rows = $result->fetch_assoc()){
