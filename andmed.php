@@ -6,18 +6,18 @@
 	$user = "bb8f29df6ad035";
 	$pwd = "461b6fa7";
 	$db = "ehaaletusdata";
-
+mysql_set_charset('utf8', $db);
 	// Create connection
 $conn = new mysqli($host, $user, $pwd, $db);
- mysql_set_charset('utf8', $conn);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli 
+$sql = "SELECT kandidaadid.number AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli 
 FROM kandidaadid LEFT JOIN erakonnad 
-ON kandidaadid.Erakonna_id=erakonnad.id;";
+ON kandidaadid.Erakonna_id=erakonnad.id
+GROUP BY Number;;	";
 $result = $conn->query($sql);
 
 $meielist= array();
@@ -26,8 +26,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
     	console.log("JÕUDSIN");
-    	echo $row["Nimi"]. " " . $row["Piirkond"]." " . $row["Erakond"]. " " . $row["Hääli"]. "<br>";
-    	array_push($meielist, array("Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
+    	array_push($meielist, array("Nr."=>$row["Number"], "Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
         
     }
 } else {
