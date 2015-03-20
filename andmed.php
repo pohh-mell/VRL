@@ -18,16 +18,22 @@ erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli FROM erakonnad, kandidaa
 WHERE kandidaadid.Erakonna_id=erakonnad.id;";
 $result = $conn->query($sql);
 
+$meielist= array();
+
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
     	console.log("JÕUDSIN");
+    	array_push(meielist, array("Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
         echo $row["Nimi"]. " " . $row["Piirkond"]." " . $row["Erakond"]. " " . $row["Hääli"]. "<br>";
     }
 } else {
     echo "0 results";
 }
+
 $conn->close();
+
+print_r($meielist);
 
 function getAllItems()
 {
