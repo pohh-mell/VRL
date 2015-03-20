@@ -75,27 +75,31 @@
 			</ol>
 			
 			<table style="width:100%" id="t01">
-				<tr>
-					<th>Nimi</th>
-			    	<th>Piirkond</th>		
-			    	<th>Erakond</th>
-			    	<th>Hääli</th>
-			    	<th></th>
-			  	</tr>
-			  	<tr>
-			    	<td>Karl</td>
-			    	<td>Tartumaa</td>		
-			    	<td>JAVA</td>
-			    	<td>3</td>
-			    	<td><a href="">Hääleta</a></td>
-			  	</tr>
-			  	<tr>
-			    	<td>Meelis</td>
-			    	<td>Tartu</td>		
-			    	<td>MUNA</td>
-			    	<td>2</td>
-			    	<td><a href="">Hääleta</a></td>
-			  	</tr>
+				<?php
+					
+					require_once("andmed.php");
+					$conn=database();
+					$sql = "SELECT kandidaadid.number AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond, erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli 
+						FROM kandidaadid LEFT JOIN erakonnad 
+						ON kandidaadid.Erakonna_id=erakonnad.id
+						GROUP BY Number;;	";
+					$result = $conn->query($sql);
+
+					$meielist= array();
+
+					if ($result->num_rows > 0) {
+   					 // output data of each row
+    					while($row = $result->fetch_assoc()) {
+    						console.log("JÕUDSIN");
+    						array_push($meielist, array("Nr."=>$row["Number"], "Nimi" => $row["Nimi"], "Piirkond" => $row["Piirkond"], "Erakond"=>$row["Erakond"], "Hääli" =>$row["Hääli"]));
+        	
+    						}
+						} else {
+    				echo "0 results";
+					}
+
+					$conn->close();
+					build_table($meielist);
 			</table>
 		</div>
 	</div>
@@ -106,3 +110,4 @@
  	</footer>
 </body>
 </html>
+
