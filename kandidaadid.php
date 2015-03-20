@@ -88,11 +88,11 @@
 
 					if($result->num_rows != 0){
 						while($rows = $result->fetch_assoc()){
-							$nr = $rows['Number'];
-							$Nimi = $rows['Nimi'];
-							$Piirkond = $rows['Piirkond'];
-							$Erakond = $rows['Erakond'];
-							$Hääli = $rows['Hääli'];
+							$nr = $rows["Number"];
+							$Nimi = $rows["Nimi"];
+							$Piirkond = $rows["Piirkond"];
+							$Erakond = $rows["Erakond"];
+							$Hääli = $rows["Hääli"];
 
 							echo "<tr>
 							<td>$nr</td>
