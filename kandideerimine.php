@@ -22,6 +22,21 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
+	<?php
+		$host = "eu-cdbr-azure-north-c.cloudapp.net";
+		$user = "bb8f29df6ad035";
+		$pwd = "461b6fa7";
+		$db = "ehaaletusdata";
+		$conn = new mysqli($host, $user, $pwd, $db);
+		$name = $_POST['nimi'];
+		$isikukood = $_POST['isikukood']
+
+		$query = "
+		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
+		mysql_query($query);
+		mysql_close($conn);
+
+	?>
 <script src="facebook.js"  type="text/javascript">
 </script>
 	<header>
@@ -55,7 +70,7 @@
 			<form class="ff1" action="post">
 				<div class="block">
 	    			<label>Nimi:</label>
-	    			<input type="text" id="nimi" name="variable">
+	    			<input type="text" id="nimi" name="nimi">
 				</div>
 				<div class="block">
 	    			<label>Piirkond:</label>
@@ -67,7 +82,7 @@
 				</div>
 				<div class="block">
 	    			<label>Isikukood:</label>
-	    			<input type="text" id="isikukood" name="variable">
+	    			<input type="text" id="isikukood" name="isikukood">
 				</div>
 				<button class="nupp" type="submit"  id="submit-button">Lisa end kandidaadiks</button>
 			</form>
