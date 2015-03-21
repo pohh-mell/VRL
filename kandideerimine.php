@@ -25,13 +25,14 @@
 <?php 	if( $_POST ){
 		require_once("andmed.php");
 		$conn = database();
+
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
-		echo $nimi;
-		echo $isikukood;
-		$sql = "INSET INTO katsetus(nimi,isikukood) VALUES ('$nimi',$isikukood);";
+		//echo $nimi;
+		//echo $isikukood;
+		$query = "INSERT INTO katsetus(nimi,isikukood) VALUES ('$nimi',$isikukood);";
 		
-		$retval = mysql_query($sql);
+		$retval =$conn->query($query);
 if(! $retval )
 {
   die('Could not enter data: ' . mysql_error());
