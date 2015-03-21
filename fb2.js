@@ -22,10 +22,15 @@ function statusChangeCallback(response) {
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    }), {scope: 'public_profile,email'});
+  function Login() {
+    FB.login(function(response) {
+           if (response.authResponse){
+                testAPI();
+            } else 
+            {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+         }, {scope: 'public_profile,email'});
   }
 
   window.fbAsyncInit = function() {
@@ -50,7 +55,7 @@ function statusChangeCallback(response) {
 
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-  }), {scope: 'public_profile,email'});
+  });
 
 };
 
