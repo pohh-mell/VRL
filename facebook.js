@@ -86,7 +86,10 @@ function statusChangeCallback(response) {
     FB.logout(function(response) {
       console.log('Successful logout for: ' + response.name);
       myfun();
-     // document.getElementById('status').innerHTML = "</br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-       //     </fb:login-button>";
+     
      });
   }
+
+
+// document.getElementById('status').innerHTML = "</br>SISENE: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+       //     </fb:login-button>";
