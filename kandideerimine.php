@@ -31,7 +31,7 @@
 		$erakond = $_POST['erakond'];
 		$piirkond= $_POST['piirkond'];
 
-		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$Erakonna_id,$isikukood);";
+		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
 		
 		$retval =$conn->query($query);
 if(! $retval )
