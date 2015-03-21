@@ -22,7 +22,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
-	<?php
+<?php
 		$host = "eu-cdbr-azure-north-c.cloudapp.net";
 		$user = "bb8f29df6ad035";
 		$pwd = "461b6fa7";
@@ -36,7 +36,7 @@
 		mysql_query($query);
 		mysql_close($conn);
 
-	?>
+	?>	
 <script src="facebook.js"  type="text/javascript">
 </script>
 	<header>
