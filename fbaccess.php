@@ -68,7 +68,6 @@ $naitik = $facebook->api('/naitik');
       <a href="<?php echo $logoutUrl; ?>">Logout</a>
     <?php else: ?>
       <div>
-        Login using OAuth 2.0 handled by the PHP SDK:
         <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
       </div>
     <?php endif ?>
