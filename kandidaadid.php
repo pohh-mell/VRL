@@ -81,7 +81,7 @@
 					 erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli
 						FROM kandidaadid LEFT JOIN erakonnad 
 						ON kandidaadid.Erakonna_id=erakonnad.id
-						GROUP BY Number;";
+						GROUP BY kandidaadid.id;";
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Nr</th>
