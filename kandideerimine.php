@@ -28,14 +28,16 @@
 		$pwd = "461b6fa7";
 		$db = "ehaaletusdata";
 		$conn = new mysqli($host, $user, $pwd, $db);
-		$name = $_POST['nimi'];
+		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
-
+		echo $nimi;
+		echo $isikukood;
 		$query = "
-		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
+		INSERT INTO katsetus(nimi,isikukood) VALUES ($nimi,$isikukood);";
 		mysql_query($query);
 		mysql_close($conn);
 	}
+	echo $nimi;
 
 	?>
 <script src="facebook.js"  type="text/javascript">
