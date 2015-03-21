@@ -30,15 +30,21 @@
 		$conn = new mysqli($host, $user, $pwd, $db);
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
-		echo $nimi;
-		echo $isikukood;
+		//echo $nimi;
+		//echo $isikukood;
 		$query = "
 		INSERT INTO katsetus(nimi,isikukood) VALUES ($nimi,$isikukood);";
-		mysql_query($query,$conn);
 		
+		$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+  die('Could not enter data: ' . mysql_error());
+}
+echo "Entered data successfully\n";
+
 		mysql_close($conn);
 	}
-	echo "auh";
+	//echo "auh";
 
 	?>
 <script src="facebook.js"  type="text/javascript">
