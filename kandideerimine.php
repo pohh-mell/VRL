@@ -22,7 +22,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
-<?php 	if( $_POST){
+<?php 	if( $_POST ){
 		$host = "eu-cdbr-azure-north-c.cloudapp.net";
 		$user = "bb8f29df6ad035";
 		$pwd = "461b6fa7";
@@ -34,7 +34,8 @@
 		$query = "
 		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
 		mysql_query($query);
-		mysql_close($conn);}
+		mysql_close($conn);
+	}
 
 	?>
 <script src="facebook.js"  type="text/javascript">
@@ -67,7 +68,7 @@
 	<div class="container">
 		<div class="middle">
 			<!-- kandidaadi lisamine -->
-			<form class="ff1"  method="post">
+			<form class="ff1" action="<?php $_PHP_SELF ?>" method="post">
 				<div class="block">
 	    			<label>Nimi:</label>
 	    			<input type="text" id="nimi" name="nimi">
