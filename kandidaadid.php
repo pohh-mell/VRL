@@ -77,7 +77,7 @@
 					
 					require_once("andmed.php");
 					$conn=database();
-					$sql = "SELECT kandidaadid.number AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
+					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
 					 erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli
 						FROM kandidaadid LEFT JOIN erakonnad 
 						ON kandidaadid.Erakonna_id=erakonnad.id
