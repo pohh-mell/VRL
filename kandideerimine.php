@@ -23,15 +23,12 @@
 </head>
 <body>
 <?php 	if( $_POST ){
-		$host = "eu-cdbr-azure-north-c.cloudapp.net";
-		$user = "bb8f29df6ad035";
-		$pwd = "461b6fa7";
-		$db = "ehaaletusdata";
-		$conn = new mysqli($host, $user, $pwd, $db);
+		require_once("andmed.php");
+		$conn = database();
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
-		//echo $nimi;
-		//echo $isikukood;
+		echo $nimi;
+		echo $isikukood;
 		$sql = "INSET INTO katsetus(nimi,isikukood) VALUES ('$nimi',$isikukood);";
 		
 		$retval = mysql_query($sql);
