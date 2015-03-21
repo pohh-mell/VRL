@@ -77,10 +77,10 @@
 					
 					require_once("andmed.php");
 					$conn=database();
-					$sql = "SELECT erakonnad.Nimi AS Nimi, erakonnad.Esimees AS Esimmes, sum(kandidaadid.haali) AS Hääli
+					$sql = "SELECT erakonnad.Nimi AS Erakond, erakonnad.Esimees AS Esimees, IFNULL(sum(kandidaadid.haali),0) AS Hääli
 							FROM erakonnad 
 							LEFT JOIN kandidaadid ON erakonnad.id=kandidaadid.Erakonna_id 
-							GROUP BY Nimi;";
+							GROUP BY Erakond;";
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Erakond</th>
@@ -89,7 +89,7 @@
 							</tr>";
 					if($result->num_rows != 0){
 						while($rows = $result->fetch_assoc()){
-							$Nimi = $rows["Nimi"];
+							$Erakond = $rows["Erakond"];
 							$Esimees = $rows["Esimees"];
 							$Hääli = $rows["Hääli"];
 
