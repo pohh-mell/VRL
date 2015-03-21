@@ -28,9 +28,10 @@
 
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
-		//echo $nimi;
-		//echo $isikukood;
-		$query = "INSERT INTO katsetus(nimi,isikukood) VALUES ('$nimi',$isikukood);";
+		$erakond = $_POST['erakond'];
+		$piirkond= $_POST['piirkond'];
+
+		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$Erakonna_id,$isikukood);";
 		
 		$retval =$conn->query($query);
 if(! $retval )
@@ -39,9 +40,9 @@ if(! $retval )
 }
 echo "Entered data successfully\n";
 
-		$conn->close();
+		mysql_close($conn);
 	}
-	//echo "auh";
+
 
 	?>
 <script src="facebook.js"  type="text/javascript">
