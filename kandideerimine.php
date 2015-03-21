@@ -29,7 +29,7 @@
 		$db = "ehaaletusdata";
 		$conn = new mysqli($host, $user, $pwd, $db);
 		$name = $_POST['nimi'];
-		$isikukood = $_POST['isikukood']
+		$isikukood = $_POST['isikukood'];
 
 		$query = "
 		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
