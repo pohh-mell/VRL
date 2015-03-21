@@ -39,7 +39,7 @@ if(! $retval )
 }
 echo "Entered data successfully\n";
 
-		$conn->close();
+		mysql_close($conn);
 	}
 	//echo "auh";
 
