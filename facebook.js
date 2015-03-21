@@ -19,7 +19,7 @@ function statusChangeCallback(response) {
       document.getElementById('status').innerHTML = 'Please log ' +
       'into Facebook.';
     }
-  }, {scope: 'public_profile,email'});
+  } //, {scope: 'public_profile,email'});
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
