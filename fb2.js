@@ -38,8 +38,13 @@ function statusChangeCallback(response) {
       appId      : '764717310292073',
       cookie     : true,  // enable cookies to allow the server to access the session
       xfbml      : true,  // parse social plugins on this page
+      status     : true, // check login status
       version    : 'v2.2' // use version 2.2
   });
+
+    FB.Event.subscribe('auth.login', function(){
+    window.location.href = 'kandideerimine.php';
+});
 
   // Now that we've initialized the JavaScript SDK, we call 
   // FB.getLoginStatus().  This function gets the state of the
