@@ -48,6 +48,18 @@
 			</div>
 		</div>
 	</header>
+	<?php
+		require_once("andmed.php");
+		$con=database();
+		$name = $_POST['name'];
+		$isikukood = $_POST['isikukood']
+
+		$query = "
+		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
+		mysql_query($query);
+		mysql_close($con);
+
+	?>
 	<div class="container">
 		<div class="middle">
 			<!-- kandidaadi lisamine -->
@@ -72,19 +84,7 @@
 			</form>
 		</div>
 	</div>
-		<?php
-		require_once("andmed.php");
-		$conn=database();
-		mysql_select_db("ehaaletusdata", $con);
-		$name = $_POST['name'];
-		$isikukood = $_POST['isikukood']
-
-		$query = "
-		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
-		mysql_query($query);
-		mysql_close($con);
-
-	?>
+	
 
 
 	<footer>
