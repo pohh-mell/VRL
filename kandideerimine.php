@@ -34,10 +34,11 @@
 		echo $isikukood;
 		$query = "
 		INSERT INTO katsetus(nimi,isikukood) VALUES ($nimi,$isikukood);";
-		mysql_query($query);
+		mysql_query($query,$conn);
+		
 		mysql_close($conn);
 	}
-	echo $nimi;
+	echo "auh";
 
 	?>
 <script src="facebook.js"  type="text/javascript">
