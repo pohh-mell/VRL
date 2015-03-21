@@ -32,8 +32,7 @@
 		$isikukood = $_POST['isikukood'];
 		//echo $nimi;
 		//echo $isikukood;
-		$query = "
-		INSERT INTO katsetus(nimi,isikukood) VALUES ($nimi,$isikukood);";
+		$query = "INSERT INTO katsetus(nimi,isikukood) VALUES ($nimi,$isikukood);";
 		
 		$retval = mysql_query( $query, $conn );
 if(! $retval )
