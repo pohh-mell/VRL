@@ -35,7 +35,7 @@
 						<div class="fb-login-button" id="aff" onlogin="Login();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 					</div>
 					<div class ="row">
-						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
+						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="Logout();" >
 					</div>
 					<div class ="row">
 						<p>

@@ -81,7 +81,7 @@ function statusChangeCallback(response) {
   }
   
 
-  function LogOut() {
+  function Logout() {
     FB.logout(function(response) {
       console.log('Successful logout for: ' + response.name);
       myfun();
