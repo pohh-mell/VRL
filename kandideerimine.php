@@ -34,7 +34,7 @@
 		//echo $isikukood;
 		$query = "INSERT INTO katsetus(nimi,isikukood) VALUES ('$nimi',$isikukood);";
 		
-		$retval = mysql_query( $query, $conn );
+		$retval = mysql_query($conn,$query);
 if(! $retval )
 {
   die('Could not enter data: ' . mysql_error());
