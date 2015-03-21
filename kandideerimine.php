@@ -54,24 +54,39 @@
 			<form class="ff1" action="post">
 				<div class="block">
 	    			<label>Nimi:</label>
-	    			<input type="text" id="name-input" name="variable">
+	    			<input type="text" id="nimi" name="variable">
 				</div>
 				<div class="block">
 	    			<label>Piirkond:</label>
-	    			<input type="text" id="piirkond-input" name="variable">
+	    			<input type="text" id="piirkond" name="variable">
 				</div>
 				<div class="block">
 	    			<label>Erakond:</label>
-	    			<input type="text" id="erakond-input" name="variable">
+	    			<input type="text" id="erakond" name="variable">
 				</div>
 				<div class="block">
 	    			<label>Isikukood:</label>
-	    			<input type="text" id="isikukood-input" name="variable">
+	    			<input type="text" id="isikukood" name="variable">
 				</div>
 				<button class="nupp" type="submit"  id="submit-button">Lisa end kandidaadiks</button>
 			</form>
 		</div>
 	</div>
+		<?php
+		require_once("andmed.php");
+		$conn=database();
+		mysql_select_db("ehaaletusdata", $con);
+		$name = $_POST['name'];
+		$isikukood = $_POST['isikukood']
+
+		$query = "
+		INSERT INTO katsetus(nimi,isikukood) VALUES ($name,$isikukood);";
+		mysql_query($query);
+		mysql_close($con);
+
+	?>
+
+
 	<footer>
  		<div class="container">
    			<!-- footeri sisu -->
