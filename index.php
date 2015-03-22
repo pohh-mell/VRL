@@ -39,7 +39,7 @@ session_start();
           <div class ="row">
             <a href="logout.php">Logout</a>
             </div>
-          <div class ="row">
+         
           <!-- Sisselogimata --> 
           <?php else: ?>
           <div class ="row">
@@ -48,8 +48,9 @@ session_start();
           <div class ="row">
             <input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="Logout();" >
           </div>
-          <div class ="row">
+
           <?php endif ?>
+           <div class ="row">
             <p>
               <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
               <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
