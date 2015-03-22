@@ -1,12 +1,9 @@
-.kl {
-	text-align:center;
-}
-
 @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-* { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased; }
-
+.kl {
+	text-align:center;
+}
 
 .kl p {
 	margin-top: 15px;

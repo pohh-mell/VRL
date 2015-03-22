@@ -27,8 +27,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-<script src="facebook.js"  type="text/javascript">
-</script>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -82,7 +80,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			</select></li>
 			
 			<li><form method="get" action="">
-				<input type="text" class="Valikud" name="search" id="search-text"  value="" Placeholder="Sisesta kandidaadi nimi" />
+				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi" />
 			</form></li>
 			
 			</ol>

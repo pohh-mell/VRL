@@ -36,27 +36,27 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
         <div class ="kl col-xs-3 col-md-3 col-lg-3">
           <?php if ($_SESSION['FBID']): ?>
-                  <div class ="row">
-                    <?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?>
-                  </div>
-                  
-                  <div class ="row">
-                    <a href="logout.php">Logout</a>
-                  </div>
-                 
-                  <!-- Sisselogimata --> 
-                  <?php else: ?>
-                  <div class ="row">
-                    <a href="fbconfig.php">Login with Facebook</a>
-                  </div>
+            <div class ="row">
+              <?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?>
+            </div>
+            
+            <div class ="row">
+              <a href="logout.php">Logout</a>
+            </div>
+           
+            <!-- Sisselogimata --> 
+            <?php else: ?>
+            <div class ="row">
+              <a class="fb-login-button" href="fbconfig.php">Logi sisse</a>
+            </div>
 
-                  <?php endif ?>
-                   <div class ="row">
-                    <p>
-                      <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
-                      <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
-                    </p>
-                  </div>     
+            <?php endif ?>
+             <div class ="row">
+              <p>
+                <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
+                <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
+              </p>
+            </div>     
         </div>
 
       </div>

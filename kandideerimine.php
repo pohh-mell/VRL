@@ -51,8 +51,6 @@ echo "Entered data successfully\n";
 
 
 	?>
-<script src="facebook.js"  type="text/javascript">
-</script>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -72,7 +70,7 @@ echo "Entered data successfully\n";
                  
                   <!-- Sisselogimata --> 
                   <?php else: ?>
-                  <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net//index.php" />
+                  <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net//index.php">
                   <?php endif ?>
                    <div class ="row">
                     <p>

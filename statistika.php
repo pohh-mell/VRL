@@ -27,8 +27,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
-<script src="facebook.js"  type="text/javascript">
-</script>
 	<header>
 		<div class="container">
 			<div class="row">
