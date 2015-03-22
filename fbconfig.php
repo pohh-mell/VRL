@@ -46,7 +46,7 @@ if ( isset( $session ) ) {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
 } else {
-  $loginUrl = $helper->getLoginUrl();
+  //$loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
 }
 ?>
