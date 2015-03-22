@@ -16,7 +16,7 @@ use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
 FacebookSession::setDefaultApplication('764717310292073','f7dc16c733615eb9f61a5fa0e41652b7' );
 // login helper with redirect_uri
-
+    $helper = new FacebookRedirectLoginHelper('http://e-haaletus.azurewebsites.net/fbconfig.php' );
 try {
   $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
