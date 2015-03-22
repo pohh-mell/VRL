@@ -33,7 +33,7 @@
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<div class ="row">
-						 <a href="fbconfig.php"><div class="fb-login-button" id="aff"  > </div></a>
+						 <a href="fbconfig.php">Logi sisse</a>
 					</div>
 					<div class ="row">
 						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
