@@ -41,7 +41,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
             </div>
             
             <div class ="row">
-              <a class="aad" href="logout.php">Logout</a>
+              <a class="aad" href="logout.php"><button class="btn btn-facebook">Logi välja</button></a>
             </div>
            
             <!-- Sisselogimata --> 

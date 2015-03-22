@@ -9,8 +9,13 @@
 
 .kl button{
 	color: white;
-  	background-color: #344D99;	
+  	background-color: #485FA3;	
   	margin-top: 15px;
+}
+
+.btn{
+	padding: 3px 6px;
+	font-size: 13px;
 }
 
 .kl p {
