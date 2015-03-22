@@ -47,7 +47,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
             <!-- Sisselogimata --> 
             <?php else: ?>
             <div class ="row">
-              <a class="fb-login-button" href="fbconfig.php">Logi sisse</a>
+              <a href="fbconfig.php">Logi sisse</a>
             </div>
 
             <?php endif ?>
