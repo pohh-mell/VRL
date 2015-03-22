@@ -1,3 +1,8 @@
+<?php
+session_start(); 
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+?>
+
 <!DOCTYPE HTML SYSTEM>
 <html>
 <head>
@@ -32,18 +37,28 @@
 					<p>Tulemused</p>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
-					<div class ="row">
-						<div class="fb-login-button" id="aff" scope="public_profile,email" onlogin="checkLoginState();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
-					</div>
-					<div class ="row">
-						<input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="LogOut();" >
-					</div>
-					<div class ="row">
-						<p>
-							<a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
-							<a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
-						</p>
-					</div>			
+					 <?php if ($_SESSION['FBID']): ?>
+                  <div class ="row">
+                    <?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?>
+                  </div>
+                  
+                  <div class ="row">
+                    <a href="logout.php">Logout</a>
+                  </div>
+                 
+                  <!-- Sisselogimata --> 
+                  <?php else: ?>
+                  <div class ="row">
+                    <a href="fbconfig.php">Login with Facebook</a>
+                  </div>
+
+                  <?php endif ?>
+                   <div class ="row">
+                    <p>
+                      <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
+                      <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
+                    </p>
+                  </div>     
 				</div>
 			</div>
 		</div>
