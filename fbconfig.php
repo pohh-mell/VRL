@@ -27,7 +27,7 @@ try {
 }
 // see if we have a session
 if ( isset( $session ) ) {
-  checkuser($fbid,$fbfullname,$femail); // To update local DB
+
   // graph api request for user data
   $request = new FacebookRequest( $session, 'GET', '/me' );
   $response = $request->execute();
@@ -36,6 +36,7 @@ if ( isset( $session ) ) {
      	$fbid = $graphObject->getProperty('id');              // To Get Facebook ID
  	    $fbfullname = $graphObject->getProperty('name'); // To Get Facebook full name
 	    $femail = $graphObject->getProperty('email');    // To Get Facebook email ID
+      checkuser($fbid,$fbfullname,$femail); // To update local DB
 	/* ---- Session Variables -----*/
 	    $_SESSION['FBID'] = $fbid;           
         $_SESSION['FULLNAME'] = $fbfullname;
