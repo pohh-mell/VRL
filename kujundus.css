@@ -1,15 +1,23 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://raw.github.com/noizwaves/bootstrap-social-buttons/v1.0.0/social-buttons.css);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 
 .kl {
 	text-align:center;
+}
+
+.kl button{
+	color: white;
+  	background-color: #344D99;	
+  	margin-top: 15px;
 }
 
 .kl p {
 	margin-top: 15px;
 }
 
-.kl a{
+.aad {
 	margin-top: 15px;
 }
 

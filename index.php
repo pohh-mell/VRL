@@ -37,17 +37,21 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
         <div class ="kl col-xs-3 col-md-3 col-lg-3">
           <?php if ($_SESSION['FBID']): ?>
             <div class ="row">
-              <?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?>
+              <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>
             </div>
             
             <div class ="row">
-              <a href="logout.php">Logout</a>
+              <a class="aad" href="logout.php">Logout</a>
             </div>
            
             <!-- Sisselogimata --> 
             <?php else: ?>
             <div class ="row">
-              <a href="fbconfig.php">Logi sisse</a>
+              <a class="aad" href="fbconfig.php"><button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Logi sisse</button></a>
+            </div>
+
+            <div class ="row">
+              </br>
             </div>
 
             <?php endif ?>

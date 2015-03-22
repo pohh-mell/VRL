@@ -79,7 +79,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			</select></li>
 			
 			<li><form method="get" action="">
-				<input type="text" class="Valikud" name="search" id="search-text"  value="Sisesta kandidaadi nimi" Placeholder="Sisesta kandidaadi nimi">
+				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 			</form></li>
 			
 			</ol>
