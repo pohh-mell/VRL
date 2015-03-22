@@ -43,7 +43,8 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
     /* ---- header location after session ----*/
   //header("Location: index.php");
-  header("Location: ".$loginUrl);
+  $loginUrl = $helper->getLoginUrl();
+ header("Location: ".$loginUrl);
 } else {
   $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
