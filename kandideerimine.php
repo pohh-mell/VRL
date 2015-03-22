@@ -1,4 +1,9 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE HTML SYSTEM>
+<?php if ($_SESSION['FBID']): ?>
 <html>
 <head>
 	<title>E-hääletus</title>
@@ -106,3 +111,6 @@ echo "Entered data successfully\n";
  	</footer>
 </body>
 </html>
+ <?php else: ?>
+ <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php" />
+<?php endif ?>
