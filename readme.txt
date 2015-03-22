@@ -1,1 +1,0 @@
-Tere tere, mell olen.

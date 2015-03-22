@@ -27,14 +27,63 @@ session_start();
 <div><a href="logout.php">Logout</a></div>
 </ul></div></div>
     <?php else: ?>     <!-- Before login --> 
-<div class="container">
-<h1>Login with Facebook</h1>
-           Not Connected
-<div>
-      <a href="fbconfig.php">Login with Facebook</a></div>
-	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
-	  </div>
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-md-9 col-lg-9">  
+          <h1><a href="">E-hääletus</a></h1>
+        </div>
+        <div class ="kl col-xs-3 col-md-3 col-lg-3">
+          <?php if ($_SESSION['FBID']): ?>
+          <div class ="row">
+            <?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?>
+          </div>
+          <div class ="row">
+            <a href="logout.php">Logout</a>
+            </div>
+          <div class ="row">
+          <!-- Sisselogimata --> 
+          <?php else: ?>
+          <div class ="row">
+            <div class="fb-login-button" id="aff" onlogin="Login();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+          </div>
+          <div class ="row">
+            <input id="out" style="visibility:hidden"  type="button" value="Log out" onclick="Logout();" >
+          </div>
+          <div class ="row">
+          <?php endif ?>
+            <p>
+              <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>
+              <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width:10%"></a>
+            </p>
+          </div>      
+        </div>
       </div>
-    <?php endif ?>
-  </body>
+    </div>
+  </header> 
+  <div class="container">
+    <div class="middle">    
+      <div class="row">
+        <div class="col-xs-8 col-md-4  col-md-offset-1">
+          <a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" alt="kandidaadid" class="pilt">KANDIDAADID</a>
+        </div>
+        <div class="col-xs-8 col-md-4 col-md-offset-1">
+          <a href="http://e-haaletus.azurewebsites.net/statistika.php" class="wide blue"><img src="http://i57.tinypic.com/2qbi06s.png" alt="statistika" class="pilt2">STATISTIKA</a>
+        </div>
+        <div class="col-xs-8 col-md-4 col-md-offset-1">
+          <a href="http://e-haaletus.azurewebsites.net/tulemused.php" class="wide blue"><img src="http://i57.tinypic.com/ta1ytl.png" alt="tulemused" class="pilt">TULEMUSED</a>
+        </div>
+        <div class="col-xs-8 col-md-4 col-md-offset-1">
+          <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" style="visibility:hidden" id="kandideerimine" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" alt="kandideeri" class="pilt">KANDIDEERI</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+        <!-- footeri sisu -->
+      </div>
+  </footer>
+</body>
 </html>
+    
