@@ -36,11 +36,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		$isikukood = $_POST['isikukood'];
 		$erakond = $_POST['erakond'];
 		$piirkond= $_POST['piirkond'];
-
-		echo "$nimi";
-		echo "$isikukood";
-		echo "$erakond";
-		echo "$piirkond";
 		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
 		mysql_query($query);
 
