@@ -29,8 +29,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 </head>
 <body>
 <?php 	if( $_POST ){
-		require_once("andmed.php");
-		$conn = database();
+		require_once("dbconfig.php");
+		
 
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
@@ -39,7 +39,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
 		
-		$retval =$conn->query($query);
+		//$retval =$conn->query($query);
+		mysql_query($query);
 if(! $retval )
 {
   die('Could not enter data: ' . mysql_error());
