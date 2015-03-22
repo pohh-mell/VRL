@@ -36,16 +36,14 @@ if ( isset( $session ) ) {
      	$fbid = $graphObject->getProperty('id');              // To Get Facebook ID
  	    $fbfullname = $graphObject->getProperty('name'); // To Get Facebook full name
 	    $femail = $graphObject->getProperty('email');    // To Get Facebook email ID
+      $url = $_SESSION['url'];
       checkuser($fbid,$fbfullname,$femail); // To update local DB
 	/* ---- Session Variables -----*/
 	    $_SESSION['FBID'] = $fbid;           
         $_SESSION['FULLNAME'] = $fbfullname;
 	    $_SESSION['EMAIL'] =  $femail;
     /* ---- header location after session ----*/
-    if(isset($_SESSION['url'])) 
-   $url = $_SESSION['url']; // holds url for last page visited.
-else 
-   $url = "index.php"; // default page for 
+     
   header("Location: http://e-haaletus.azurewebsites.net/$url");
  
 } else {
