@@ -2,6 +2,7 @@
 session_start();
 // added in v4.0.0
 require_once 'autoload.php';
+require 'functions.php'; // Include functions
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
@@ -26,6 +27,7 @@ try {
 }
 // see if we have a session
 if ( isset( $session ) ) {
+  checkuser($fbid,$fbfullname,$femail); // To update local DB
   // graph api request for user data
   $request = new FacebookRequest( $session, 'GET', '/me' );
   $response = $request->execute();

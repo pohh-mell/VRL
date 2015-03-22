@@ -3,5 +3,6 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `Fuid` varchar(100) NOT NULL,
   `Ffname` varchar(60) NOT NULL,
   `Femail` varchar(60) DEFAULT NULL,
+  `Haal` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`UID`)
 );
