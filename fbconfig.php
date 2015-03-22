@@ -42,11 +42,14 @@ if ( isset( $session ) ) {
         $_SESSION['FULLNAME'] = $fbfullname;
 	    $_SESSION['EMAIL'] =  $femail;
     /* ---- header location after session ----*/
-  //header("Location: index.php");
-  $loginUrl = $helper->getLoginUrl();
- header("Location: ".$loginUrl);
+    if(isset($_SESSION['url'])) 
+   $url = $_SESSION['url']; // holds url for last page visited.
+else 
+   $url = "index.php"; // default page for 
+  header("Location: http://e-haaletus.azurewebsites.net/$url");
+ 
 } else {
-  //$loginUrl = $helper->getLoginUrl();
+  $loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
 }
 ?>
