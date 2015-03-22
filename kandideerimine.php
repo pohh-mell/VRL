@@ -42,14 +42,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		echo "$erakond";
 		echo "$piirkond";
 		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
-		
-		//$retval =$conn->query($query);
 		mysql_query($query);
-if(! $retval )
-{
-  die('Could not enter data: ' . mysql_error());
-}
-echo "Entered data successfully\n";
 
 		mysql_close($conn);
 	}
