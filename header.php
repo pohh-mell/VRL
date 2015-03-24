@@ -32,6 +32,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
         
         <div class="col-xs-9 col-md-9 col-lg-9">  
           <h1><a href="">E-hääletus</a></h1>
+          <p><?php echo $title; ?></p>
         </div>
 
         <div class ="kl col-xs-3 col-md-3 col-lg-3">

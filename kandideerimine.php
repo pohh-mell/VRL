@@ -101,15 +101,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 		</div>
 	</div>
 	
-
-
-	<footer>
- 		<div class="container">
-   			<!-- footeri sisu -->
-  		</div>
- 	</footer>
-</body>
-</html>
+<?php include "footer.php"; ?>
  <?php else: ?>
  <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php" />
 <?php endif ?>
