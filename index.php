@@ -82,7 +82,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
         </div>
           <?php if ($_SESSION['FBID']): ?>
         <div class="col-xs-8 col-md-4 col-md-offset-1">
-          <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" id="kandideerimine" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" alt="kandideeri" class="pilt">KANDIDEERI</a>
+          <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" id="kandideerimine" class="wide blue"><img src="picid/people-icon-oige.png" alt="kandideeri" class="pilt">KANDIDEERI</a>
         </div>
         <?php else: ?>
         <div class="col-xs-8 col-md-4 col-md-offset-1">
