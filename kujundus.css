@@ -16,7 +16,7 @@
 
 .kl p {
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 
 .aad {
@@ -61,8 +61,6 @@ h1 a {
 	text-decoration: none;
 	color: #666;
 	position: relative;
-
-	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,.5)), to(rgba(0,0,0,1)));
 }
 
 h1 {

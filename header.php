@@ -52,7 +52,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
             </div>
 
             <div class ="row">
-              </br>
+              <br>
             </div>
 
             <?php endif ?>
