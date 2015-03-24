@@ -31,7 +31,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="row">
         
         <div class="col-xs-9 col-md-9 col-lg-9">  
-          <h1><a href="">E-hääletus</a></h1>
+          <h1><a href="<?php echo $link; ?>">E-hääletus</a></h1>
           <p><?php echo $title; ?></p>
         </div>
 

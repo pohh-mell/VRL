@@ -1,5 +1,6 @@
 <?php
 $title = "Kandidaadid";
+$link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
 	<div class="container">
