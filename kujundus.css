@@ -7,15 +7,11 @@
 	text-align:center;
 }
 
-.kl button{
-	color: white;
-  	background-color: #485FA3;	
-  	margin-top: 15px;
-}
-
 .btn{
 	padding: 3px 6px;
 	font-size: 13px;
+	color: white;
+  	background-color: #344D99;	
 }
 
 .kl p {
@@ -157,20 +153,6 @@ a.wide:active, a.box:active{
 	float:left;
 }
 
-@-webkit-keyframes galeri
-{
-1% {background-position: 0px 0px;}
-10%{background-position: 0px 140px;}
-20%{background-position: 0px 140px;}
-30%{background-position: 0px 280px;}
-40%{background-position: 0px 280px;}
-50%{background-position: 0px 420px;}
-60%{background-position: 0px 420px;}
-70%{background-position: 0px 560px;}
-80%{background-position: 0px 560px;}
-100% {background-position: 0px 560px;}
-}
-
 .right{
 	float:right;
 	text-align:right;
@@ -229,7 +211,7 @@ table#t01 {
 	margin-bottom: 50px;	
 }
 
-table#t01 tr:nth-child {
+table#t01 tr {
     background-color: #eee;
 }
 
