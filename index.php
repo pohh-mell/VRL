@@ -72,7 +72,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="row">
         <div class="col-xs-8 col-md-4  col-md-offset-1">
 
-          <a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="wide blue"><img src="http://i62.tinypic.com/ojzw9.jpg" alt="kandidaadid" class="pilt">KANDIDAADID</a>
+          <a href="http://e-haaletus.azurewebsites.net/kandidaadid.php" class="wide blue"><img src="picid/people-icon-oige.png" alt="kandidaadid" class="pilt">KANDIDAADID</a>
         </div>
         <div class="col-xs-8 col-md-4 col-md-offset-1">
           <a href="http://e-haaletus.azurewebsites.net/statistika.php" class="wide blue"><img src="http://i57.tinypic.com/2qbi06s.png" alt="statistika" class="pilt2">STATISTIKA</a>
