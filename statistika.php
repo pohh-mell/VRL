@@ -19,7 +19,7 @@ include "header.php";
 			</select></li>
 			</ol>
 
-			<script type="javaskript.js">
+			<script type="text/javascript" src="javaskript.js">
     			function funktioon() {
           		        
    				}
