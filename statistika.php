@@ -58,7 +58,7 @@ include "header.php";
             type: 'pie',
             name: 'Browser share',
             data: [
-                ['KArl',   45.0],
+                ['Karl on muna',   159.0],
                 ['IE',       26.8],
                 {
                     name: 'Chrome',
