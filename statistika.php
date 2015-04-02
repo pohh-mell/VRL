@@ -4,8 +4,8 @@ $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
 
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="highcharts.js"></script>
+<script src="exporting.js"></script>
 
 
 
