@@ -20,9 +20,8 @@ include "header.php";
 			</ol>
 
 			<script type="text/javascript" src="javaskript.js">
-    			function funktioon() {
+    			funktioon() ;
           		        
-   				}
 			</script>
 
 
