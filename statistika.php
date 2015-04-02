@@ -9,13 +9,12 @@ include "header.php";
 
 
 
-
 	<div class="container">
+		<script src="javaskript.js"></script>
+
 		<div class="middle">
 			<ol class="singleline">
-			<script src="javaskript.js">
-          		        
-			</script>
+			
 			<li><select onchange="funktioon();">
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Partei</option>
