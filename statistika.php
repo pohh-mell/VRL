@@ -29,11 +29,9 @@ include "header.php";
 				
 				<script type="text/javascript">
     			function funktioon () {
-    alert("add");
-    console.log("mine");
     $('#container2').highcharts({
         chart: {
-            plotBackgroundColor: null,
+           // plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false
         },
