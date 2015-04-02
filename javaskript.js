@@ -1,4 +1,5 @@
 $(funktioon () {
+    alert("add");
     $('#container2').highcharts({
         chart: {
             plotBackgroundColor: null,
