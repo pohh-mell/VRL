@@ -24,7 +24,7 @@ include "header.php";
 						if($resultSet->num_rows != 0){
 							while($rows = $resultSet->fetch_assoc()){
 								$errakond = $rows['nimi'];
-								<option value=$errakond>$errakond</option>
+								echo"<option value=$errakond>$errakond</option>";
 							}
 						}
 						$conn->close();
