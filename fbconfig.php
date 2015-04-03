@@ -60,9 +60,10 @@ if ( isset( $session ) ) {
   $url1 = parse_url(".$loginUrl");
   $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php");
   if ($url1['path'] == $url2['path']){
-    header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
-  }else {
     header("Location: ".$loginUrl);
+    
+  }else {
+    header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
   }
   
 }
