@@ -80,12 +80,20 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 function whatIsYourCurrentStatus() {
         if (navigator.onLine) {
-                alert("nett on");
+                var nimi = document.getElementById("nimi").value;
+                var piirkond = document.getElementById("piirkond").value;
+                var erakond = document.getElementById("erakond").value;
+                var isikukood = document.getElementById("isikukood").value;
+                sendToServer(ńimi,piirkond,erakond,isikuud);
          } else {
                 alert("netti pole");
                 saveStatusLocally();
          }
       
+        
+}
+
+function sendToServer(nimi,piirkond,erakond,isikukood){
         
 }
 
