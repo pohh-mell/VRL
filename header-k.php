@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php if ($_SESSION['FBID']): ?>
 <html>
 <head>
     <title>E-hääletus</title>
@@ -31,7 +30,6 @@
                         <p>Kandideerimine</p>
                 </div>
                 <div class ="kl col-xs-3 col-md-3 col-lg-3">
-                    <?php if ($_SESSION['FBID']): ?>
                     <div class ="row">
                     <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>
                     </div>
@@ -39,11 +37,6 @@
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="logout.php">Logi välja</a>
                     </div>
-                     
-                    <!-- Sisselogimata --> 
-                    <?php else: ?>
-                    <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
-                    <?php endif ?>
                     <div class ="row">
                         <p>
                             <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width:10%"></a>

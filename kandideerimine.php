@@ -1,7 +1,11 @@
 <?php
 session_start(); 
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
-include "header-k.php"
+?>
+
+<?php if ($_SESSION['FBID']): ?>
+<?php
+    include "header-k.php";
 ?>
 
 <?php   if( $_POST ){
