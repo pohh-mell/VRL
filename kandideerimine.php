@@ -79,8 +79,9 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <script type="text/javascript">
 function saveStatusLocally() {
         if (navigator.onLine) {
-        alert("auh");
+        alert("auh123123");
         }else{
+                alert("nettipole");
                 var nimi = document.getElementById("nimi").value;
         var piirkond = document.getElementById("piirkond").value;
         var erakond = document.getElementById("erakond").value;
