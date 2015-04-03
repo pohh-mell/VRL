@@ -79,9 +79,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <script type="text/javascript">
 
 function whatIsYourCurrentStatus() {
-  
-        <img src='http://gfx2.hotmail.com/mail/uxp/w4/m4/pr014/h/s7.png' 
-      onerror='alert("Connection dead");' />
+        if (navigator.onLine) {
+                alert("nett on");
+         } else {
+                alert("netti pole");
+                saveStatusLocally();
+         }
+      
         
 }
 
@@ -110,17 +114,18 @@ function sendLocalStatus() {
  
 window.addEventListener("load", function() {
    if (navigator.onLine) {
-     sendLocalStatus();
+     alert("alguses on nett");
    }
-}, true);
- 
-window.addEventListener("online", function() {
-  sendLocalStatus();
+   window.addEventListener("online", function() {
+  alert("online oleme");
 }, true);
  
 window.addEventListener("offline", function() {
   alert("You're now offline. If you update your status, it will be sent when you go back online");
 }, true);
+}, true);
+ 
+
 
 
 </script>
