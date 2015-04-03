@@ -78,9 +78,16 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 <script type="text/javascript">
 function saveStatusLocally() {
+        if (!navigator.onLine) {
         var nimi = document.getElementById("nimi").value;
-        window.localStorage.setItem("nimi1", document.getElementById("nimi").value);
-        window.localStorage.setItem("nimi2", nimi);
+        var piirkond = document.getElementById("piirkond").value;
+        var erakond = document.getElementById("erakond").value;
+        var isikukood = document.getElementById("isikukood").value;
+        window.localStorage.setItem("nimi", nimi);
+        window.localStorage.setItem("piirkond", piirkond);
+        window.localStorage.setItem("erakond", erakond);
+        window.localStorage.setItem("isikukood", isikukood);
+}
 }
 </script>
 
