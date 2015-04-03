@@ -77,12 +77,20 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
         ?>
 
 <script type="text/javascript">
+
+function whatIsYourCurrentStatus() {
+  if (navigator.onLine) {
+    alert("nett on olemas")
+  } else {
+    saveStatusLocally();
+  }
+}
+
 function saveStatusLocally() {
-        if (navigator.onLine) {
-        alert("auh123123");
-        }else{
-                alert("nettipole");
-                var nimi = document.getElementById("nimi").value;
+       
+       
+        alert("nettipole");
+        var nimi = document.getElementById("nimi").value;
         var piirkond = document.getElementById("piirkond").value;
         var erakond = document.getElementById("erakond").value;
         var isikukood = document.getElementById("isikukood").value;
@@ -90,7 +98,7 @@ function saveStatusLocally() {
         window.localStorage.setItem("piirkond", piirkond);
         window.localStorage.setItem("erakond", erakond);
         window.localStorage.setItem("isikukood", isikukood);
-        }
+        
 }
 </script>
 
@@ -115,7 +123,7 @@ function saveStatusLocally() {
                                 <label>Isikukood:</label>
                                 <input type="text" id="isikukood" name="isikukood">
                                 </div>
-                                <button class="nupp" type="submit" onclick="saveStatusLocally()" id="submit-button">Lisa end kandidaadiks</button>
+                                <button class="nupp" type="submit" onclick="whatIsYourCurrentStatus()" id="submit-button">Lisa end kandidaadiks</button>
                         </form>
                 </div>
         </div>
