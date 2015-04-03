@@ -152,3 +152,6 @@ window.addEventListener("load", function() {
     </div>
         
 <?php include "footer.php"; ?>
+ <?php else: ?>
+ <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php" />
+<?php endif ?>
