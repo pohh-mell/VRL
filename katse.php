@@ -1,8 +1,10 @@
 <?php
-$var = $_POST['Valikud1'];
- 
 
- 			echo var;
+ if( isset($_POST['Valikud1']) ){
+ 	$var = $_POST['Valikud1'];
+ 	echo var;
+ }
+
 					require_once("andmed.php");
 					$conn=database();
 					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
