@@ -160,3 +160,7 @@ window.addEventListener("offline", function() {
  <?php else: ?>
  <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php" />
 <?php endif ?>
+<?php
+        $lst_page = $_SERVER['HTTP_REFERER'];
+        $_SESSION['lst_page'] = $lst_page;
+?>
