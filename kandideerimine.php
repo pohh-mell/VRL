@@ -10,15 +10,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 <?php   if( $_POST ){
     require_once("dbconfig.php");
-    
-
     $nimi = $_POST['nimi'];
     $isikukood = $_POST['isikukood'];
     $erakond = $_POST['erakond'];
     $piirkond= $_POST['piirkond'];
     $query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
     mysql_query($query);
-
     mysql_close($conn);
 }
 ?>
@@ -35,9 +32,7 @@ function whatIsYourCurrentStatus() {
      } else {
         alert("netti pole");
         saveStatusLocally();
-     }
-      
-        
+     }      
 }
 
 function sendToServer(nimi,piirkond,erakond,isikukood){
@@ -73,6 +68,7 @@ window.addEventListener("load", function() {
         alert("You're now offline. If you update your status, it will be sent when you go back online");
     }, true);
 }, true);
+
 </script>
        
     <div class="container">
