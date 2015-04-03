@@ -1,20 +1,16 @@
 <?php
-session_start(); 
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 $title = "Kandideerimine";
 include "header-k.php";
 ?>
 <?php 	if( $_POST ){
 		require_once("dbconfig.php");
 		
-
 		$nimi = $_POST['nimi'];
 		$isikukood = $_POST['isikukood'];
 		$erakond = $_POST['erakond'];
 		$piirkond= $_POST['piirkond'];
 		$query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
 		mysql_query($query);
-
 		mysql_close($conn);
 	}
 

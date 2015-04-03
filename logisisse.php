@@ -1,6 +1,6 @@
 <?php
-$title = "Sisselogimine";
-include "header-k.php";
+$link = "http://e-haaletus.azurewebsites.net/";
+include "header.php";
 ?>
 	<div class="container">
 		<div class="middle">
