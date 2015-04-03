@@ -1,6 +1,6 @@
 <?php
 $link = "http://e-haaletus.azurewebsites.net/";
-include "header.php";
+include "header-r.php";
 ?> 
 	<div class="container">
 		<div class="middle">
