@@ -76,7 +76,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
         ?>
 
-
+<script type="text/javascript">
+function saveStatusLocally() {
+  window.localStorage.setItem("status", "auh");
+}
+</script>
 
         
         <div class="container">
@@ -99,12 +103,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                                 <label>Isikukood:</label>
                                 <input type="text" id="isikukood" name="isikukood">
                                 </div>
-                                <button class="nupp" type="submit"  id="submit-button">Lisa end kandidaadiks</button>
+                                <button class="nupp" type="submit" onclick="saveStatusLocaly()" id="submit-button">Lisa end kandidaadiks</button>
                         </form>
                 </div>
         </div>
         
 <?php include "footer.php"; ?>
  <?php else: ?>
- <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php" />
+ <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php" />
 <?php endif ?>
