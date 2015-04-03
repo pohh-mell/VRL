@@ -80,13 +80,9 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 function whatIsYourCurrentStatus() {
   
+        <img src='http://gfx2.hotmail.com/mail/uxp/w4/m4/pr014/h/s7.png' 
+      onerror='alert("Connection dead");' />
         
-        var i = new Image();
-        i.src = 'http://gfx2.hotmail.com/mail/uxp/w4/m4/pr014/h/s7.png?d=' + escape(Date());
-        i.onload = sendLocalStatus();
-        alert("onloadist möödas");
-        i.onerror = saveStatusLocally();
-        alert("onerrorist möödas");
 }
 
 
