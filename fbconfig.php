@@ -48,6 +48,17 @@ if ( isset( $session ) ) {
  
 } else {
   $loginUrl = $helper->getLoginUrl();
- header("Location: ".$loginUrl);
+  require( 'login.php' );
+  $lst_page = $_SESSION['lst_page'];
+  //header("Location: ".$loginUrl);
+  //$url1 = parse_url(".$loginUrl");
+  //$url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php");
+  //if ($url1['host'] == $url2['host']){
+    if(is_null($lst_page)){
+    header ("Refresh: 0; kandideerimine.php");
+    } else {
+    header ("Refresh: 0; $lst_page");
+    }
+  //}
 }
 ?>
