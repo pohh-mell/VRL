@@ -103,7 +103,7 @@ function saveStatusLocally() {
                                 <label>Isikukood:</label>
                                 <input type="text" id="isikukood" name="isikukood">
                                 </div>
-                                <button class="nupp" type="submit" onclick="saveStatusLocaly()" id="submit-button">Lisa end kandidaadiks</button>
+                                <button class="nupp" type="submit" onclick="saveStatusLocally()" id="submit-button">Lisa end kandidaadiks</button>
                         </form>
                 </div>
         </div>
