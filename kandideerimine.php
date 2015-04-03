@@ -78,8 +78,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
 <script type="text/javascript">
 function saveStatusLocally() {
-        var nimi = document.getElementById("nimi").value;
-        window.localStorage.setItem(nimi, "auh");
+        aler(document.getElementById("nimi").value);
+        window.localStorage.setItem(document.getElementById("nimi").value, "auh");
 }
 </script>
 
