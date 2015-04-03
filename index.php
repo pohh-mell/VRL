@@ -16,10 +16,6 @@
         <div class="col-xs-8 col-md-4 col-md-offset-1">
           <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" id="kandideerimine" class="wide blue"><img src="picid/people-icon-oige.png" alt="kandideeri" class="pilt">KANDIDEERI</a>
         </div>
-        <?php else: ?>
-        <div class="col-xs-8 col-md-4 col-md-offset-1">
-          <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" style="visibility:hidden" id="kandideerimine" class="wide blue"><img src="picid/people-icon-oige.png" alt="kandideeri" class="pilt">KANDIDEERI</a>
-        </div>
       <?php endif ?>
       </div>
     </div>
