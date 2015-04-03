@@ -3,12 +3,13 @@ $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
+
 	<div class="container">
 		<div class="middle">
 		
 			<ol class="singleline">			
 		
-			<li><select class="Valikud">
+			<li><select class="Valikud" onchange= "func(this.value)">
 				<option value="tühi">------</option>
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Tartumaa</option>
