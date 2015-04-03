@@ -15,11 +15,27 @@ include "header.php";
 			  	<option value="Harjumaa">Harjumaa</option>
 			</select></li>
 			
-			<li><select class="Valikud">
-	   		    <option value="Kõik Erakonnad">Kõik Erakonnad</option>
-			    <option value="JAVA">JAVA</option>
-			    <option value="MUNA">MUNA</option>
-			</select></li>
+			<div class="col-xs-2 col-sm-2 col-md-2">
+					<form class="name">
+						
+						<input type="text" list="Erakond" id="Valikud" name="color" style="width:100px;">
+						<datalist id="Erakond">
+						<?php
+						require_once("andmed.php");
+						$conn=database();
+						//Query the database
+						$resultSet = $conn->query("SELECT nimi FROM erakonnad group by nimi;");
+						if($resultSet->num_rows != 0){
+							while($rows = $resultSet->fetch_assoc()){
+								$errakond = $rows['nimi'];
+								echo "<option value=$errakond>";
+							}
+						}
+						$conn->close();
+						?>
+						</datalist>
+
+					</form>
 			
 			<li><form method="get" action="">
 				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
