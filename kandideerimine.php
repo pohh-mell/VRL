@@ -4,7 +4,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 <?php
 $title = "Kandideerimine";
-include "header-k.php";
+include "header.php";
 ?>
 <?php 
 if( $_POST ){
