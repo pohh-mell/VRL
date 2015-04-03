@@ -45,7 +45,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                  
                 <!-- Sisselogimata --> 
                 <?php else: ?>
-                <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net//logisisse.php">
+                <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
                 <?php endif ?>
                 <div class ="row">
                     <p>

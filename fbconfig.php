@@ -48,22 +48,22 @@ if ( isset( $session ) ) {
  
 } else {
   $loginUrl = $helper->getLoginUrl();
-  $url = "http://e-haaletus.azurewebsites.net/logisisse.php";
+/*  $url = "http://e-haaletus.azurewebsites.net/logisisse.php";
   if (.$loginUrl == $url){
     header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
   }else{
     header("Location: ".$loginUrl);
   }
-  
+  */
 
-/*
+
   $url1 = parse_url(".$loginUrl");
   $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php");
-  if ($url1['host'] == $url2['host']){
+  if ($url1['path'] == $url2['path']){
     header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
   }else {
     header("Location: ".$loginUrl);
   }
-  */
+  
 }
 ?>
