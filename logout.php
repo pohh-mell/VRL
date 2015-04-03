@@ -6,5 +6,5 @@ session_unset();
     $_SESSION['FBID'] = NULL;
     $_SESSION['FULLNAME'] = NULL;
 //header("Location: index.php");      // you can enter home page here ( Eg : header("Location: " ."http://www.krizna.com"); 
-	header("Location: http://e-haaletus.azurewebsites.net/$url");
+	header("Location: http://e-haaletus.azurewebsites.net$url");
 ?>

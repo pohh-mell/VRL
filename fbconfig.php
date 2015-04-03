@@ -46,7 +46,7 @@ if ( isset( $session ) ) {
      
     //$url1 = parse_url("http://e-haaletus.azurewebsites.net/$url", PHP_URL_PATH);
     //$url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php", PHP_URL_PATH);
-    $url2 = "logisisse.php";
+    $url2 = "/logisisse.php";
     if ($url == $url2){
         header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
     }else {
