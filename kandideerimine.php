@@ -1,4 +1,6 @@
 <?php
+session_start(); 
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 $title = "Kandideerimine";
 include "header-k.php";
 ?>
@@ -43,6 +45,6 @@ include "header-k.php";
 	</div>
 	
 <?php include "footer.php"; ?>
- <?php else: ?>
- <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php" />
+<?php else: ?>
+ <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php" />
 <?php endif ?>

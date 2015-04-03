@@ -1,7 +1,3 @@
-<?php
-session_start(); 
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-?>
 <!DOCTYPE html>
 <?php if ($_SESSION['FBID']): ?>
 <html>
@@ -46,7 +42,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 	                 
 	                <!-- Sisselogimata --> 
 	                <?php else: ?>
-	                <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net//index.php">
+	                <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
                     <?php endif ?>
                     <div class ="row">
 	                    <p>
