@@ -1,7 +1,3 @@
-<?php
-session_start(); 
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-?>
 <!DOCTYPE html>
 <?php if ($_SESSION['FBID']): ?>
 <html>
