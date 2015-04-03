@@ -19,55 +19,41 @@ FacebookSession::setDefaultApplication('764717310292073','f7dc16c733615eb9f61a5f
 // login helper with redirect_uri
     $helper = new FacebookRedirectLoginHelper('http://e-haaletus.azurewebsites.net/fbconfig.php' );
 try {
-  $session = $helper->getSessionFromRedirect();
+    $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
-  // When Facebook returns an error
+    // When Facebook returns an error
 } catch( Exception $ex ) {
-  // When validation fails or other local issues
+    // When validation fails or other local issues
 }
 // see if we have a session
 if ( isset( $session ) ) {
 
-  // graph api request for user data
-  $request = new FacebookRequest( $session, 'GET', '/me' );
-  $response = $request->execute();
-  // get response
-  $graphObject = $response->getGraphObject();
+    // graph api request for user data
+    $request = new FacebookRequest( $session, 'GET', '/me' );
+    $response = $request->execute();
+    // get response
+    $graphObject = $response->getGraphObject();
      	$fbid = $graphObject->getProperty('id');              // To Get Facebook ID
  	    $fbfullname = $graphObject->getProperty('name'); // To Get Facebook full name
 	    $femail = $graphObject->getProperty('email');    // To Get Facebook email ID
-      $url = $_SESSION['url'];
-      checkuser($fbid,$fbfullname,$femail); // To update local DB
+        $url = $_SESSION['url'];
+        checkuser($fbid,$fbfullname,$femail); // To update local DB
 	/* ---- Session Variables -----*/
 	    $_SESSION['FBID'] = $fbid;           
         $_SESSION['FULLNAME'] = $fbfullname;
 	    $_SESSION['EMAIL'] =  $femail;
     /* ---- header location after session ----*/
      
-  $url1 = parse_url("http://e-haaletus.azurewebsites.net/$url");
-  $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php");
-  if ($url1['path'] == $url2['path']){
-    header("Location: http://e-haaletus.azurewebsites.net/$url");
-    
-  }else {
-    header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
-    
-  }
-  
- 
+    $url1 = parse_url("http://e-haaletus.azurewebsites.net/$url",, PHP_URL_PATH);
+    $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php",, PHP_URL_PATH);
+    if ($url1 == $url2){
+        header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
+    }else {
+        header("Location: http://e-haaletus.azurewebsites.net/$url");
+    }
+
 } else {
-  $loginUrl = $helper->getLoginUrl();
-  header("Location: ".$loginUrl);
-/*  $url = "http://e-haaletus.azurewebsites.net/logisisse.php";
-  if (.$loginUrl == $url){
-    header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
-  }else{
+    $loginUrl = $helper->getLoginUrl();
     header("Location: ".$loginUrl);
-  }
-  */
-
-
-  
-  
 }
 ?>
