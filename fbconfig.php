@@ -46,7 +46,7 @@ if ( isset( $session ) ) {
      
     require('logisisse.php');
     $lst_page = $_SESSION['lst_page'];
-    $url1 = parse_url(.$lst_page, PHP_URL_PATH);
+    $url1 = parse_url($lst_page, PHP_URL_PATH);
     $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php", PHP_URL_PATH);
     if ($url1 == $url2){
         header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
