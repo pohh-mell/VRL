@@ -4,9 +4,11 @@ include "header.php";
 ?> 
 	<div class="container">
 		<div class="middle">
-			<p class="logisissetxt">
-				Oled sattunud lehele, mis on mõeldud ainult sisselogitud kasutajatele. Lehe nägemiseks logi sisse. Sisselogimiseks on nupp üleval paremal nurgas. 
-			</p>
+			<div class="row logisissetxt">
+				<p>
+					Oled sattunud lehele, mis on mõeldud ainult sisselogitud kasutajatele. Lehe nägemiseks logi sisse. Sisselogimiseks on nupp üleval paremal nurgas. 
+				</p>
+			<div>
 		</div>
 	</div>
 <?php include "footer.php"; ?>

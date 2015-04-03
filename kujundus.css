@@ -14,9 +14,9 @@
   	background-color: #344D99;	
 }
 
- p#logisissetxt {
-	margin-top: 50px;
-	font-size: 25px;
+ .logisissetxt p {
+	margin: 80px;
+	font-size: 20px;
 }
 
 .kl p {
