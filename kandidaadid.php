@@ -3,7 +3,7 @@ $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
-
+<script src='kandidaadimuutmine.js'></script>
 	<div class="container">
 		<div class="middle">
 		
