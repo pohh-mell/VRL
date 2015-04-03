@@ -86,6 +86,8 @@ function whatIsYourCurrentStatus() {
   }
 }
 
+
+
 function saveStatusLocally() {
        
        
@@ -100,6 +102,28 @@ function saveStatusLocally() {
         window.localStorage.setItem("isikukood", isikukood);
         
 }
+
+
+function sendLocalStatus() {
+  alert("sendlocalstatus");
+}
+ 
+ 
+window.addEventListener("load", function() {
+   if (navigator.onLine) {
+     sendLocalStatus();
+   }
+}, true);
+ 
+window.addEventListener("online", function() {
+  sendLocalStatus();
+}, true);
+ 
+window.addEventListener("offline", function() {
+  alert("You're now offline. If you update your status, it will be sent when you go back online");
+}, true);
+
+
 </script>
 
         
