@@ -45,7 +45,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <div class ="row">
                         <br>
                     </div>
-
                     <?php endif ?>
                         <div class ="row">
                         <p>
