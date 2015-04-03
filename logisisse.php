@@ -1,6 +1,8 @@
 <?php
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header-r.php";
+$lst_page = $_SERVER['HTTP_REFERER'];
+$_SESSION['lst_page'] = $lst_page;
 ?> 
 	<div class="container">
 		<div class="middle">

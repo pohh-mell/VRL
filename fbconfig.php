@@ -44,13 +44,21 @@ if ( isset( $session ) ) {
 	    $_SESSION['EMAIL'] =  $femail;
     /* ---- header location after session ----*/
      
-    $url1 = parse_url("http://e-haaletus.azurewebsites.net/$url", PHP_URL_PATH);
+    require('logisisse.php');
+    $lst_page = $_SESSION['lst_page'];
+    if(is_null($lst_page)){
+        header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
+    } else {
+        header("Location: http://e-haaletus.azurewebsites.net/$url");
+    }
+
+    /*$url1 = parse_url("http://e-haaletus.azurewebsites.net/$url", PHP_URL_PATH);
     $url2 = parse_url("http://e-haaletus.azurewebsites.net/logisisse.php", PHP_URL_PATH);
     if ($url1 == $url2){
         header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
     }else {
         header("Location: http://e-haaletus.azurewebsites.net/$url");
-    }
+    }*/
 
 } else {
     $loginUrl = $helper->getLoginUrl();
