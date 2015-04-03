@@ -3,5 +3,5 @@ function func(param){
 	var valitud = param;
 	var tabel = document.getElementById("t01");
 	console.log(valitud);
-	console.log(tabel.rows);
+	console.log(tabel[0].cells);
 }
