@@ -9,7 +9,7 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<li><select class="Valikud" onchange= "func(this.value)">
+			<li><select class="Valikud1" >
 				<option value="tühi">------</option>
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Tartumaa</option>
