@@ -48,7 +48,7 @@ if ( isset( $session ) ) {
  
 } else {
   $loginUrl = $helper->getLoginUrl();
-  require( 'login.php' );
+  require( 'kandideerimine.php' );
   $lst_page = $_SESSION['lst_page'];
   //header("Location: ".$loginUrl);
   //$url1 = parse_url(".$loginUrl");
