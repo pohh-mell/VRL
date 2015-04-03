@@ -49,7 +49,7 @@ if ( isset( $session ) ) {
   if ($url1['path'] == $url2['path']){
     header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
   }else {
-    header("Location: ".$url1);
+    header("Location: http://e-haaletus.azurewebsites.net/$url");
     
   }
   
