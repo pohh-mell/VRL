@@ -1,7 +1,3 @@
-<?php
-session_start(); 
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-?>
 <!DOCTYPE html>
 <?php if ($_SESSION['FBID']): ?>
 <html>
@@ -32,7 +28,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 			<div class="row">
 				<div class="col-xs-9 col-md-9 col-lg-9">  
 					<h1><a href="http://e-haaletus.azurewebsites.net/">E-hääletus</a></h1>
-					<p>Kandideerimine</p>
+					<p><?php echo $title; ?></p>
 				</div>
 				<div class ="kl col-xs-3 col-md-3 col-lg-3">
 					<?php if ($_SESSION['FBID']): ?>
