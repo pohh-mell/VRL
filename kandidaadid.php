@@ -9,6 +9,7 @@ include "header.php";
 			<ol class="singleline">			
 		
 			<li><select class="Valikud">
+				<option value="tühi">------</option>
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Tartumaa</option>
 			    <option value="Võrumaa">Võrumaa</option>
@@ -16,6 +17,7 @@ include "header.php";
 			</select></li>
 						
 				<li><select class="Valikud">	
+					<option value="tühi">------</option>
 						<?php
 						require_once("andmed.php");
 						$conn=database();
