@@ -79,11 +79,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <script type="text/javascript">
 
 function whatIsYourCurrentStatus() {
-  if (navigator.onLine) {
-    alert("nett on olemas")
-  } else {
-    saveStatusLocally();
-  }
+  
+        var i = new Image();
+        i.onload = sendLocalStatus();
+        i.onerror = saveStatusLocally();
+// CHANGE IMAGE URL TO ANY IMAGE YOU KNOW IS LIVE
+        i.src = 'http://gfx2.hotmail.com/mail/uxp/w4/m4/pr014/h/s7.png?d=' + escape(Date());
 }
 
 
