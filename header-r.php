@@ -16,19 +16,15 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="kujundus.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-xs-9 col-md-9 col-lg-9">  
+                <div class="col-xs-8 col-md-9 col-lg-9">  
                     <h1><a href="http://e-haaletus.azurewebsites.net/">E-hääletus</a></h1>
                 </div>
-                <div class ="kl col-xs-3 col-md-3 col-lg-3">
+                <div class ="kl col-xs-4 col-md-3 col-lg-3">
                     <?php if ($_SESSION['FBID']): ?>
                     <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php">
                    
@@ -45,8 +41,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <?php endif ?>
                     <div class ="row">
                         <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee"></a>
+                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width: 10%"></a>
+                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width: 10%"></a>
                         </p>
                     </div>     
                 </div>
