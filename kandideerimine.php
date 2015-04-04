@@ -27,7 +27,7 @@ function sendToServer(){
                 type:"POST",
                 data:{param:"auhh"},
         success: function(data){
-                alert('param');
+                alert(data.param);
         },
         error:function(){
                 alert("error");
