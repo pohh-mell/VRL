@@ -10,12 +10,13 @@ if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }	
 	echo"jõudsiphp "; 
-	echo $q;
+	echo $q+"    ";
 
 					if($q=="1"){
 						$sql = "SELECT * FROM ehaaletusdata.abi;";
 					}else{
-					$sql = "SELECT * FROM ehaaletusdata.abi WHERE piirkond='".$q."';";}
+					$sql = "SELECT * FROM ehaaletusdata.abi piirkond = '".$q."'";
+				}
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Nr</th>

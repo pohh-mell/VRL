@@ -47,7 +47,7 @@ include "header.php";
 			<li><select class="Valikud1" onchange="uuenda(this.value)" >
 				<option value="">------</option>
 	   		    <option value="1">Kogu Eesti</option>
-			    <option value="Tartumaa">Tartumaa</option>
+			    <option value="asd">asd</option>
 			    <option value="Võrumaa">Võrumaa</option>
 			  	<option value="Valgamaa">Valgamaa</option>
 			</select></li>
