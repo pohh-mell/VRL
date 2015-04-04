@@ -7,18 +7,6 @@
 
 <script type="text/javascript">
 
-function whatIsYourCurrentStatus() {
-    if (navigator.onLine) {
-        var nimi = document.getElementById("nimi").value;
-        var piirkond = document.getElementById("piirkond").value;
-        var erakond = document.getElementById("erakond").value;
-        var isikukood = document.getElementById("isikukood").value;
-        sendToServer();
-     } else {
-        alert("netti pole");
-        saveStatusLocally();
-     }      
-}
 
 function sendToServer(){
         alert("sendtoserver");
@@ -30,19 +18,22 @@ function sendToServer(){
                 erakond:document.getElementById("erakond").value,
                 isikukood:document.getElementById("isikukood").value
                 },
-        success: function(){
-                alert("success");
+                success: function(){
+                        localStorage.clear();
+                },      
+                error: function(){
+                        
+                        alert("error nupu vajutusel laadimisel");
+                        saveStatusLocally();
+                        setTimeout(sendToServer(),5000);
+                        
+                }
                 
-        },
-        error:function(){
-                alert("error");
-        }
-                
-});
+        });
 }
 
 function saveStatusLocally() {       
-    alert("nettipole");
+    alert("nettipole ehk save statuslocally");
     var nimi = document.getElementById("nimi").value;
     var piirkond = document.getElementById("piirkond").value;
     var erakond = document.getElementById("erakond").value;
@@ -54,21 +45,34 @@ function saveStatusLocally() {
 }
 
 
+
+
 function sendLocalStatus() {
   alert("sendlocalstatus");
+  $.ajax({
+                url:"ajax_request.php",
+                type:"POST",
+                data:{nimi:localStorage.getItem("nimi"),
+                piirkond:localStorage.getItem("piirkond"),
+                erakond:localStorage.getItem("erakond"),
+                isikukood:lcoal .getItem("isikukood")
+                },
+        success: function(){
+                alert("local storagest lisatud");
+                localStorage.clear();
+               
+                
+        },
+        error: function(){
+                alert("error local storagega");
+  localStorage.clear();
 }
  
  
 window.addEventListener("load", function() {
-    if (navigator.onLine) {
-        alert("alguses on nett");
-    }
-    window.addEventListener("online", function() {
-        alert("online oleme");
-    }, true);
-    window.addEventListener("offline", function() {
-        alert("You're now offline. If you update your status, it will be sent when you go back online");
-    }, true);
+        if(localStorage.length==4){
+        sendLocalStatus();}
+
 }, true);
 
 </script>
@@ -93,7 +97,7 @@ window.addEventListener("load", function() {
                 <label>Isikukood:</label>
                 <input type="text" id="isikukood" name="isikukood">
                 </div>
-                <button class="nupp" type="submit" onclick="whatIsYourCurrentStatus()" id="submit-button">Lisa end kandidaadiks</button>
+                <button class="nupp" type="submit" onclick="sendToServer" id="submit-button">Lisa end kandidaadiks</button>
             </form>
         </div>
     </div>
