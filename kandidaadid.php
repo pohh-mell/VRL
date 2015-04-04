@@ -37,7 +37,7 @@ include "header.php";
 			<li><form method="get" action="">
 				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 			</form></li>
-			
+			<button class="nupp" type="submit" onclick="uuenda()" id="submit-button">Otsi</button>
 			</ol>
 			
 			<table id="t01">
