@@ -70,6 +70,8 @@ function sendLocalStatus() {
  
  
 window.addEventListener("load", function() {
+        alert(localStorage.length);
+        alert("auhhh");
         if(localStorage.length==4){
         sendLocalStatus();}
 
