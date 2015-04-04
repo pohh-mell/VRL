@@ -15,12 +15,12 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="kujundus.css">
-</head>
-<body>
-    <!-- jQuery library -->
+        <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
+</head>
+<body>
     <header>
         <div class="container">
             <div class="row">
