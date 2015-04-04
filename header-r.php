@@ -9,6 +9,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <link rel="icon" href="picid/lipp.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="description" content="Free Web tutorials">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
      

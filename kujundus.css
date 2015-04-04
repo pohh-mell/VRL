@@ -44,7 +44,7 @@ header p {
 	width: 100%;
     height: 100%;
 	background-image:url(picid/kaart.jpg);
-	background-size: 100%; 
+	background-size: 70%; 
 	min-height: 540px;
 	background-color:white;
 	background-position: 50% 10%; 
