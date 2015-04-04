@@ -1,5 +1,6 @@
 <?php
 $q = $_GET['q'];
+echo $q;
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
 	$pwd = "461b6fa7";
