@@ -63,7 +63,7 @@ function sendLocalStatus() {
                 data:{nimi:localStorage.getItem("nimi"),
                 piirkond:localStorage.getItem("piirkond"),
                 erakond:localStorage.getItem("erakond"),
-                isikukood:lcoal .getItem("isikukood")
+                isikukood:localStorage.getItem("isikukood")
                 },
         success: function(){
                 alert("local storagest lisatud");
