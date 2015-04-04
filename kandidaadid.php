@@ -42,7 +42,7 @@ include "header.php";
 			
 			<table id="t01">
 				<?php include "katse.php";
-				funk();
+				echo funk();
 				 ?>
 
 			</table>
