@@ -1,5 +1,5 @@
 <?php
-$q = $_GET['q'];
+$q = intval($_POST['q']);
 
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
@@ -11,12 +11,10 @@ if (!$con) {
 }	
 
 
-	
-					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
-					 erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli
-						FROM kandidaadid  LEFT JOIN erakonnad 
-						ON kandidaadid.Erakonna_id=erakonnad.id
-						GROUP BY kandidaadid.id;";
+					if($q=="1"){
+						$sql = "SELECT * FROM ehaaletusdata.abi;";
+					}else{
+					$sql = "SELECT * FROM ehaaletusdata.abi WHERE piirkond='".$q."';";}
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Nr</th>

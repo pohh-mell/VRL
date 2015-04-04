@@ -3,18 +3,45 @@ $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
-<script src='kandidaadimuutmine.js'></script>
+<script>
+	
+
+	function uuenda(str) {
+	alert("jõudsin");
+    if (str == "") {
+        document.getElementById("t01").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("t01").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","katse.php?q="+str,true);
+        xmlhttp.send();
+    }
+}	
+
+
+</script>
 	<div class="container">
 		<div class="middle">
 		
 			<ol class="singleline">			
 		
 			<li><select class="Valikud1" onchange="uuenda(this.value)" >
-				<option value="tühi">------</option>
-	   		    <option value="Kogu Eesti">Kogu Eesti</option>
+				<option value="">------</option>
+	   		    <option value="1">Kogu Eesti</option>
 			    <option value="Tartumaa">Tartumaa</option>
 			    <option value="Võrumaa">Võrumaa</option>
-			  	<option value="Harjumaa">Harjumaa</option>
+			  	<option value="Valgamaa">Valgamaa</option>
 			</select></li>
 						
 				<li><select class="Valikud">	
@@ -43,6 +70,7 @@ include "header.php";
 			<table id="t01">
 				<?php include "katse.php"
 				 ?>
+			
 
 			</table>
 		</div>
