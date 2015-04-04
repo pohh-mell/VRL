@@ -1,6 +1,5 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import url(https://raw.github.com/noizwaves/bootstrap-social-buttons/v1.0.0/social-buttons.css);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 
 .kl {
@@ -12,6 +11,39 @@
 	font-size: 13px;
 	color: white;
   	background-color: #344D99;	
+}
+
+.btn-facebook {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2b4b90;
+  *background-color: #133783;
+  background-image: -moz-linear-gradient(top, #3b5998, #133783);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+  background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+  background-image: -o-linear-gradient(top, #3b5998, #133783);
+  background-image: linear-gradient(to bottom, #3b5998, #133783);
+  background-repeat: repeat-x;
+  border-color: #133783 #133783 #091b40;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+  color: #ffffff;
+  background-color: #133783;
+  *background-color: #102e6d;
+}
+
+.btn-facebook:active,
+.btn-facebook.active {
+  background-color: #0d2456 \9;
 }
 
  .logisissetxt p {
@@ -36,10 +68,6 @@ header p {
 	margin-bottom: 10px;
 }
 
-.fb_iframe_widget {
-	margin: 15px;	
-}
-
 .middle{
 	width: 100%;
     height: 100%;
@@ -50,6 +78,7 @@ header p {
 	background-position: 50% 10%; 
 	background-repeat: no-repeat
 }
+
 a:hover {
     text-decoration: none;
 }
