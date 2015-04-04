@@ -8,7 +8,7 @@ include "header-r.php";
 				<p>
 					Oled sattunud lehele, mis on mõeldud ainult sisselogitud kasutajatele. Lehe nägemiseks logi sisse. Sisselogimiseks on nupp üleval paremal nurgas. 
 				</p>
-			<div>
+			</div>
 		</div>
 	</div>
 <?php include "footer.php"; ?>
