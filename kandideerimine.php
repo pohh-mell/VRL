@@ -3,17 +3,7 @@
     include "header-k.php";
 ?>
 
-<?php   if( $_POST ){
-    require_once("dbconfig.php");
-    $nimi = $_POST['nimi'];
-    $isikukood = $_POST['isikukood'];
-    $erakond = $_POST['erakond'];
-    $piirkond= $_POST['piirkond'];
-    $query = "INSERT INTO kandidaadid(Nimi,Piirkond,Erakonna_id,isikukood) VALUES ('$nimi','$piirkond',$erakond,$isikukood);";
-    mysql_query($query);
-    mysql_close($conn);
-}
-?>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 <script type="text/javascript">
 
@@ -23,15 +13,27 @@ function whatIsYourCurrentStatus() {
         var piirkond = document.getElementById("piirkond").value;
         var erakond = document.getElementById("erakond").value;
         var isikukood = document.getElementById("isikukood").value;
-        sendToServer(ńimi,piirkond,erakond,isikuud);
+        sendToServer();
      } else {
         alert("netti pole");
         saveStatusLocally();
      }      
 }
 
-function sendToServer(nimi,piirkond,erakond,isikukood){
-        
+function sendToServer(){
+        alert("sendtoserver");
+        $.ajax({
+                url:"ajax_request.php",
+                type:"POST",
+                data:{param:"auhh"},
+        success: function(data){
+                alert(data);
+        },
+        error:function(){
+                alert("error");
+        }
+                
+});
 }
 
 function saveStatusLocally() {       
