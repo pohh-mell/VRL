@@ -1,5 +1,4 @@
-@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
-@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+@import url('/css/styles.css');
 
 .kl {
 	text-align:center;
