@@ -13,9 +13,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="kujundus.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
     <!-- Latest compiled JavaScript -->
