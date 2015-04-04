@@ -9,7 +9,7 @@ include "header.php";
 	function uuenda(str) {
 	alert("jõudsin");
     if (str == "") {
-        document.getElementById("t01").innerHTML = "";
+        document.getElementById("txtHint").innerHTML = "";
         alert("tühi");
         return;
     } else { 
@@ -27,7 +27,7 @@ include "header.php";
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             	alert("document.getelement");
-                document.getElementById("t01").innerHTML = xmlhttp.responseText;
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
             }
         }
         alert("open");
@@ -76,8 +76,7 @@ include "header.php";
 			</ol>
 			
 			<table id="t01">
-				<?php include "katse.php"
-				 ?>
+				<div id="txtHint"><b>Person info will be listed here...</b></div>
 			
 
 			</table>
