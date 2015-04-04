@@ -51,8 +51,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <?php endif ?>
                     <div class ="row">
                         <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width: 100%"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width: 100%"></a>
+                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width: 10%"></a>
+                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width: 10%"></a>
                         </p>
                     </div>     
                 </div>
