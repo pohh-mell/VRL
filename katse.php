@@ -1,5 +1,5 @@
 <?php
-$q = intval($_POST['q']);
+$q = intval($_GET['q']);
 
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
@@ -9,7 +9,7 @@ $con = mysqli_connect($host, $user, $pwd, $db);
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }	
-
+	echo"jõudsin php";
 
 					if($q=="1"){
 						$sql = "SELECT * FROM ehaaletusdata.abi;";

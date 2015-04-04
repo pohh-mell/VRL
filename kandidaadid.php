@@ -10,22 +10,30 @@ include "header.php";
 	alert("jõudsin");
     if (str == "") {
         document.getElementById("t01").innerHTML = "";
+        alert("tühi");
         return;
     } else { 
+    	alert("else");
         if (window.XMLHttpRequest) {
+        	alert("piisav browser");
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         } else {
+        	alert("odav browser");
             // code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
+        alert("get ready");
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            	alert("document.getelement");
                 document.getElementById("t01").innerHTML = xmlhttp.responseText;
             }
         }
+        alert("open");
         xmlhttp.open("GET","katse.php?q="+str,true);
-        xmlhttp.send();
+        alert("send");
+        xmlhttp.send(); alert("kõik done");
     }
 }	
 
