@@ -121,6 +121,14 @@ margin-top: 10px; /* outside Codepen is actually 30px */
     text-align: center;
 }
 
+a.wide:hover, a.box:hover{
+    -webkit-transform: scale(1.05);
+}
+
+a.wide:active, a.box:active{
+    -webkit-transform: scale(1);
+}
+
 
 .lime{background:#61b812;}
 .orange{background:#e76022;}
