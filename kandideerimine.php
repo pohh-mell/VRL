@@ -7,6 +7,14 @@
 
 <script type="text/javascript">
 
+window.addEventListener("load", function() {
+        alert("auhhh");
+        alert(localStorage.length);
+
+        if(localStorage.length==4){
+        sendLocalStatus();}
+
+}, true);
 
 function sendToServer(){
         alert("sendtoserver");
@@ -69,13 +77,7 @@ function sendLocalStatus() {
 }
  
  
-window.addEventListener("load", function() {
-        alert(localStorage.length);
-        alert("auhhh");
-        if(localStorage.length==4){
-        sendLocalStatus();}
 
-}, true);
 
 </script>
        
