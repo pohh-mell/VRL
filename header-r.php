@@ -17,6 +17,10 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <link rel="stylesheet" type="text/css" href="kujundus.css">
 </head>
 <body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"  type="text/javascript"></script>
     <header>
         <div class="container">
             <div class="row">
