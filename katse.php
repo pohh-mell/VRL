@@ -12,12 +12,8 @@ if (!$con) {
 	echo"jõudsiphp "; 
 	echo $q+"    ";
 
-					if($q=="1"){
-						$sql = "SELECT * FROM ehaaletusdata.abi;";
-					}else{
-						$kaktus = "asd";
-					$sql = "SELECT * FROM ehaaletusdata.abi piirkond = $kaktus ";
-				}
+					$sql = "SELECT * FROM ehaaletusdata.abi where piirkond = $kaktus ";
+				
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Nr</th>
