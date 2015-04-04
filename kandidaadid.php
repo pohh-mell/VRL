@@ -41,7 +41,8 @@ include "header.php";
 			</ol>
 			
 			<table id="t01">
-				<?php include "katse.php";
+				<?php  
+				require_once("katse.php");
 				echo funk();
 				 ?>
 
