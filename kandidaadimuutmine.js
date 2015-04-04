@@ -1,4 +1,5 @@
 function uuenda(str) {
+	alert("jõudsin");
     if (str == "") {
         document.getElementById("t01").innerHTML = "";
         return;
