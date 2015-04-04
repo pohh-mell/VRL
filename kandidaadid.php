@@ -9,7 +9,7 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<li><select class="Valikud1"onchange="uuenda(this.value)" >
+			<li><select class="Valikud1" onchange="uuenda(this.value)" >
 				<option value="tühi">------</option>
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Tartumaa</option>
@@ -41,9 +41,7 @@ include "header.php";
 			</ol>
 			
 			<table id="t01">
-				<?php  
-				require_once("katse.php");
-				echo func();
+				<?php include "katse.php"
 				 ?>
 
 			</table>
