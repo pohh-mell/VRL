@@ -43,7 +43,7 @@ include "header.php";
 			<table id="t01">
 				<?php  
 				require_once("katse.php");
-				echo funk();
+				echo func();
 				 ?>
 
 			</table>
