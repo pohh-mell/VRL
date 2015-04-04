@@ -9,7 +9,8 @@ $con = mysqli_connect($host, $user, $pwd, $db);
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }	
-	echo"jõudsin php";
+	echo"jõudsiphp "; 
+	echo $q;
 
 					if($q=="1"){
 						$sql = "SELECT * FROM ehaaletusdata.abi;";
