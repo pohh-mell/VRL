@@ -15,7 +15,8 @@ if (!$con) {
 					if($q=="1"){
 						$sql = "SELECT * FROM ehaaletusdata.abi;";
 					}else{
-					$sql = "SELECT * FROM ehaaletusdata.abi piirkond = '".$q."'";
+						$kaktus = "asd";
+					$sql = "SELECT * FROM ehaaletusdata.abi piirkond = $kaktus ";
 				}
 					$result = $conn->query($sql);
 					echo "<tr>
