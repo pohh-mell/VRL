@@ -25,10 +25,14 @@ function sendToServer(){
         $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
-                data:{param:"auhh"},
-        success: function(data){
-                alert(data(param));
+                data:{nimi:document.getElementById("nimi").value,
+                piirkond:document.getElementById("piirkond").value,
+                erakond:document.getElementById("erakond").value,
+                isikukood:document.getElementById("isikukood").value
+                },
+        success: function(){
                 alert("success");
+                
         },
         error:function(){
                 alert("error");
