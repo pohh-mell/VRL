@@ -120,13 +120,7 @@ text-align: center;
 display: block;
 margin-top: 10px; /* outside Codepen is actually 30px */
 }
-a.wide:hover, a.box:hover{
-	-webkit-transform: scale(1.05);
-}
 
-a.wide:active, a.box:active{
-	-webkit-transform: scale(1);
-}
 .wide{
 	width:100%;
 	min-width:250px;
