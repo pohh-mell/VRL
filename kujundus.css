@@ -44,7 +44,7 @@ header p {
 	width: 100%;
     height: 100%;
 	background-image:url(picid/kaart.jpg);
-	background-size: 70%; 
+	background-size: 100%; 
 	min-height: 540px;
 	background-color:white;
 	background-position: 50% 10%; 
@@ -74,27 +74,13 @@ h1 {
 	text-shadow: 0 1px 0 white;
 }
 
-
-
 .pilt {
-	width:30%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:auto;
 	margin-bottom:auto;
 	display:block;
 }
-
-.pilt2 {
-	width:35%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:auto;
-	margin-bottom:auto;
-	display:block;
-}
-
-
 
 a.wide, a.box{
 	text-decoration:none;
