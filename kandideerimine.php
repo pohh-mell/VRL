@@ -8,16 +8,11 @@
 <script type="text/javascript">
 
 window.addEventListener("load", function(){
-        alert("auhhh");
-        alert(localStorage.length);
-
         if(localStorage.length==4){
         sendLocalStatus();}
-
 }, true);
 
 function sendToServer(){
-        alert("sendtoserver");
         $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
@@ -30,8 +25,6 @@ function sendToServer(){
                         localStorage.clear();
                 },      
                 error: function(){
-                        
-                        alert("error nupu vajutusel laadimisel");
                         saveStatusLocally();
                         setTimeout(sendToServer(),5000);
                         
@@ -41,7 +34,6 @@ function sendToServer(){
 }
 
 function saveStatusLocally() {       
-    alert("nettipole ehk save statuslocally");
     var nimi = document.getElementById("nimi").value;
     var piirkond = document.getElementById("piirkond").value;
     var erakond = document.getElementById("erakond").value;
@@ -56,7 +48,6 @@ function saveStatusLocally() {
 
 
 function sendLocalStatus() {
-  alert("sendlocalstatus");
   $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
@@ -66,7 +57,7 @@ function sendLocalStatus() {
                 isikukood:localStorage.getItem("isikukood")
                 },
         success: function(){
-                alert("local storagest lisatud");
+                alert("eelmine kandidaat lisatud");
                 localStorage.clear();          
         },
         error: function(){
