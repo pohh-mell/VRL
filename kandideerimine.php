@@ -26,8 +26,9 @@ function sendToServer(){
                 url:"ajax_request.php",
                 type:"POST",
                 data:{param:"auhh"},
-        success: function(param){
-                alert(param);
+        success: function(data){
+                alert(data);
+                alert("success");
         },
         error:function(){
                 alert("error");
