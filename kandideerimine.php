@@ -7,7 +7,7 @@
 
 <script type="text/javascript">
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function(){
         alert("auhhh");
         alert(localStorage.length);
 
@@ -67,13 +67,12 @@ function sendLocalStatus() {
                 },
         success: function(){
                 alert("local storagest lisatud");
-                localStorage.clear();
-               
-                
+                localStorage.clear();          
         },
         error: function(){
                 alert("error local storagega");
-  localStorage.clear();
+        }
+  });
 }
  
  
@@ -101,7 +100,7 @@ function sendLocalStatus() {
                 <label>Isikukood:</label>
                 <input type="text" id="isikukood" name="isikukood">
                 </div>
-                <button class="nupp" type="submit" onclick="sendToServer" id="submit-button">Lisa end kandidaadiks</button>
+                <button class="nupp" type="submit" onclick="sendToServer()" id="submit-button">Lisa end kandidaadiks</button>
             </form>
         </div>
     </div>
