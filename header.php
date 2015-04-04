@@ -24,11 +24,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-xs-9 col-md-9 col-lg-9">  
+            <div class="col-xs-8 col-md-9 col-lg-9">  
                 <h1><a href="<?php echo $link; ?>">E-hääletus</a></h1>
                 <p><?php echo $title; ?></p>
             </div>
-            <div class ="kl col-xs-3 col-md-3 col-lg-3">
+            <div class ="kl col-xs-4 col-md-3 col-lg-3">
                 <?php if ($_SESSION['FBID']): ?>
                 <div class ="row">
                     <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>

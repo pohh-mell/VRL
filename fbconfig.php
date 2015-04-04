@@ -48,7 +48,7 @@ if (isset($session)){
     if ($url == $url2){
         header("Location: http://e-haaletus.azurewebsites.net/kandideerimine.php");
     }else {
-        header("Location: http://e-haaletus.azurewebsites.net/$url");
+        header("Location: http://e-haaletus.azurewebsites.net$url");
     }
 } else {
     $loginUrl = $helper->getLoginUrl();
