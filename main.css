@@ -186,9 +186,11 @@ margin-top: 10px; /* outside Codepen is actually 30px */
 a.wide:hover, a.box:hover{
     -webkit-transform: scale(1.05);
 }
+
 a.wide:active, a.box:active{
     -webkit-transform: scale(1);
 }
+
 .lime{background:#61b812;}
 .orange{background:#e76022;}
 .blue{background:#8585FF;}
@@ -201,6 +203,7 @@ a.wide:active, a.box:active{
 	margin-right: 50px;
 	float:left;
 }
+
 .right{
 	float:right;
 	text-align:right;
