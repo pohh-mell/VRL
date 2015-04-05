@@ -33,7 +33,7 @@ include "header.php";
             }
         }
         alert("open");
-        xmlhttp.open("GET","katse.php?q="+str,true);
+        xmlhttp.open("POST","katse.php?q="+str,true);
         alert("send");
         xmlhttp.send(); alert("kõik done");
     }
