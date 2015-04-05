@@ -1,5 +1,5 @@
 <?php
-$q = intval($_GET['q']);
+$q = $_GET['q'];
 
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
@@ -12,7 +12,7 @@ if (!$con) {
 	echo"jõudsiphp "; 
 	echo $q+"    ";
 
-					$sql = "SELECT * FROM ehaaletusdata.abi where piirkond = $kaktus ";
+					$sql = "SELECT * FROM ehaaletusdata.abi where piirkond = $q ";
 				
 					$result = $conn->query($sql);
 					echo "<tr>
