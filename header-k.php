@@ -12,10 +12,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="kujundus.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <header>
@@ -41,8 +38,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <?php endif ?>
                     <div class ="row">
                         <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width: 10%"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width: 10%"></a>
+                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
+                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
                         </p>
                     </div>          
                 </div>
