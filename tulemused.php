@@ -8,8 +8,8 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<a href="#t01">Erakonnad</a>
-			<a href="#t02">Kandidaadid</a>
+			<a id="Erakonnad">Erakonnad</a>
+			<a id="Kandidaadid">Kandidaadid</a>
 			
 			</ol>
 			
@@ -99,3 +99,4 @@ include "header.php";
 		</div>
 	</div>
 <?php include "footer.php"; ?>
+ <script src="ajaxviited.js"</script>
