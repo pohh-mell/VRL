@@ -17,10 +17,9 @@ $.ajax({
                 url:"katse.php",
                 type:"POST",
                 success: function(){
-                        alert("success");
                 },      
                 error: function(){
-                        alert("error");
+                        alert("ei saa internetiga ühendust");
                         
                 }
                 
