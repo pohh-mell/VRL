@@ -14,6 +14,7 @@ function sendToServer(){
                 },
                 success: function(){
                         localStorage.clear();
+                        saadameformiminema();
                 },      
                 error: function(){
                         saveStatusLocally();
@@ -36,7 +37,9 @@ function saveStatusLocally() {
 }
 
 
-
+function saadameformiminema(){
+    document.getElementById("lisu").innerHTML= "Kandidaat edukalt lisatud";
+}
 
 function sendLocalStatus() {
   $.ajax({

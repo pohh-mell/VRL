@@ -8,7 +8,7 @@
 <script src = "offlinelisamine.js"></script>
        
     <div class="container">
-        <div class="middle">
+        <div class="middle" id="lisu">
             <!-- kandidaadi lisamine -->
             <form class="ff1" action="<?php $_PHP_SELF ?>" method="post">
                 <div class="block">
