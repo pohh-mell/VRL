@@ -33,7 +33,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     </div>
                     <!-- Sisselogimata --> 
                     <?php else: ?>
-                    <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
+                    <?php header('Location: http://e-haaletus.azurewebsites.net/logisisse.php');?>
                     <?php endif ?>        
                 </div>
             </div>
