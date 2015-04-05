@@ -1,5 +1,4 @@
-$('document').ready(function(){
-    function funktioon () {
+function funktioon () {
         $('#container2').highcharts({
             chart: {
                // plotBackgroundColor: null,
@@ -45,4 +44,3 @@ $('document').ready(function(){
             }]
         });
     }
-});
