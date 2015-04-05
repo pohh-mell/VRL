@@ -1,5 +1,4 @@
 <?php
-
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
 	$pwd = "461b6fa7";
@@ -8,14 +7,14 @@ $con = mysqli_connect($host, $user, $pwd, $db);
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }	
-	
 
+
+	
 					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
 					 erakonnad.Nimi AS Erakond, kandidaadid.haali AS Hääli
 						FROM kandidaadid  LEFT JOIN erakonnad 
 						ON kandidaadid.Erakonna_id=erakonnad.id
 						GROUP BY kandidaadid.id;";
-				
 					$result = $conn->query($sql);
 					echo "<tr>
 							<th>Nr</th>
