@@ -24,7 +24,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                 </div>
                 <div class ="kl col-xs-4 col-md-3 col-lg-3">
                     <?php if ($_SESSION['FBID']): ?>
-                    <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php">
+                    <!--<meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php">-->
+                    <?php header('Location: http://e-haaletus.azurewebsites.net/index.php');?>
                    
                     <!-- Sisselogimata --> 
                     <?php else: ?>
