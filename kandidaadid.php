@@ -45,7 +45,7 @@ if (window.XMLHttpRequest) {
   xmlhttp.send();
 }
 
-}
+
 </script>
 	<div class="container">
 		<div class="middle">
