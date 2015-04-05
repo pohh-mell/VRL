@@ -5,7 +5,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<script src = "offline.js"></script>
+<script src = "offlinelisamine.js"></script>
        
     <div class="container">
         <div class="middle">
