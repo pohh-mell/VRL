@@ -15,7 +15,7 @@ if (!$con) {
 						FROM kandidaadid  LEFT JOIN erakonnad 
 						ON kandidaadid.Erakonna_id=erakonnad.id
 						GROUP BY kandidaadid.id;";
-					$result = $conn->query($sql);
+					$result = $con->query($sql);
 					echo "<tr>
 							<th>Nr</th>
 							<th>Nimi</th>
@@ -46,7 +46,7 @@ if (!$con) {
     				echo "0 results";
 					}
 
-					mysql_close($conn);
+					mysql_close($con);
 
 
 				
