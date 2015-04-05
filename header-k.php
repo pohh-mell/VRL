@@ -23,11 +23,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                         <p>Kandideerimine</p>
                 </div>
                 <div class ="kl col-xs-4 col-md-3 col-lg-3">
+                    <!-- Sisselogituna --> 
                     <?php if ($_SESSION['FBID']): ?>
                     <div class ="row">
                     <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>
                     </div>
-                      
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="logout.php">Logi välja</a>
                     </div>
@@ -35,13 +35,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <!-- Sisselogimata --> 
                     <?php else: ?>
                     <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
-                    <?php endif ?>
-                    <div class ="row">
-                        <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
-                        </p>
-                    </div>          
+                    <?php endif ?>        
                 </div>
             </div>
         </div>

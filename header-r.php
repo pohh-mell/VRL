@@ -22,6 +22,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <h1><a href="http://e-haaletus.azurewebsites.net/">E-hääletus</a></h1>
                 </div>
                 <div class ="kl col-xs-4 col-md-3 col-lg-3">
+                    <!-- Sisselogituna --> 
                     <?php if ($_SESSION['FBID']): ?>
                     <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/index.php">
                    
@@ -30,18 +31,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="fbconfig.php"><i class="fa fa-facebook"></i> | Logi sisse</a>
                     </div>
-
-                    <div class ="row">
-                        <br>
-                    </div>
-
-                    <?php endif ?>
-                    <div class ="row">
-                        <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
-                        </p>
-                    </div>     
+                    <?php endif ?>  
                 </div>
             </div>
         </div>

@@ -26,6 +26,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <p><?php echo $title; ?></p>
                 </div>
                 <div class ="kl col-xs-4 col-md-3 col-lg-3">
+                    <!-- Sisselogituna --> 
                     <?php if ($_SESSION['FBID']): ?>
                     <div class ="row">
                         <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>
@@ -40,18 +41,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="fbconfig.php"><i class="fa fa-facebook"></i> | Logi sisse</a>
                     </div>
-
-                    <div class ="row">
-                        <br>
-                    </div>
-
-                    <?php endif ?>
-                    <div class ="row">
-                        <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
-                        </p>
-                    </div>     
                 </div>
             </div>
         </div>
