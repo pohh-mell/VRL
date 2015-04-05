@@ -13,8 +13,9 @@ function sendToServer(){
                 isikukood:document.getElementById("isikukood").value
                 },
                 success: function(){
-                        localStorage.clear();
-                        
+                    saadameformiminema();
+                    localStorage.clear();
+
                 },      
                 error: function(){
                         saveStatusLocally();
