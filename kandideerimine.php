@@ -1,12 +1,4 @@
-    
-<?php
-    include "header-k.php";
-?>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-<script src = "offlinelisamine.js"></script>
-       
+<?php include "header-k.php"; ?>  
     <div class="container">
         <div class="middle" id="lisu">
             <!-- kandidaadi lisamine -->
@@ -30,6 +22,7 @@
                 <button class="nupp" type="button" onclick="sendToServer()" id="submit-button">Lisa end kandidaadiks</button>
             </form>
         </div>
-    </div>
-        
+    </div>   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src = "offlinelisamine.js"></script>    
 <?php include "footer.php"; ?>
