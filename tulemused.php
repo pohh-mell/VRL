@@ -13,7 +13,7 @@ include "header.php";
 			
 			</ol>
 			
-			<table id="t01">
+			<table class="Era" id ="t01">
 				<?php
 					
 					require_once("andmed.php");
@@ -48,7 +48,7 @@ include "header.php";
 					mysql_close($conn);
 					?>
 			</table>
-			<table id="t02">
+			<table class ="kand" id="t01">
 			<?php
 			require_once("andmed.php");
 					$conn=database();
