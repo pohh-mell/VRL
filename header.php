@@ -34,17 +34,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <div class ="row">
                         <a href="logout.php" class="aad btn btn-facebook">Logi välja</a>
                     </div>
-                   
                     <!-- Sisselogimata --> 
                     <?php else: ?>
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="fbconfig.php"><i class="fa fa-facebook"></i> | Logi sisse</a>
                     </div>
-
-                    <div class ="row">
-                        <br>
-                    </div>
-
                     <?php endif ?>
                 </div>
             </div>
