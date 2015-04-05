@@ -27,21 +27,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <div class ="row">
                     <p><?php echo "Tere tulemast, " . $_SESSION['FULLNAME']; ?></p>
                     </div>
-                      
                     <div class ="row">
                         <a class="aad btn btn-facebook" href="logout.php">Logi välja</a>
                     </div>
-                     
                     <!-- Sisselogimata --> 
                     <?php else: ?>
                     <meta http-equiv="refresh" content="0; url=http://e-haaletus.azurewebsites.net/logisisse.php">
-                    <?php endif ?>
-                    <div class ="row">
-                        <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
-                        </p>
-                    </div>          
+                    <?php endif ?>        
                 </div>
             </div>
         </div>
