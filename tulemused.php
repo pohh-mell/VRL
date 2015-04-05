@@ -8,12 +8,12 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<button id="Erakonnad">Erakonnad</button>
-			<button id="Kandidaadid">Kandidaadid</button>
+			<a id="ErakonnadNupp">Erakonnad</a>
+			<a id="KandidaadidNupp">Kandidaadid</a>
 			
 			</ol>
 			
-			<table id="t01">
+			<table class="Era" id ="t01">
 				<?php
 					
 					require_once("andmed.php");
@@ -48,7 +48,7 @@ include "header.php";
 					mysql_close($conn);
 					?>
 			</table>
-			<table id="t02">
+			<table class ="kand" id="t01">
 			<?php
 			require_once("andmed.php");
 					$conn=database();

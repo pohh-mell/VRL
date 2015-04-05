@@ -3,27 +3,27 @@ $(document).ready(function() {
         window.addEventListener("popstate", function(e) {
             if (e.state == null) {
                 hideAll();
-            } else if (e.state.view == "Erakonnad") {
+            } else if (e.state.view == "Era") {
                 Erakonnad();
-            } else if (e.state.view == "Kandidaadid") {
+            } else if (e.state.view == "kand") {
                 Kandidaadid();
             }
         });
     }
 
     function hideAll() {
-        $("#Erakonnad").hide();
-        $("#Kandidaadid").hide();
+        $("#Era").hide();
+        $("#kand").hide();
     }
 
     function Erakonnad() {
-        $("#Erakonnad").show();
-        $("#Kandidaadid").hide();
+        $("#Era").show();
+        $("#kand").hide();
     }
 
     function Kandidaadid() {
-        $("#Erakonnad").hide();
-        $("#Kandidaadid").show();
+        $("#Era").hide();
+        $("#kand").show();
     }
 
 
@@ -42,15 +42,15 @@ $(document).ready(function() {
         }
     }
 
-    $("#Erakonnad").click(function(){
+    $("#ErakonnadNupp").click(function(){
         Erakonnad();
-        window.history.pushState({'view': 't01'}, "Erakonnad", "/tulemused.php#Erakonnad");
+        window.history.pushState({'view': 'Era'}, "Erakonnad", "/tulemused.php#Erakonnad");
         addingListener();
         return false;
     }); 
-    $("#Kandidaadid").click(function(){
+    $("#KandidaadidNupp").click(function(){
         Kandidaadid();
-        window.history.pushState({'view': 't02'}, "Kandidaadid", "/tulemused.php#Kandidaadid");
+        window.history.pushState({'view': 'kand'}, "Kandidaadid", "/tulemused.php#Kandidaadid");
         addingListener();
         return false;
     });
