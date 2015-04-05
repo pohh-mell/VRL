@@ -27,7 +27,7 @@
                 <label>Isikukood:</label>
                 <input type="text" id="isikukood" name="isikukood">
                 </div>
-                <button class="nupp" type="submit" onclick="sendToServer()" id="submit-button">Lisa end kandidaadiks</button>
+                <button class="nupp" type="button" onclick="sendToServer()" id="submit-button">Lisa end kandidaadiks</button>
             </form>
         </div>
     </div>
