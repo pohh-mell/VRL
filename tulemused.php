@@ -8,22 +8,8 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<li><select class="Valikud">
-	   		    <option value="Kogu Eesti">Kogu Eesti</option>
-			    <option value="Tartumaa">Tartumaa</option>
-			    <option value="Võrumaa">Võrumaa</option>
-			  	<option value="Harjumaa">Harjumaa</option>
-			</select></li>
-			
-			<li><select class="Valikud">
-	   		    <option value="Kõik Erakonnad">Kõik Erakonnad</option>
-			    <option value="JAVA">JAVA</option>
-			    <option value="MUNA">MUNA</option>
-			</select></li>
-			
-			<li><form method="get" action="">
-				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi" />
-			</form></li>
+			<a href="#C4">Erakonnad</a>
+			<a href="#C4">Kandidaadid</a>
 			
 			</ol>
 			
