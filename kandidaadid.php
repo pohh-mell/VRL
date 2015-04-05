@@ -24,7 +24,8 @@ include "header.php";
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         alert("get ready");
-        alert(xmlhttp.readyState);
+        var asd = xmlhttp.readyState;
+        console.log(var);
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             	alert("document.getelement");
