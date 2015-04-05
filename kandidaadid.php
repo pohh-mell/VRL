@@ -8,27 +8,12 @@ include "header.php";
 <script type="text/javascript">
 	window.addEventListener("load", function(){
         
-	setInterval(getTable1,5000);}
+	setInterval(getTable,5000);}
 	, true);
 
 
+
 function getTable(){
-$.ajax({
-                url:"katse.php",
-                type:"POST",
-                success: function(){
-                },      
-                error: function(){
-                        alert("ei saa internetiga ühendust");
-                        
-                }
-                
-        });
-
-
-}
-
-function getTable1(){
 
 if (window.XMLHttpRequest) {
     // code for IE7+, Firefox, Chrome, Opera, Safari
