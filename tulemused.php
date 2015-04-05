@@ -48,17 +48,10 @@ include "header.php";
 					mysql_close($conn);
 					?>
 			</table>
-			<?php
 			<table id="t02">
-$host = "eu-cdbr-azure-north-c.cloudapp.net";
-	$user = "bb8f29df6ad035";
-	$pwd = "461b6fa7";
-	$db = "ehaaletusdata";
-$con = mysqli_connect($host, $user, $pwd, $db);
-if (!$con) {
-    die('Could not connect: ' . mysqli_error($con));
-}	
-
+			<?php
+			require_once("andmed.php");
+					$conn=database();
 
 	
 					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
