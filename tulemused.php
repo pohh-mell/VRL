@@ -8,8 +8,8 @@ include "header.php";
 		
 			<ol class="singleline">			
 		
-			<button id="ErakonnadNupp">Erakonnad</button>
-			<button id="KandidaadidNupp">Kandidaadid</button>
+			<a id="ErakonnadNupp">Erakonnad</a>
+			<a id="KandidaadidNupp">Kandidaadid</a>
 			
 			</ol>
 			
