@@ -3,50 +3,13 @@ $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
-<script>
-	
 
-	function uuenda(str) {
-	alert("jõudsin");
-    if (str == "") {
-        document.getElementById("t01").innerHTML = "";
-        alert("tühi");
-        return;
-    } else { 
-    	alert("else");
-        if (window.XMLHttpRequest) {
-        	alert("piisav browser");
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
-        } else {
-        	alert("odav browser");
-            // code for IE6, IE5
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        alert("get ready");
-        
-        console.log(xmlhttp.readyState);
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            	alert("document.getelement");
-                document.getElementById("t01").innerHTML = xmlhttp.responseText;
-            }
-        }
-        alert("open");
-        xmlhttp.open("POST","katse.php?q="+str,true);
-        alert("send");
-        xmlhttp.send(); alert("kõik done");
-    }
-}	
-
-
-</script>
 	<div class="container">
 		<div class="middle">
 		
 			<ol class="singleline">			
 		
-			<li><select class="Valikud1" onchange="uuenda(this.value)" >
+			<li><select class="Valikud1"  >
 				<option value="">------</option>
 	   		    <option value="1">Kogu Eesti</option>
 			    <option value="asd">asd</option>
@@ -74,12 +37,11 @@ include "header.php";
 			<li><form method="get" action="">
 				<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 			</form></li>
-			<button class="nupp" type="submit" onclick="uuenda()" id="submit-button">Otsi</button>
 			</ol>
 			
 			<table id="t01">
 				
-			
+			<?php include "katse.php"; ?>
 
 			</table>
 		</div>

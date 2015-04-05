@@ -1,5 +1,4 @@
 <?php
-$q = $_GET['q'];
 
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 	$user = "bb8f29df6ad035";
@@ -9,10 +8,9 @@ $con = mysqli_connect($host, $user, $pwd, $db);
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }	
-	echo"jõudsiphp "; 
-	echo $q+"    ";
+	
 
-					$sql = "SELECT * FROM ehaaletusdata.abi where piirkond = $q ";
+					$sql = "SELECT * FROM ehaaletusdata.abi ;";
 				
 					$result = $conn->query($sql);
 					echo "<tr>
