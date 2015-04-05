@@ -7,7 +7,8 @@ include "header.php";
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript">
 	window.addEventListener("load", function(){
-        getTable();}
+        
+	setInterval(getTable,5000);}
 	, true);
 
 
@@ -26,7 +27,6 @@ $.ajax({
         });
 
 
-	setInterval(getTable,5000);
 }
 </script>
 	<div class="container">
