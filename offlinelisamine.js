@@ -14,7 +14,7 @@ function sendToServer(){
                 },
                 success: function(){
                         localStorage.clear();
-                        saadameformiminema();
+                        
                 },      
                 error: function(){
                         saveStatusLocally();
@@ -51,7 +51,7 @@ function sendLocalStatus() {
                 isikukood:localStorage.getItem("isikukood")
                 },
         success: function(){
-                alert("eelmine kandidaat lisatud");
+                saadameformiminema();
                 localStorage.clear();          
         },
         error: function(){
