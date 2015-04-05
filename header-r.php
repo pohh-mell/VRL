@@ -12,7 +12,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="kujundus.css">
 </head>
 <body>
     <header>
@@ -38,8 +38,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                     <?php endif ?>
                     <div class ="row">
                         <p>
-                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" class="keel"></a>
-                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" class="keel"></a>
+                            <a href=""><img src="picid/ENG.png" id="ENG" alt="eng" style="width: 10%"></a>
+                            <a href=""><img src="picid/EE.png" id="EE" alt="ee" style="width: 10%"></a>
                         </p>
                     </div>     
                 </div>
