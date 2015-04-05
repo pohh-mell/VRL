@@ -19,7 +19,7 @@ function sendToServer(){
                 },      
                 error: function(){
                         saveStatusLocally();
-                        alert("Puudub internetiühendus, lisame kandidaadi kui ühendus taastatakse");
+                        alert("Puudub internetiühendus, lisame kandidaadi, kui ühendus taastatakse");
                         setTimeout(sendToServer2(),5000);
                         
                 }
@@ -44,7 +44,7 @@ function sendToServer2(){
                 },      
                 error: function(){
                         
-                        setTimeout(sendToServer(),5000);
+                        setTimeout(sendToServer2(),5000);
                         
                 }
                 
