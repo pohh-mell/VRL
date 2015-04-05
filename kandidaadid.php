@@ -8,7 +8,7 @@ include "header.php";
 <script type="text/javascript">
 	window.addEventListener("load", function(){
         
-	setInterval(getTable,5000);}
+	setInterval(getTable1,5000);}
 	, true);
 
 
@@ -25,6 +25,25 @@ $.ajax({
                 
         });
 
+
+}
+
+function getTable1(){
+
+if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","katse.php",true);
+  xmlhttp.send();
+}
 
 }
 </script>
@@ -65,8 +84,8 @@ $.ajax({
 			
 			<table id="t01">
 				
-			<?php include "katse.php"; ?>
-
+			<br>
+<div id="txtHint"><b>Person info will be listed here.</b></div>
 			</table>
 		</div>
 	</div>
