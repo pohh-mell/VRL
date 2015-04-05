@@ -12,7 +12,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
-    <link rel="stylesheet" type="text/css" href="kujundus.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <header>
