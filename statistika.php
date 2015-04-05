@@ -3,14 +3,6 @@ $title = "Statistika";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
-<style>
-.diagramm{
-	min-width: 310px; 
-	height: 400px; 
-	max-width: 600px; 
-	margin: 0 auto;
-}
-</style>
 
 	<div class="container">
 		<div class="middle">
