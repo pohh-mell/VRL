@@ -4,6 +4,31 @@ $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+	window.addEventListener("load", function(){
+        getTable();
+	, true);
+
+
+function getTable(){
+$.ajax({
+                url:"katse.php",
+                type:"POST",
+                success: function(){
+                        alert("success");
+                },      
+                error: function(){
+                        alert("error");
+                        
+                }
+                
+        });
+
+
+	setInterval(getTable,5000);
+}
+</script>
 	<div class="container">
 		<div class="middle">
 		
