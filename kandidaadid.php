@@ -23,7 +23,7 @@ if (window.XMLHttpRequest) {
   }
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseXML;
     }
   }
   xmlhttp.open("GET","katse.php",true);
