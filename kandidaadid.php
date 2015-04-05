@@ -7,7 +7,7 @@ include "header.php";
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript">
 	window.addEventListener("load", function(){
-        
+       getTable;
 	setInterval(getTable,5000);}
 	, true);
 
@@ -69,8 +69,7 @@ if (window.XMLHttpRequest) {
 			
 			<table id="t01">
 				
-			<br>
-<div id="txtHint"><b>Person info will be listed here.</b></div>
+			
 			</table>
 		</div>
 	</div>
