@@ -8,7 +8,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <title>E-hääletus</title>
     <link rel="icon" href="picid/lipp.jpg" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="external.css">
     <link rel="stylesheet" type="text/css" href="main.css">
