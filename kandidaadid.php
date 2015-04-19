@@ -8,10 +8,27 @@ include "header.php";
 <script type="text/javascript">
 	function hääletafunc() {
 		alert(document.getElementById("hääleta").value);
-
-
+		sendTable();
 	}
 
+
+	function sendTable(){
+        $.ajax({
+                url:"ajax_send.php",
+                type:"POST",
+                data:{nimi:'907751352620245',
+                nr:document.getElementById("hääleta").value
+                },
+                success: function(){
+                	alert("Hääl on antud!");
+                },      
+                error: function(){
+                        alert("Kandidaadi lisamine ebaõnnestus");
+                }
+                
+        });
+}
+}
 </script>
 	<div class="container">
 		<div class="middle">		
