@@ -6,14 +6,15 @@ session_start();
 ?>
 <script type="text/javascript">
 	function hääletafunc() {
-		alert('<%=Session["FBID"] %>');
+		var idekas = '<%= Session["FBID"] ?? "" %>';
+        alert(idekas);
 		sendTable();
 	}
 
 
 	function sendTable(){
         $.ajax({
-        		var idekas = '<%=Session["FBID"] %>';
+        		var idekas = '<%= Session["FBID"] ?? "" %>';
         		alert(idekas);
                 url:"ajax_send.php",
                 type:"POST",
