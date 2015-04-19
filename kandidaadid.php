@@ -28,7 +28,7 @@ include "header.php";
                 
         });
 }
-}
+
 </script>
 	<div class="container">
 		<div class="middle">		
