@@ -38,7 +38,7 @@ if (!$con) {
 							<td>$Piirkond</td>
 							<td>$Erakond</td>
 							<td>$Hääli</td>
-							<td>Hääleta</td>
+							<td><button onclick="myFunction()">Vajuta mind<button></td>
 							</tr>";
 						}
 					}
