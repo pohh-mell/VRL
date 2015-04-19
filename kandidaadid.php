@@ -3,6 +3,16 @@ $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
+
+
+<script type="text/javascript">
+	function hääletafunc() {
+		alert(document.getElementById("hääleta"));
+
+
+	}
+
+</script>
 	<div class="container">
 		<div class="middle">		
 			<ol class="singleline">				
@@ -37,7 +47,7 @@ include "header.php";
 			<ol class="singleline">
 				<li><form method="get">
 					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi number">
-					<button id="hääleta-nupp" onclick="hääletafunc">Hääleta</button>
+					<button id="hääleta-nupp" onclick="hääletafunc()">Hääleta</button>
 				</form></li>
 			</ol>
 			<?php endif ?>  
