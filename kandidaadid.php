@@ -16,7 +16,7 @@ include "header.php";
         $.ajax({
                 url:"ajax_send.php",
                 type:"POST",
-                data:{nimi:'907751352620245',
+                data:{nimi:$_SESSION['FBID'],
                 nr:document.getElementById("hääleta").value
                 },
                 success: function(){
