@@ -7,14 +7,14 @@ session_start();
 <input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
 <script type="text/javascript">
 	function hääletafunc() {
-		var idekas = document.getElementById('fbide');
+		var idekas = document.getElementById('fbide').value;
         alert(idekas);
 		sendTable();
 	}
 
 
 	function sendTable(){
-		var idekas = document.getElementById('fbide');
+		var idekas = document.getElementById('fbide').value;
         		alert(idekas);
         $.ajax({
         		
