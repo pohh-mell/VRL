@@ -63,7 +63,7 @@ include "header.php";
 			<?php if ($_SESSION['FBID']): ?>		
 			<ol class="singleline">
 				<li><form method="get">
-					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi number">
+					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
 					<button id="hääleta-nupp" onclick="hääletafunc()">Hääleta</button>
 				</form></li>
 			</ol>
