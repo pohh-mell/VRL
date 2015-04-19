@@ -4,6 +4,7 @@ $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 session_start(); 
 ?>
+<input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
 <script type="text/javascript">
 	function hääletafunc() {
 		var idekas = document.getElementById('fbide');
@@ -35,7 +36,7 @@ session_start();
 </script>
 	<div class="container">
 		<div class="middle">		
-			<input type="hidden" name="fbide" id="fbide" value="<?php echo $_SESSION['FBID'];?>" />
+			
 			<ol class="singleline">				
 				<li><select class="Valikud"  >
 					<option value="">------</option>
