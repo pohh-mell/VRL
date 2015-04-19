@@ -13,9 +13,10 @@ session_start();
 
 
 	function sendTable(){
-        $.ajax({
-        		var idekas = '<%= Session["FBID"] ?? "" %>';
+		var idekas = '<%= Session["FBID"] ?? "" %>';
         		alert(idekas);
+        $.ajax({
+        		
                 url:"ajax_send.php",
                 type:"POST",
                 data:{nimi: idekas,
