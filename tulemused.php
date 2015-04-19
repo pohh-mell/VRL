@@ -98,6 +98,6 @@ include "header.php";
 				</table>
 		</div>
 	</div>
+	<script src="jquery-1.11.2.min.js"></script>
+ 	<script src="ajaxviited.js" defer </script>
 <?php include "footer.php"; ?>
- <script src="jquery-1.11.2.min.js"></script>
- <script src="ajaxviited.js" defer </script>
