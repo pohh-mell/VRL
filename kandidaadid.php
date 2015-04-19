@@ -72,7 +72,12 @@ session_start();
 					<button id="hääleta-nupp" onclick="hääletafunc()">Hääleta</button>
 				</form></li>
 			</ol>
+			<?php else: ?>
+			<ol class="singleline">
+				<p> Kandidaadile hääle andmiseks logige sisse. </p>
+			</ol>
 			<?php endif ?>  
+
 			<table id="t01"></table>
 		</div>
 	</div>
