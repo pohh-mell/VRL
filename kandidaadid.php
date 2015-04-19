@@ -4,7 +4,6 @@ $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 session_start(); 
 ?>
-<a><?php echo  $_SESSION['FBID']; ?></a>
 <script type="text/javascript">
 	function hääletafunc() {
 		alert("töötab");
