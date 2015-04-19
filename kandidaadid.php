@@ -5,32 +5,6 @@ include "header.php";
 session_start(); 
 ?>
 <input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
-<script type="text/javascript">
-	function hääletafunc() {
-		sendTable();
-	}
-
-
-	function sendTable(){
-		var idekas = document.getElementById('fbide').value;
-        $.ajax({
-        		
-                url:"ajax_send.php",
-                type:"POST",
-                data:{nimi: idekas,
-                nr:document.getElementById("hääleta").value
-                },
-                success: function(){
-                	alert("Hääl on antud!");
-                },      
-                error: function(){
-                        alert("Kandidaadi lisamine ebaõnnestus");
-                }
-                
-        });
-}
-
-</script>
 	<div class="container">
 		<div class="middle">		
 			
@@ -82,5 +56,6 @@ session_start();
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 <script src="kandidaadid.js" type="text/javascript"></script>
+<script src="haal.js" type="text/javascript"></script>
 <?php include "footer.php"; ?>
 
