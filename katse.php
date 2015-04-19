@@ -12,11 +12,11 @@ if (!$con) {
 	
 					$sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
 					 erakonnad.Nimi AS Erakond, count(users.haal) as Hääli
-						FROM kandidaadid  
+						FROM kandidaadid
+                        left join erakonnad on kandidaadid.Erakonna_id=erakonnad.id
                         left join users on users.haal=kandidaadid.id
-						right JOIN erakonnad 
-						ON kandidaadid.Erakonna_id=erakonnad.id
-						group by Nimi;";
+						group by Nimi
+                        order by Number;";
 					$result = $con->query($sql);
 					echo "<tr>
 							<th>Nr</th>

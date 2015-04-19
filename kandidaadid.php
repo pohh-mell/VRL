@@ -7,14 +7,15 @@ session_start();
 <a><?php echo  $_SESSION['FBID']; ?></a>
 <script type="text/javascript">
 	function hääletafunc() {
-		alert($_SESSION['FBID']);
+		alert("töötab");
 		sendTable();
 	}
 
 
 	function sendTable(){
         $.ajax({
-        		var idekas = $_SESSION['FBID'];
+        		var idekas = <?php echo json_encode($_SESSION['FBID']); ?>;
+        		alert(idekas);
                 url:"ajax_send.php",
                 type:"POST",
                 data:{nimi: idekas,
