@@ -14,7 +14,7 @@ session_start();
 
 	function sendTable(){
         $.ajax({
-        		var idekas = <?php echo json_encode($_SESSION['FBID']); ?>;
+        		var idekas = '<%=Session["FBID"] %>';
         		alert(idekas);
                 url:"ajax_send.php",
                 type:"POST",
