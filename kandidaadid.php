@@ -2,8 +2,8 @@
 $title = "Kandidaadid";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
+session_start(); 
 ?>
-
 
 <script type="text/javascript">
 	function hääletafunc() {
