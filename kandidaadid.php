@@ -7,7 +7,7 @@ include "header.php";
 
 <script type="text/javascript">
 	function hääletafunc() {
-		alert(document.getElementById("hääleta").value);
+		alert($_SESSION['FBID']);
 		sendTable();
 	}
 
