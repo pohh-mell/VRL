@@ -12,7 +12,8 @@ include "header.php";
 			<a id="KandidaadidNupp">Kandidaadid</a>
 			
 			</ol>
-			
+			<div id="Era" style="display: none;">
+                       
 			<table class="Era" id ="t01">
 				<tr>
 							<th>Erakond</th>
@@ -36,6 +37,8 @@ include "header.php";
 							<td>3</td>
 							</tr>
 			</table>
+		</div>
+		<div id="kand" style="display: none;">
 			<table class ="kand" id="t01">
 					<tr>
 							<th>Nr</th>
@@ -62,6 +65,8 @@ include "header.php";
 						
 				</table>
 		</div>
+		</div>
+
 	</div>
 	<script src="jquery-1.11.2.min.js"></script>
  	<script src="ajaxviited.js" defer </script>
