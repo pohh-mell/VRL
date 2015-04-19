@@ -6,7 +6,7 @@ session_start();
 ?>
 <script type="text/javascript">
 	function hääletafunc() {
-		alert("töötab");
+		alert('<%=Session["FBID"] %>');
 		sendTable();
 	}
 
