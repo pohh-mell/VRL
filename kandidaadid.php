@@ -4,7 +4,7 @@ $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 session_start(); 
 ?>
-
+<a> $_SESSION['FBID'] </a>
 <script type="text/javascript">
 	function hääletafunc() {
 		alert($_SESSION['FBID']);
@@ -14,9 +14,10 @@ session_start();
 
 	function sendTable(){
         $.ajax({
+        		var idekas = $_SESSION['FBID'];
                 url:"ajax_send.php",
                 type:"POST",
-                data:{nimi:$_SESSION['FBID'],
+                data:{nimi: idekas,
                 nr:document.getElementById("hääleta").value
                 },
                 success: function(){
