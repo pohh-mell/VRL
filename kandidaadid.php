@@ -33,6 +33,12 @@ include "header.php";
 					<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
 			</ol>			
+			<ol class="singleline">
+				<li><form method="get">
+					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi number">
+					<button id="hääleta-nupp" onclick="hääletafunc">Hääleta</button>
+				</form></li>
+			</ol>
 			<table id="t01"></table>
 		</div>
 	</div>

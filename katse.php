@@ -38,7 +38,6 @@ if (!$con) {
 							<td>$Piirkond</td>
 							<td>$Erakond</td>
 							<td>$Hääli</td>
-							<td>Hääleta</td>
 							</tr>";
 						}
 					}
