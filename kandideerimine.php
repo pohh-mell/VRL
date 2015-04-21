@@ -1,6 +1,7 @@
 <?php
 session_start(); 
 ?>
+<?php echo  $_SESSION['FULLNAME'];?>
 
 <?php include "header-k.php"; ?>  
     <div class="container">
