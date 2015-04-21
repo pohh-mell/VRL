@@ -17,7 +17,7 @@ session_start();
                 </div>
                 <div class="block">
                 <label>Erakond:</label>
-                <select class="Valikud" id "erakond">
+                <select class="Valikud" id "erakond" name = "erakonnad">
                     <?php
                     require_once("andmed.php");
                     $conn=database();

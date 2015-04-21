@@ -4,8 +4,7 @@ window.addEventListener("load", function(){
 }, true);
 
 function sendToServer(){
-                var e = document.forms['ff1'].elements['erakond'];
-                var strUser = e.options[e.selectedIndex].value;
+                var strUser = oForm.elements["erakonnad"].selectedIndex;
                 alert(strUser);
         $.ajax({
                 url:"ajax_request.php",
