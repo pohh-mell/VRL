@@ -4,12 +4,13 @@ window.addEventListener("load", function(){
 }, true);
 
 function sendToServer(){
-        $.ajax({
-                url:"ajax_request.php",
-                type:"POST",
                 var e = document.getElementById("erakond");
                 var strUser = e.options[e.selectedIndex].value;
                 alert(strUser);
+        $.ajax({
+                url:"ajax_request.php",
+                type:"POST",
+
                 data:{nimi:document.getElementById("nimi").value,
                 piirkond:document.getElementById("piirkond").value,
                 erakond:strUser,
