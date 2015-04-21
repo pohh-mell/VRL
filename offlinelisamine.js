@@ -57,6 +57,7 @@ function saveStatusLocally() {
     var piirkond = document.getElementById("piirkond").value;
     var erakond = document.getElementById("erakond").value;
     var isikukood = document.getElementById("isikukood").value;
+    alert(erakond);
     window.localStorage.setItem("nimi", nimi);
     window.localStorage.setItem("piirkond", piirkond);
     window.localStorage.setItem("erakond", erakond);

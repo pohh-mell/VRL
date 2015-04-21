@@ -1,7 +1,6 @@
 <?php
 session_start(); 
 ?>
-<?php echo  $_SESSION['FULLNAME'];?>
 
 <?php include "header-k.php"; ?>  
     <div class="container">
@@ -18,7 +17,7 @@ session_start();
                 </div>
                 <div class="block">
                 <label>Erakond:</label>
-                <select class="Valikud">
+                <select class="Valikud" id "erakond">
                     <?php
                     require_once("andmed.php");
                     $conn=database();
