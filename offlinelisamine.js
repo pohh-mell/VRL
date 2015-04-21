@@ -7,9 +7,12 @@ function sendToServer(){
         $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
+                var e = document.getElementById("erakond");
+                var strUser = e.options[e.selectedIndex].value;
+                alert(strUser);
                 data:{nimi:document.getElementById("nimi").value,
                 piirkond:document.getElementById("piirkond").value,
-                erakond:document.getElementById("erakond").value,
+                erakond:strUser,
                 isikukood:document.getElementById("isikukood").value
                 },
                 success: function(){
