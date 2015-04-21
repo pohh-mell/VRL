@@ -27,7 +27,7 @@ session_start();
                         while($rows = $resultSet->fetch_assoc()){
                             $errakond = $rows['nimi'];
                             $eraid = $rows['id'];
-;                            echo"<option value=\"$eraid\">$errakond</option>";
+                            echo"<option value=\"$eraid\">$errakond</option>";
                         }
                     }
                     $conn->close();
