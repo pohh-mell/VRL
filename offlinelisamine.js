@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
 }, true);
 
 function sendToServer(){
-                var e = document.getElementById("erakond");
+                var e = document.forms['ff1'].elements['erakond'];
                 var strUser = e.options[e.selectedIndex].value;
                 alert(strUser);
         $.ajax({
