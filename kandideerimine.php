@@ -18,7 +18,21 @@ session_start();
                 </div>
                 <div class="block">
                 <label>Erakond:</label>
-                <input type="text" id="erakond" name="erakond">
+                <select class="Valikud">
+                    <?php
+                    require_once("andmed.php");
+                    $conn=database();
+                    //Query the database
+                    $resultSet = $conn->query("SELECT nimi FROM erakonnad group by nimi;");
+                    if($resultSet->num_rows != 0){
+                        while($rows = $resultSet->fetch_assoc()){
+                            $errakond = $rows['nimi'];
+                            echo"<option value=\"$errakond\">$errakond</option>";
+                        }
+                    }
+                    $conn->close();
+                    ?>
+                </select>
                 </div>
                 <div class="block">
                 <label>Isikukood:</label>
