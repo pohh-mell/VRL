@@ -45,7 +45,6 @@ session_start();
 				</form></li>
 			</ol>
 			<?php else: ?>
-			<li></li>
 			<ol class="singleline">
 				<li>
 					<p> Kandidaadile hääle andmiseks logige sisse. </p>
