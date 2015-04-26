@@ -34,12 +34,14 @@ function sendToServer(){
 
 
 function sendToServer2(){
+                var e = document.getElementById("erakond");
+                var strUser = e.options[e.selectedIndex].value;
         $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
                 data:{nimi:document.getElementById("nimi").value,
                 piirkond:document.getElementById("piirkond").value,
-                erakond:document.getElementById("erakond").value,
+                erakond:document.strUser,
                 isikukood:document.getElementById("isikukood").value
                 },
                 success: function(){
@@ -57,10 +59,12 @@ function sendToServer2(){
 }
 
 
-function saveStatusLocally() {       
+function saveStatusLocally() {   
+                var e = document.getElementById("erakond");
+                var strUser = e.options[e.selectedIndex].value;   
     var nimi = document.getElementById("nimi").value;
     var piirkond = document.getElementById("piirkond").value;
-    var erakond = document.getElementById("erakond").value;
+    var erakond = strUser;
     var isikukood = document.getElementById("isikukood").value;
     alert(erakond);
     window.localStorage.setItem("nimi", nimi);

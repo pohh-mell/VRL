@@ -9,7 +9,7 @@ session_start();
             <form class="ff1" action="<?php $_PHP_SELF ?>" method="post">
                 <div class="block">
                 <label>Nimi:</label>
-                <input type="text" id="nimi" name="nimi" value = "<?php echo  $_SESSION['FULLNAME'];?>" readonly="readonly";>
+                <input type="text" id="nimi" name="nimi" value = "<?php echo  $_SESSION['FULLNAME'];?>" readonly="readonly">
                 </div>
                 <div class="block">
                 <label>Piirkond:</label>
