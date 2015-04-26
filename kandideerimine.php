@@ -25,9 +25,9 @@ session_start();
                     $resultSet = $conn->query("SELECT nimi, id FROM erakonnad group by nimi;");
                     if($resultSet->num_rows != 0){
                         while($rows = $resultSet->fetch_assoc()){
-                            $errakond = $rows['nimi'];
+                            $erakond = $rows['nimi'];
                             $eraid = $rows['id'];
-                            echo"<option value=\"$eraid\">$eraid</option>";
+                            echo"<option value=\"$eraid\">$erakond</option>";
                         }
                     }
                     $conn->close();
