@@ -200,6 +200,26 @@ table#t01 th	{
     background-color: #DEDEFF;
 }
 
+table#t02, th, td {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#t02 {
+	width:100%;
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}
+
+table#t02 tr {
+    background-color: #eee;
+}
+
+table#t02 th	{
+    background-color: #DEDEFF;
+}
+
+
 .Valikud{
 	height: 25px
 }
