@@ -14,7 +14,7 @@ function sendToServer(){
 
                 data:{nimi:document.getElementById("nimi").value,
                 piirkond:document.getElementById("piirkond").value,
-                erakond:strOUser,
+                erakond:strUser,
                 isikukood:document.getElementById("isikukood").value
                 },
                 success: function(){
