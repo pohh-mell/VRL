@@ -39,7 +39,7 @@ include "header.php";
 			</table>
 		</div>
 		<div id="kand" style="display: none;">
-			<table class ="kand" id="t01">
+			<table class ="kand" id="t02">
 					<tr>
 							<th>Nr</th>
 							<th>Nimi</th>
@@ -69,5 +69,5 @@ include "header.php";
 
 	</div>
 	<script src="jquery-1.11.2.min.js"></script>
- 	<script src="ajaxviited.js" defer </script>
+ 	<script src="ajaxviited.js" defer> </script>
 <?php include "footer.php"; ?>
