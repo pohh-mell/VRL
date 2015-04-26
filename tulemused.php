@@ -5,12 +5,11 @@ include "header.php";
 ?>
 	<div class="container">
 		<div class="middle">
-		
 			<ol class="singleline">			
-		
-			<a id="ErakonnadNupp">Erakonnad</a>
-			<a id="KandidaadidNupp">Kandidaadid</a>
-			
+				<li>
+					<a id="ErakonnadNupp">Erakonnad</a>
+					<a id="KandidaadidNupp">Kandidaadid</a>
+				</li>
 			</ol>
 			<div id="Era" style="display: none;">
                        
