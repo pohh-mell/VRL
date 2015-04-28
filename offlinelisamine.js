@@ -5,9 +5,9 @@ window.addEventListener("load", function(){
 
 function sendToServer(){
                 var e = document.getElementById("erakond");
-                alert(e);
+                
                 var strUser = e.options[e.selectedIndex].value;
-                alert(strUser);
+                
         $.ajax({
                 url:"ajax_request.php",
                 type:"POST",
