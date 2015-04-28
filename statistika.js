@@ -1,7 +1,9 @@
 
-$(funktioon () {
+//function funktioon() {
+
+$(function () {
     var chart;
-    $(document).ready(funktioon() {
+    $(document).ready(function() {
         chart = new Highcharts.Chart({  
         
             chart: {    
