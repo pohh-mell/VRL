@@ -1,9 +1,12 @@
 function funktioon () {
-    $('#container2').highcharts({
+    var chart = new Highcharts.Chart({
         chart: {
            // plotBackgroundColor: null,
             plotBorderWidth: null,
-            plotShadow: false
+            plotShadow: false,
+            type: 'line',
+            renderTo: 'container2'
+
         },
         title: {
             text: 'Browser market shares at a specific website, 2014'
