@@ -6,12 +6,13 @@ include "header.php";
 	<div class="container">
 		<div class="middle">
 			<ol class="singleline">
-			<li><select onchange="funktioon();"> <!-- onchange="funktioon();" -->
+			<li><select> <!-- onchange="funktioon();" -->
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Tartumaa">Partei</option>
 			</select></li>
 			</ol>
 			<div class="diagramm" id="container2">
+				<script>funktioon();</script>
 			</div>
 		</div>	
 </div>

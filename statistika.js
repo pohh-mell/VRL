@@ -1,4 +1,4 @@
-function funktioon () {
+function funktioon() {
     var chart = new Highcharts.Chart({
         chart: {
            // plotBackgroundColor: null,
@@ -9,7 +9,7 @@ function funktioon () {
 
         },
         title: {
-            text: 'Browser market shares at a specific website, 2014'
+            text: 'Statistika, 2015'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
