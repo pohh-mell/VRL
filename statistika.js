@@ -1,52 +1,54 @@
-$(function () {
+
+$(funktioon () {
     var chart;
-    $(document).ready(function() {
+    $(document).ready(funktioon() {
         chart = new Highcharts.Chart({  
         
-        chart: {    
-           // plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'line',
-            renderTo: 'container2'
+            chart: {    
+               // plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'line',
+                renderTo: 'container2'
 
-        },
-        title: {
-            text: 'Statistika, 2015'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+            },
+            title: {
+                text: 'Statistika, 2015'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
                     }
                 }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Browser share',
-            data: [
-                ['Karl on muna',   159.0],
-                ['IE',       26.8],
-                {
-                    name: 'Chrome',
-                
-                    y: 12.8,
-                    sliced: true,
-                    selected: true
-                },
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                ['Others',   0.7]
-            ]
-        }]
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Karl on muna',   159.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                    
+                        y: 12.8,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
     });
-}});
+});
