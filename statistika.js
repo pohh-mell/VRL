@@ -1,6 +1,9 @@
-
-    var chart = new Highcharts.Chart({
-        chart: {
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({  
+        
+        chart: {    
            // plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
@@ -46,3 +49,4 @@
             ]
         }]
     });
+}});
