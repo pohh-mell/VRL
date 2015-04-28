@@ -3,7 +3,9 @@ $title = "Statistika";
 $link = "http://e-haaletus.azurewebsites.net/";
 include "header.php";
 ?>
-
+<script src="highcharts.js" type="text/javascript"></script>
+<script src="exporting.js" type ="text/javascript"></script>
+<script src="statistika.js" type="text/javascript"></script>
 	<div class="container">
 		<div class="middle">
 			<ol class="singleline">
@@ -17,7 +19,5 @@ include "header.php";
 		</div>	
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
-<script src="highcharts.js" type="text/javascript"></script>
-<script src="exporting.js" type ="text/javascript"></script>
-<script src="statistika.js" type="text/javascript"></script>
+
 <?php include "footer.php"; ?>
