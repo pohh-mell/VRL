@@ -12,7 +12,6 @@ include "header.php";
 			</select></li>
 			</ol>
 			<div class="diagramm" id="container2">
-				<script>funktioon();</script>
 			</div>
 		</div>	
 </div>

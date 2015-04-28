@@ -1,4 +1,4 @@
-function funktioon() {
+
     var chart = new Highcharts.Chart({
         chart: {
            // plotBackgroundColor: null,
@@ -46,4 +46,3 @@ function funktioon() {
             ]
         }]
     });
-}
