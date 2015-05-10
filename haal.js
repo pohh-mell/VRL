@@ -12,12 +12,7 @@ function hääletafunc() {
                 data:{nimi: idekas,
                 nr:document.getElementById("hääleta").value
                 },
-                success: function(){
-                	alert("Hääl on antud!");
-                },      
-                error: function(){
-                        alert("Kandidaadi lisamine ebaõnnestus");
-                }
+               
                 
         });
 }
