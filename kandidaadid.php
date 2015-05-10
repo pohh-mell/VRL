@@ -41,7 +41,7 @@ session_start();
 			<ol class="singleline">
 				<li><form method="get">
 					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
-					<button id="hääleta-nupp" onclick="hääletafunc()">Hääleta</button>
+					<button class="nupp" type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
 				</form></li>
 			</ol>
 			<?php else: ?>
