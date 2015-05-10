@@ -1,5 +1,5 @@
 
-//function funktioon() {
+function funktioon() {
 
 $(function () {
     var chart;
