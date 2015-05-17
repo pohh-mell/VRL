@@ -13,7 +13,7 @@
                 </div>
                 <?php if ($_SESSION['FBID']): ?>
                 <div class="col-xs-8 col-md-4 col-md-offset-1">
-                    <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" id="kandideerimine" class="wide blue"><img src="picid/people-icon-oige.png" alt="kandideeri" class="pilt">KANDIDEERI</a>
+                    <a href="http://e-haaletus.azurewebsites.net/kandideerimine.php" id="kandideerimine" class="wide blue"><img src="picid/kandideeri_oige.png" alt="kandideeri" class="pilt">KANDIDEERI</a>
                 </div>
                 <?php endif ?>
             </div>
