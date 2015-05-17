@@ -16,3 +16,19 @@ function hääletafunc() {
                 
         });
 }
+
+function eemaldafunc(){
+
+                var idekas = document.getElementById('fbide').value;
+        $.ajax({
+                        
+                url:"ajax_delete.php",
+                type:"POST",
+                data:{nimi: idekas,
+                },
+               
+                
+        });
+
+
+}
