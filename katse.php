@@ -9,13 +9,9 @@ if (!$con) {
 }	
 
 
-                    $sql = "SELECT kandidaadid.id AS Number,kandidaadid.Nimi AS Nimi, kandidaadid.Piirkond AS Piirkond,
-                     erakonnad.Nimi AS Erakond, count(users.haal) as Hääli
-                        FROM kandidaadid
-                        left join erakonnad on kandidaadid.Erakonna_id=erakonnad.id
-                        left join users on users.haal=kandidaadid.id
-                        group by Nimi
-                        order by Number;";
+                    $sql = "SELECT kandidaadid.id as Number,kandidaadid.nimi as Nimi,piirkond as Piirkond ,x.Nimi as Erakond, abi as Hääli FROM kandidaadid
+left join (select Haal,count(Haal) as abi from users group by users.haal) as t on kandidaadid.id=t.Haal
+left join erakonnad as x on kandidaadid.Erakonna_id=x.id;";
 					
 
 
