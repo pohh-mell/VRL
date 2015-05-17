@@ -20,7 +20,7 @@ function hääletafunc() {
 function eemaldafunc(){
 
                 var idekas = document.getElementById('fbide').value;
-                alert("auh");
+                
         $.ajax({
                         
                 url:"ajax_delete.php",
