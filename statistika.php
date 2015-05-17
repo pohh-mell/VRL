@@ -6,9 +6,10 @@ include "header.php";
 	<div class="container">
 		<div class="middle">
 			<ol class="singleline">
-			<li><select onchange="funktioon();"> 
+			<li><select id = "statvalik" onchange="funktioon();"> 
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
-			    <option value="Tartumaa">Partei</option>
+			    <option value="Piirkond">Piirkonnad</option>
+			    <option value="Partei">Parteid</option>
 			</select></li>
 			</ol>
 			<div class="diagramm" id="container2">
