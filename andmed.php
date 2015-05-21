@@ -25,7 +25,7 @@ $result=  $conn->query($sql);
 
 if($result->num_rows != 0){
     while($rows = $result->fetch_assoc()){
-            $abilist = array();
+            $abilist = array("auh");
             $Nimi = $rows["Nimi"];
             $Hääli = $rows["Hääli"];
             array_push($abilist, $Nimi, $Hääli);
