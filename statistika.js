@@ -1,13 +1,13 @@
-function makeData(){
-    var valik = document.getElementById("statvalik");
-    var vastus = valik.options[valik.selectedIndex].value;
-    var sql;
-
-    if (vastus == "Kogu Eesti"){
-        
-    }
-    alert(document.getElementById("koguest"));
-}
+//function makeData(){
+//    var valik = document.getElementById("statvalik");
+//    var vastus = valik.options[valik.selectedIndex].value;
+//    var sql;
+//
+//    if (vastus == "Kogu Eesti"){
+//        
+//    }
+//    alert(document.getElementById("koguest"));
+//}
 
 
 function funktioon() {

@@ -14,7 +14,7 @@ include "header.php";
 			</ol>
 			<div id="koguest" style="display: none;">
 			<?php
-				require_once(andmed.php);
+				include "andmed.php";
 				?>
 			</div>
 			<div class="diagramm" id="container2">
