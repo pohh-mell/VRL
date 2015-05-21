@@ -27,7 +27,7 @@ if($result->num_rows != 0){
     while($rows = $result->fetch_assoc()){
             $abilist = array();
             $Nimi = $rows["Nimi"];
-            $Hääli = (double)number_format($rows["Hääli"], 1);
+            $Hääli = round((float)$rows["Hääli"], 1);
             array_push($abilist, $Nimi, $Hääli);
             array_push($valjalist, $abilist);
 
