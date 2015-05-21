@@ -22,7 +22,7 @@ include "header.php";
 			</div>
 		</div>	
 </div>
-<p id "kek" > AUHauhAUH </h>
+<input type="hidden" id="kek" name="Language" value="mauno">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>
