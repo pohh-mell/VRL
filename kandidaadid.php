@@ -19,7 +19,7 @@ session_start();
 				<li><select class="Valikud">	
 					<option value="tühi">------</option>
 					<?php
-					require_once("andmed.php");
+					require_once("andmebaas.php");
 					$conn=database();
 					//Query the database
 					$resultSet = $conn->query("SELECT nimi, id FROM erakonnad group by nimi;");
