@@ -14,9 +14,7 @@ function funktioon() {
 //makeData();
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
-    var list = document.getElementById("kek").value;
-    var proov =  convert_smart_quotes(list);
-    alert(proov);
+    var list = JSON.parse(document.getElementById("kek").value);
 $(function () {
     var chart;
     $(document).ready(function() {
