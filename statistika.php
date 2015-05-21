@@ -17,15 +17,16 @@ include "header.php";
 				include "andmed.php";
 				?>
 			</div>
-			<div class = "eestiandmed" id="koguest2">
-				<p id = "kek">
-				auhauh
-			</p>
-			</div>
+			
 			<div class="diagramm" id="container2">
 			</div>
 		</div>	
 </div>
+<div class = "eestiandmed" id="koguest2">
+				<p id = "kek">
+				auhauh
+			</p>
+			</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>
