@@ -11,7 +11,7 @@
 
 
 function funktioon() {
-makeData();
+//makeData();
 $(function () {
     var chart;
     $(document).ready(function() {
