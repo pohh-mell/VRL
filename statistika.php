@@ -22,11 +22,7 @@ include "header.php";
 			</div>
 		</div>	
 </div>
-<div class = "eestiandmed" id="koguest2">
-				<p id = "kek">
-				auhauh
-			</p>
-			</div>
+<h1 id "kek" > AUH </h1>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>
