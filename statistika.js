@@ -14,8 +14,13 @@ function funktioon() {
 //makeData();
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
-    var list = JSON.parse(document.getElementById("kek").value);
-    alert(list);
+    var list;
+    if(vastus=="Kogu Eesti"){
+        list = JSON.parse(document.getElementById("koguest").value);
+    }
+    else if (vastus == "Piirkond"){
+        list=JSON.parse(document.getElementById("piirkond").value);
+    }
 $(function () {
     var chart;
     $(document).ready(function() {
@@ -50,7 +55,7 @@ $(function () {
             },
             series: [{
                 type: 'pie',
-                name: 'Browser share',
+                name: 'Häälte osakaal',
                 data: list
             }]
         });

@@ -17,8 +17,8 @@ include "header.php";
 			</div>
 		</div>	
 </div>
-<input type="hidden" id="kek" name="Language" value='<?php echo  $_SESSION['koguestonia'];?>'>
-
+<input type="hidden" id="koguest" name="Language" value='<?php echo  $_SESSION['koguestonia'];?>'>
+<input type="hidden" id="piirk" name="Language" value='<?php echo  $_SESSION['piirkond'];?>'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>
