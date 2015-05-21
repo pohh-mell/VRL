@@ -25,11 +25,13 @@ $result=  $conn->query($sql);
 
 if($result->num_rows != 0){
     while($rows = $result->fetch_assoc()){
-            $abilist = array("auh");
+            $abilist = array();
             $Nimi = $rows["Nimi"];
             $Hääli = $rows["Hääli"];
             array_push($abilist, $Nimi, $Hääli);
-            echo($abilist);
+            foreach($results['data'] as $result) {
+             echo $result['type'], '<br>';
+            }
             array_push($valjalist, $abilist);
 
 
