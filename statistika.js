@@ -15,6 +15,7 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     var list;
+    alert(JSON.parse(document.getElementById("piirk").value));
     if(vastus=="Kogu Eesti"){
         list = JSON.parse(document.getElementById("koguest").value);
     }
