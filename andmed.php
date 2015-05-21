@@ -29,12 +29,11 @@ if($result->num_rows != 0){
             $Nimi = $rows["Nimi"];
             $Hääli = $rows["Hääli"];
             array_push($abilist, $Nimi, $Hääli);
-            print_r($abilist);
             array_push($valjalist, $abilist);
 
 
                         }
                     }
-    echo($valjalist);
+    print_r($valjalist);
 
 ?>
