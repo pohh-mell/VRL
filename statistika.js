@@ -16,7 +16,7 @@ function funktioon() {
     var vastus = valik.options[valik.selectedIndex].value;
     alert(vastus);
     alert(document.getElementById("koguest").value);
-    alert($_SESSION['koguestonia']);
+    alert('<%= Session["koguestonia"] %>');
 $(function () {
     var chart;
     $(document).ready(function() {
