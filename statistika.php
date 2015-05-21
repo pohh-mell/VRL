@@ -12,6 +12,11 @@ include "header.php";
 			    <option value="Partei">Parteid</option>
 			</select></li>
 			</ol>
+			<div id="koguest" style="display: none;">
+			<?php
+				require_once(andmed.php);
+				?>
+			</div>
 			<div class="diagramm" id="container2">
 			</div>
 		</div>	
