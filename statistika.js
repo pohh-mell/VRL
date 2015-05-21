@@ -15,11 +15,8 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     alert(vastus);
-    //alert(document.getElementById("koguest").value);
-    var array = document.getElementById("koguest").value;
-for(i = 0; i < array.length; i++) {
-    alert(array[i]);
-}
+    alert(document.getElementById("koguest").value);
+
 $(function () {
     var chart;
     $(document).ready(function() {
