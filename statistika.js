@@ -15,7 +15,7 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     var list = document.getElementById("kek").value;
-    var proov = convert_smart_quotes(list);
+    var proov =  convert_smart_quotes(list);
     alert(proov);
 $(function () {
     var chart;
@@ -73,9 +73,9 @@ $(function () {
 
 function convert_smart_quotes($string) 
 { 
-    $search = chr(34); 
+    $search = array('"'); 
 
-    $replace = chr(39); 
+    $replace = array("'"); 
 
     return str_replace($search, $replace, $string); 
 }
