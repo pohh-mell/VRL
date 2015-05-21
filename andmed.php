@@ -27,10 +27,9 @@ if($result->num_rows != 0){
     while($rows = $result->fetch_assoc()){
             $abilist = array();
             $Nimi = $rows["Nimi"];
-            echo($Nimi);
             $Hääli = $rows["Hääli"];
-            echo($Hääli);
             array_push($abilist, $Nimi, $Hääli);
+            echo($abilist);
             array_push($valjalist, $abilist);
 
 
