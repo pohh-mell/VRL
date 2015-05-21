@@ -17,6 +17,9 @@ include "header.php";
 				include "andmed.php";
 				?>
 			</div>
+			<div class = "eestiandmed" id="koguest">
+				<?php echo "auhauh"; ?>
+			</div>
 			<div class="diagramm" id="container2">
 			</div>
 		</div>	
