@@ -16,7 +16,7 @@ function funktioon() {
     var vastus = valik.options[valik.selectedIndex].value;
     alert(vastus);
     //alert(document.getElementById("koguest").value);
-    var array = getElementById("koguest");
+    var array = getElementById("koguest").value;
 for(i = 0; i < array.length; i++) {
     alert(array[i]);
 }
