@@ -19,7 +19,7 @@ function funktioon() {
         list = JSON.parse(document.getElementById("koguest").value);
     }
     else if (vastus == "Piirkond"){
-        list=JSON.parse(document.getElementById("piirkond").value);
+        list=JSON.parse(document.getElementById("piirk").value);
     }
 $(function () {
     var chart;
