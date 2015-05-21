@@ -14,7 +14,7 @@ function funktioon() {
 //makeData();
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
-    alert(document.getElementById("kek").value);
+    var list = document.getElementById("kek").value;
 $(function () {
     var chart;
     $(document).ready(function() {
@@ -50,20 +50,7 @@ $(function () {
             series: [{
                 type: 'pie',
                 name: 'Browser share',
-                data: [
-                    ['Karl on muna',   159.0],
-                    ['IE',       26.8],
-                    {
-                        name: 'Chrome',
-                    
-                        y: 12.8,
-                        sliced: true,
-                        selected: true
-                    },
-                    ['Safari',    8.5],
-                    ['Opera',     6.2],
-                    ['Others',   0.7]
-                ]
+                data: list;
             }]
         });
     });
