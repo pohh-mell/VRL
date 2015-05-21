@@ -19,7 +19,7 @@ session_start();
                 <label>Erakond:</label>
                 <select class="Valikud" id = "erakond" name = "erakonnad">
                     <?php
-                    require_once("andmed.php");
+                    require_once("andmebaas.php");
                     $conn=database();
                     //Query the database
                     $resultSet = $conn->query("SELECT nimi, id FROM erakonnad group by nimi;");
