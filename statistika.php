@@ -12,7 +12,7 @@ include "header.php";
 			    <option value="Partei">Parteid</option>
 			</select></li>
 			</ol>
-			<div id="koguest" style="display: none;">
+			<div class = "eestiandmed" id="koguest">
 			<?php
 				include "andmed.php";
 				?>
