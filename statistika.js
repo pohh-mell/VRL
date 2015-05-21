@@ -50,7 +50,7 @@ $(function () {
             series: [{
                 type: 'pie',
                 name: 'Browser share',
-                data: list;
+                data: list
             }]
         });
     });
