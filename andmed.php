@@ -35,5 +35,18 @@ if($result->num_rows != 0){
                         }
                     }
     $_SESSION['koguestonia'] = json_encode($valjalist);
-    echo(json_encode($valjalist));
+    echo(json_encode(convert_smart_quotes($valjalist)));
+
+
+function convert_smart_quotes($string) 
+{ 
+    $search = array('"'); 
+
+    $replace = array("'"); 
+
+    return str_replace($search, $replace, $string); 
+}
+
 ?>
+
+

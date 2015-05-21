@@ -71,11 +71,3 @@ $(function () {
     });
 });}
 
-function convert_smart_quotes($string) 
-{ 
-    $search = array('"'); 
-
-    $replace = array("'"); 
-
-    return str_replace($search, $replace, $string); 
-}
