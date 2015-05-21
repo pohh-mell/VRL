@@ -17,7 +17,6 @@ include "header.php";
 			</div>
 		</div>	
 </div>
-<input type="hidden" id="koguest" name="Language" value='<?php echo  $_SESSION['koguestonia'];?>'>
 <input type="hidden" id="koguest2" name="Language" value='<?php include  "andmed.php";?>'>
 <input type="hidden" id="piirk" name="Language" value='<?php include  "piirkonnaandmed.php";?>'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
