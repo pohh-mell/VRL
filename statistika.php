@@ -7,22 +7,18 @@ include "header.php";
 		<div class="middle">
 			<ol class="singleline">
 			<li><select id = "statvalik" onchange="funktioon();"> 
+				<option value="tyhi">---------</option>
 	   		    <option value="Kogu Eesti">Kogu Eesti</option>
 			    <option value="Piirkond">Piirkonnad</option>
 			    <option value="Partei">Parteid</option>
 			</select></li>
 			</ol>
-			<div class = "eestiandmed" id="koguest">
-			<?php
-				include "andmed.php";
-				?>
-			</div>
-			
 			<div class="diagramm" id="container2">
 			</div>
 		</div>	
 </div>
 <input type="hidden" id="kek" name="Language" value='<?php echo  $_SESSION['koguestonia'];?>'>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>
