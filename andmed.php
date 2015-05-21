@@ -25,6 +25,7 @@ $result=  $conn->query($sql);
 
 if($result->num_rows != 0){
     while($rows = $result->fetch_assoc()){
+        echo "string";
             $abilist = array();
             $Nimi = $rows["Nimi"];
             $Hääli = $rows["Hääli"];
