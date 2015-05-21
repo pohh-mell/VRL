@@ -6,12 +6,12 @@ function makeData(){
     if (vastus == "Kogu Eesti"){
         
     }
-    var list = 
+    alert(document.getElementById("koguest"));
 }
 
 
 function funktioon() {
-
+makeData();
 $(function () {
     var chart;
     $(document).ready(function() {
