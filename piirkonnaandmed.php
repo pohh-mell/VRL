@@ -16,7 +16,6 @@ $conn = new mysqli($host, $user, $pwd, $db);
 	if (!$conn) {
 	    die("Connection failed: " . mysqli_connect_error());
 	}
-$result2=  $conn->query($sql2);
 
 $result2=  $conn->query($sql2);
 $valjalist2=array();
@@ -36,6 +35,6 @@ if($result2->num_rows != 0){
     echo(json_encode($valjalist));
 
 
-
+?>
 
 
