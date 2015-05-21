@@ -35,5 +35,4 @@ if($result->num_rows != 0){
                         }
                     }
     print_r($valjalist);
-
 ?>
