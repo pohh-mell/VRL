@@ -29,9 +29,7 @@ if($result->num_rows != 0){
             $Nimi = $rows["Nimi"];
             $Hääli = $rows["Hääli"];
             array_push($abilist, $Nimi, $Hääli);
-            foreach($results['data'] as $result) {
-             echo $result['type'], '<br>';
-            }
+            print_r($abilist);
             array_push($valjalist, $abilist);
 
 
