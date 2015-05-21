@@ -34,5 +34,6 @@ if($result->num_rows != 0){
 
                         }
                     }
+    $_SESSION['koguestonia'] = json_encode($valjalist);
     echo(json_encode($valjalist));
 ?>
