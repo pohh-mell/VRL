@@ -15,8 +15,7 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     alert(vastus);
-    alert(document.getElementById("koguest").value);
-    alert('<%= Session["koguestonia"] %>');
+    alert(document.getElementById("kek").value);
 $(function () {
     var chart;
     $(document).ready(function() {
