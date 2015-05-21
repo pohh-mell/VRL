@@ -15,7 +15,7 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     alert(vastus);
-    alert(document.getElementById("koguest"));
+    alert(document.getElementById("koguest").value);
 $(function () {
     var chart;
     $(document).ready(function() {
