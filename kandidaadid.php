@@ -6,8 +6,7 @@ session_start();
 ?>
 <input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
 	<div class="container">
-		<div class="middle">		
-			
+		<div class="middle">				
 			<ol class="singleline">				
 				<li><select class="Valikud"  >
 					<option value="">------</option>
@@ -38,7 +37,7 @@ session_start();
 				</form></li>
 			</ol>	
 			<?php if ($_SESSION['FBID']): ?>		
-			<ol class="singleline">
+			<ol class="singleline2">
 				<li><form method="get">
 					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
 					<button class="nupp" type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
