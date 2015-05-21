@@ -32,7 +32,7 @@ if($result2->num_rows != 0){
                     }
 #$_SESSION['piirkond'] = json_encode($valjalist2);
    # $_SESSION['koguestonia'] = json_encode($valjalist);
-    echo(json_encode($valjalist));
+    echo(json_encode($valjalist2));
 
 
 ?>
