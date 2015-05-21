@@ -230,6 +230,11 @@ margin-right: 15px;
 margin-top: 50px;
 }
 
+.singleline2 {
+	display: inline-block;
+	margin-right: 15px;
+}
+
 label { 
 	display: inline-block; 
 	width: 140px;
