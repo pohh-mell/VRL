@@ -15,6 +15,8 @@ function funktioon() {
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
     var list = document.getElementById("kek").value;
+    var proov = convert_smart_quotes(list);
+    alert(proov);
 $(function () {
     var chart;
     $(document).ready(function() {
@@ -50,8 +52,30 @@ $(function () {
             series: [{
                 type: 'pie',
                 name: 'Browser share',
-                data: list
+                data: [
+                    ['Karl on muna',   159.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                    
+                        y: 12.8,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
             }]
         });
     });
 });}
+
+function convert_smart_quotes($string) 
+{ 
+    $search = chr(34); 
+
+    $replace = chr(39); 
+
+    return str_replace($search, $replace, $string); 
+}
