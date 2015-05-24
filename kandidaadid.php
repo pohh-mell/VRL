@@ -8,7 +8,6 @@ session_start();
 	<div class="container">
 		<div class="middle">				
 			<ol class="singleline">			
-				<p>Otsing:</p>	
 				<li><select class="Valikud"  >
 					<option value="">------</option>
 		   		    <?php
