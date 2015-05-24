@@ -7,6 +7,25 @@ session_start();
 <input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
 	<div class="container">
 		<div class="middle">				
+			<?php if ($_SESSION['FBID']): ?>		
+			<ol class="singleline2">
+				<li><form method="get">
+					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
+					<button type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
+					<button type="button" onclick="eemaldafunc()" id="submit-button">Eemalda hääl</button>
+				</form></li>
+			</ol>
+			<?php else: ?>
+			<ol class="singleline">
+				<li>
+					<p> Kandidaadile hääle andmiseks logige sisse. </p>
+				</li>
+			</ol>
+			<?php endif ?>  
+
+			<table id="t01"></table>
+
+			<p>Otsing:</p>
 			<ol class="singleline">				
 				<li><select class="Valikud"  >
 					<option value="">------</option>
@@ -43,26 +62,14 @@ session_start();
 					?>
 				</select></li>
 				<li><form method="get">
-					<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
+					<input type="text" class="Valikud" name="search" id="search-text"  value="<?php if(isset($_POST["kandidaadid.nimi"])) echo $_POST["kandidaadid.nimi"]; ?>" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
+				<input type="button" name="go" class="btnSearch" value="Search">
 			</ol>	
-			<?php if ($_SESSION['FBID']): ?>		
-			<ol class="singleline2">
-				<li><form method="get">
-					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
-					<button type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
-					<button type="button" onclick="eemaldafunc()" id="submit-button">Eemalda hääl</button>
-				</form></li>
-			</ol>
-			<?php else: ?>
-			<ol class="singleline">
-				<li>
-					<p> Kandidaadile hääle andmiseks logige sisse. </p>
-				</li>
-			</ol>
-			<?php endif ?>  
 
-			<table id="t01"></table>
+			<div id="users-grid">               
+            </div>
+
 		</div>
 	</div>
 
