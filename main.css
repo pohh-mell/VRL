@@ -186,17 +186,17 @@ table#t01, th, td {
     border-collapse: collapse;
 }
 
-table#t01 {
+.t01 {
 	width:100%;
 	margin-top: 50px;
 	margin-bottom: 50px;	
 }
 
-table#t01 tr {
+.t01 tr {
     background-color: #eee;
 }
 
-table#t01 th	{
+.t01 th	{
     background-color: #DEDEFF;
 }
 

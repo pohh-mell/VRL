@@ -23,11 +23,11 @@ session_start();
 			</ol>
 			<?php endif ?>  
 
-			<table id="t01"></table>
+			<table class="t01" id="t01"></table>
 
 			<p>Otsing:</p>
 			<ol class="singleline">				
-				<li><select class="Valikud"  >
+				<li><select class="Valikud"> <!--  onchange="getTable2();" -->
 					<option value="">------</option>
 		   		    <?php
 					require_once("andmebaas.php");
@@ -61,10 +61,9 @@ session_start();
 					$conn->close();
 					?>
 				</select></li>
-				<li><form name="frmSearch" method="post" onsubmit="return getresult('katse.php')">
-					<input type="text" class="Valikud" name="search" id="search-text"  value="<?php if(isset($_POST["kandidaadid.nimi"])) echo $_POST["kandidaadid.nimi"]; ?>" placeholder="Sisesta kandidaadi nimi">
+				<li><form>
+					<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
-				<input type="button" name="go" class="btnSearch" value="Search">
 			</ol>	
 
 			<div id="users-grid">               
