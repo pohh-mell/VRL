@@ -23,9 +23,9 @@ function getresult(url) {
     $.ajax({
         url: url,
         type: "POST",
-        data: {product: $('input[name=product]').val()},
+        data: {kandidaadid.nimi: $('input[name=kandidaadid.nimi]').val()},
         success: function(data){ $("#users-grid").html(data);}
    });
    return false
 }
-    getresult("Kandidaadid/getresult.php");
+    getresult("katse.php");
