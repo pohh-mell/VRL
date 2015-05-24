@@ -12,7 +12,7 @@ left join erakonnad as x on kandidaadid.Erakonna_id=x.id
 order by Number;";
 
     $sql2 = "SELECT kandidaadid.Piirkond as Piirkond,COUNT(users.Haal) as Hääli from kandidaadid
-left join user on kandidaadid.id=users.haal group by piirkond;";
+left join users on kandidaadid.id=users.haal group by piirkond;";
 
 $sql3 = "SELECT erakonnad.nimi as Erakond,COUNT(users.Haal) as Hääli from 
 ((kandidaadid inner join users on kandidaadid.id=users.haal)

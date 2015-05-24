@@ -14,19 +14,16 @@ function funktioon() {
 //makeData();
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
-    var list;
+    var list = document.getElementById("koguest2").value;
+    var tulemus;
     if(vastus=="Kogu Eesti"){
-        alert(document.getElementById("koguest2").value);
-        list = JSON.parse(document.getElementById("koguest2").value);
-        alert(list);
+        tulemus = JSON.parse(list[0]);
     }
     if (vastus == "Piirkond"){
-        alert(document.getElementById("piirk").value);
-        list=JSON.parse(document.getElementById("piirk").value);
-        alert(list);
+        tulemus = JSON.parse(list[2]);
     }
     if (vastus == "Partei"){
-        list=JSON.parse(document.getElementById("erak").value);
+         tulemus = JSON.parse(list[2]);
     }
 $(function () {
     var chart;
