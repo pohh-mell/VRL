@@ -28,7 +28,7 @@ if($result3->num_rows != 0){
             $Hääli = round((float)$rows["Hääli"], 1);
             if($Hääli != 0){
                 array_push($abilist, $erakond, $Hääli);
-                array_push($valjalist, $abilist);
+                array_push($valjalist3, $abilist);
             }
 
                         }
