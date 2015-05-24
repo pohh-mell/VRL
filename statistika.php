@@ -19,6 +19,7 @@ include "header.php";
 </div>
 <input type="hidden" id="koguest2" name="Language" value='<?php include  "andmed.php";?>'>
 <input type="hidden" id="piirk" name="Language" value='<?php include  "piirkonnaandmed.php";?>'>
+<input type="hidden" id="erak" name="Language" value='<?php include  "erakonnaandmed.php";?>'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
 <script src="highcharts.js" type="text/javascript"></script>
 <script src="exporting.js" type ="text/javascript"></script>

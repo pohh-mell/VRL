@@ -21,6 +21,9 @@ function funktioon() {
     if (vastus == "Piirkond"){
         list=JSON.parse(document.getElementById("piirk").value);
     }
+    if (vastus == "Partei"){
+        list=JSON.parse(document.getElementById("erak").value);
+    }
 $(function () {
     var chart;
     $(document).ready(function() {

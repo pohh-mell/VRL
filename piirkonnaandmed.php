@@ -10,8 +10,8 @@
 mysql_set_charset('utf8', $db);
 	// Create connection
 
-$sql2 = "SELECT piirkond as Piirkond, IFNULL(abi,0) as Hääli FROM kandidaadid
-left join (select Haal,count(Haal) as abi from users group by users.haal) as t on kandidaadid.id=t.Haal Group by piirkond;";
+$sql2 = "SELECT kandidaadid.Piirkond as Piirkond,COUNT(users.Haal) as Hääli from kandidaadid
+left join user on kandidaadid.id=users.haal group by piirkond;";
 $conn = new mysqli($host, $user, $pwd, $db);
 	if (!$conn) {
 	    die("Connection failed: " . mysqli_connect_error());
@@ -32,7 +32,7 @@ if($result2->num_rows != 0){
                     }
     echo(json_encode($valjalist2));
 
-
+$conn->close();
 ?>
 
 
