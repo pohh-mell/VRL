@@ -7,24 +7,6 @@ session_start();
 <input type="hidden" name="fbide" id="fbide" value="<?php echo  $_SESSION['FBID'];?>" />
 	<div class="container">
 		<div class="middle">				
-			<?php if ($_SESSION['FBID']): ?>		
-			<ol class="singleline">
-				<li><form method="get">
-					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
-					<button type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
-					<button type="button" onclick="eemaldafunc()" id="submit-button">Eemalda hääl</button>
-				</form></li>
-			</ol>
-			<?php else: ?>
-			<ol class="singleline">
-				<li>
-					<p> Kandidaadile hääle andmiseks logige sisse. </p>
-				</li>
-			</ol>
-			<?php endif ?>  
-
-			<table id="t01"></table>
-
 			<ol class="singleline">			
 				<p>Otsing:</p>	
 				<li><select class="Valikud"  >
@@ -64,7 +46,24 @@ session_start();
 				<li><form method="get">
 					<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
-			</ol>	
+			</ol>
+			<?php if ($_SESSION['FBID']): ?>		
+			<ol class="singleline2">
+				<li><form method="get">
+					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
+					<button type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
+					<button type="button" onclick="eemaldafunc()" id="submit-button">Eemalda hääl</button>
+				</form></li>
+			</ol>
+			<?php else: ?>
+			<ol class="singleline">
+				<li>
+					<p> Kandidaadile hääle andmiseks logige sisse. </p>
+				</li>
+			</ol>
+			<?php endif ?>  
+
+			<table id="t01"></table>			
 		</div>
 	</div>
 

@@ -18,13 +18,3 @@ function getTable(){
     xmlhttp.open("GET","katse.php",true);
     xmlhttp.send();
 }
-
-function getresult(url) {   
-    $.ajax({
-        url: url,
-        type: "POST",
-        data: {kandidaadid.nimi: $('input[name=kandidaadid.nimi]').val()},
-        success: function(data){ $("#users-grid").html(data);}
-   });
-   return false
-}
