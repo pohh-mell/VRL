@@ -28,8 +28,11 @@ if($result->num_rows != 0){
             $abilist = array();
             $Nimi = $rows["Nimi"];
             $Hääli = round((float)$rows["Hääli"], 1);
-            array_push($abilist, $Nimi, $Hääli);
-            array_push($valjalist, $abilist);
+            if($Hääli != 0){
+                array_push($abilist, $Nimi, $Hääli);
+                array_push($valjalist, $abilist);
+            }
+            
 
 
                         }
