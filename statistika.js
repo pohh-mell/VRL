@@ -61,7 +61,7 @@ $(function () {
             series: [{
                 type: 'pie',
                 name: 'Häälte osakaal',
-                data: list
+                data: tulemus
             }]
         });
     });
