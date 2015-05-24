@@ -11,7 +11,7 @@ mysql_set_charset('utf8', $db);
 	// Create connection
 
 $sql2 = "SELECT kandidaadid.Piirkond as Piirkond,COUNT(users.Haal) as Hääli from kandidaadid
-left join user on kandidaadid.id=users.haal group by piirkond;";
+left join users on kandidaadid.id=users.haal group by piirkond;";
 $conn2 = new mysqli($host, $user, $pwd, $db);
 	if (!$conn2) {
 	    die("Connection failed: " . mysqli_connect_error());

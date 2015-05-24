@@ -14,18 +14,15 @@ function funktioon() {
 //makeData();
     var valik = document.getElementById("statvalik");
     var vastus = valik.options[valik.selectedIndex].value;
-    var list = document.getElementById("koguest2").value;
-    alert(list[0]);
-    alert(list);
-    var tulemus;
+    var list;
     if(vastus=="Kogu Eesti"){
-        tulemus = JSON.parse(list[0]);
+        list = JSON.parse(document.getElementById("koguest2").value);
     }
     if (vastus == "Piirkond"){
-        tulemus = JSON.parse(list[2]);
+        list=JSON.parse(document.getElementById("piirk").value);
     }
     if (vastus == "Partei"){
-         tulemus = JSON.parse(list[2]);
+        list=JSON.parse(document.getElementById("erak").value);
     }
 $(function () {
     var chart;
@@ -62,7 +59,7 @@ $(function () {
             series: [{
                 type: 'pie',
                 name: 'Häälte osakaal',
-                data: tulemus
+                data: list
             }]
         });
     });
