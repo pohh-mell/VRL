@@ -19,6 +19,7 @@ function funktioon() {
         list = JSON.parse(document.getElementById("koguest2").value);
     }
     if (vastus == "Piirkond"){
+        alert(document.getElementById("piirk").value);
         list=JSON.parse(document.getElementById("piirk").value);
         alert(list);
     }
