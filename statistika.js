@@ -17,6 +17,7 @@ function funktioon() {
     var list;
     if(vastus=="Kogu Eesti"){
         list = JSON.parse(document.getElementById("koguest2").value);
+        alert(list);
     }
     if (vastus == "Piirkond"){
         alert(document.getElementById("piirk").value);
