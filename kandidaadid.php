@@ -61,7 +61,7 @@ session_start();
 					$conn->close();
 					?>
 				</select></li>
-				<li><form method="get">
+				<li><form name="frmSearch" method="post" onsubmit="return getresult('katse.php')">
 					<input type="text" class="Valikud" name="search" id="search-text"  value="<?php if(isset($_POST["kandidaadid.nimi"])) echo $_POST["kandidaadid.nimi"]; ?>" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
 				<input type="button" name="go" class="btnSearch" value="Search">
