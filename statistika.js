@@ -16,6 +16,7 @@ function funktioon() {
     var vastus = valik.options[valik.selectedIndex].value;
     var list;
     if(vastus=="Kogu Eesti"){
+        alert(document.getElementById("koguest2").value);
         list = JSON.parse(document.getElementById("koguest2").value);
         alert(list);
     }
