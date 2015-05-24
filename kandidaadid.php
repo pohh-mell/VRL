@@ -14,7 +14,7 @@ session_start();
 					require_once("andmebaas.php");
 					$conn=database();
 					//Query the database
-					$resultSet = $conn->query("SELECT nimi, piirkond FROM kandidaadid group by nimi;");
+					$resultSet = $conn->query("SELECT piirkond FROM kandidaadid group by piirkond;");
 					if($resultSet->num_rows != 0){
 						while($rows = $resultSet->fetch_assoc()){
 							$piirrkond = $rows['nimi'];
