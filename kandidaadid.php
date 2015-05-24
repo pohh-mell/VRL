@@ -8,7 +8,7 @@ session_start();
 	<div class="container">
 		<div class="middle">				
 			<?php if ($_SESSION['FBID']): ?>		
-			<ol class="singleline2">
+			<ol class="singleline">
 				<li><form method="get">
 					<input type="text" class="Hääleta" name="hääleta" id="hääleta"  value="" placeholder="Sisesta kandidaadi nr!">
 					<button type="button" onclick="hääletafunc()" id="submit-button">Hääleta</button>
@@ -25,8 +25,8 @@ session_start();
 
 			<table id="t01"></table>
 
-			<p>Otsing:</p>
-			<ol class="singleline">				
+			<ol class="singleline">			
+				<p>Otsing:</p>	
 				<li><select class="Valikud"  >
 					<option value="">------</option>
 		   		    <?php
