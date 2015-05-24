@@ -10,10 +10,20 @@ session_start();
 			<ol class="singleline">				
 				<li><select class="Valikud"  >
 					<option value="">------</option>
-		   		    <option value="1">Kogu Eesti</option>
-				    <option value="asd">asd</option>
-				    <option value="Võrumaa">Võrumaa</option>
-				  	<option value="Valgamaa">Valgamaa</option>
+		   		    <?php
+					require_once("andmebaas.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT nimi, id FROM piirkond group by nimi;");
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$piirrkond = $rows['nimi'];
+							$piirid = $rows['id'];
+							echo"<option value=\"$piirid\">$piirrkond</option>";
+						}
+					}
+					$conn->close();
+					?>
 				</select></li>					
 				<li><select class="Valikud">	
 					<option value="tühi">------</option>
