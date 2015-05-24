@@ -186,17 +186,36 @@ table#t01, th, td {
     border-collapse: collapse;
 }
 
-.t01 {
+table#t01 {
 	width:100%;
 	margin-top: 50px;
 	margin-bottom: 50px;	
 }
 
-.t01 tr {
+table#t01 tr {
     background-color: #eee;
 }
 
-.t01 th	{
+table#t01 th	{
+    background-color: #DEDEFF;
+}
+
+table#t03, th, td {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#t03 {
+	width:100%;
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}
+
+table#t03 tr {
+    background-color: #eee;
+}
+
+table#t03 th	{
     background-color: #DEDEFF;
 }
 

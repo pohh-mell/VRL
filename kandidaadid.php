@@ -23,7 +23,7 @@ session_start();
 			</ol>
 			<?php endif ?>  
 
-			<table class="t01" id="t01"></table>
+			<table id="t01"></table>
 
 			<p>Otsing:</p>
 			<ol class="singleline">				

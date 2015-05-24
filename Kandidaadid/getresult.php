@@ -12,7 +12,7 @@
     </div>
 </form>
 
-    <table class="t01">
+    <table id="t03">
         <thead>
             <tr>
                 <th>Nr</th>
@@ -37,10 +37,10 @@
                 foreach ($pdo->query($sql) as $row) {
                     echo '<tr>';
                     echo '<td>'. $row['Number'] . '</td>';
-                    echo '<td>'. $row['product'] . '</td>';
-                    echo '<td>'. $row['quantity'] . '</td>';
-                    echo '<td>'. $row['grossprice'] . '</td>';
-                    echo '<td>'. $row['profit'] . '</td>';
+                    echo '<td>'. $row['Nimi'] . '</td>';
+                    echo '<td>'. $row['Piirkond'] . '</td>';
+                    echo '<td>'. $row['Erakond'] . '</td>';
+                    echo '<td>'. $row['Hääli'] . '</td>';
                     echo '</tr>';
                 }
                 Database::disconnect();

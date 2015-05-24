@@ -14,12 +14,7 @@ left join (select Haal,count(Haal) as abi from users group by users.haal) as t o
 left join erakonnad as x on kandidaadid.Erakonna_id=x.id
 order by Number;";
 					
-					$queryCondition = "";
-					if(!empty($_POST["kandidaadid.nimi"])) {
-						$queryCondition .= " WHERE kandidaadid.nimi LIKE '%" . $_POST["kandidaadid.nimi"] . "%'";
-						$orderby = " ORDER BY id desc"; 
-                		$sql = "SELECT * FROM users " . $queryCondition . $orderby;
-					}
+
 
 
 					//$sql = "SELECT * FROM kandidaadid
