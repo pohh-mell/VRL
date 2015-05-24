@@ -27,7 +27,7 @@ session_start();
 
 			<p>Otsing:</p>
 			<ol class="singleline">				
-				<li><select class="Valikud"> <!--  onchange="getTable2();" -->
+				<li><select class="Valikud"  >
 					<option value="">------</option>
 		   		    <?php
 					require_once("andmebaas.php");
@@ -61,14 +61,10 @@ session_start();
 					$conn->close();
 					?>
 				</select></li>
-				<li><form>
+				<li><form method="get">
 					<input type="text" class="Valikud" name="search" id="search-text"  value="" placeholder="Sisesta kandidaadi nimi">
 				</form></li>
 			</ol>	
-
-			<div id="users-grid">               
-            </div>
-
 		</div>
 	</div>
 
